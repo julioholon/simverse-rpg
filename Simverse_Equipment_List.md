@@ -24,46 +24,46 @@
 ### Melee Weapons - Light (One-Handed)
 | Weapon | Damage | Cost | Notes |
 |--------|--------|------|-------|
-| **Dagger** | 1d6-3 | 5 sp | Concealable, can be thrown (10m) |
-| **Shortsword** | 1d6-1 | 20 sp | Versatile, quick draw |
-| **Hand Axe** | 1d6 | 15 sp | Can be thrown (8m) |
-| **Mace** | 1d6 | 15 sp | Good vs armor |
-| **Rapier** | 1d6 | 30 sp | Finesse weapon, +1 to parry |
-| **Whip** | 1d6-2 | 20 sp | 3m reach, can disarm |
-| **Club** | 1d6-2 | 2 sp | Improvised available |
+| **Dagger** | 1d6-3 | 5 sp | Cutting/impaling (thrust -1 dmg/die), concealable, thrown 10m |
+| **Shortsword** | 1d6-1 | 20 sp | Cutting/impaling (thrust -1 dmg/die), versatile, quick draw |
+| **Hand Axe** | 1d6 | 15 sp | Cutting, can be thrown (8m) |
+| **Mace** | 1d6 | 15 sp | Bludgeoning, good vs armor |
+| **Rapier** | 1d6 | 30 sp | Impaling (thrust -1 dmg/die), finesse weapon, +1 to parry |
+| **Whip** | 1d6-2 | 20 sp | Cutting, 3m reach, can disarm |
+| **Club** | 1d6-2 | 2 sp | Bludgeoning, improvised available |
 
 ### Melee Weapons - Medium (One or Two-Handed)
 | Weapon | Damage | Cost | Notes |
 |--------|--------|------|-------|
-| **Longsword** | 2d6-1 | 50 sp | Versatile, good balance |
-| **Battleaxe** | 2d6 | 40 sp | High damage |
-| **War Hammer** | 2d6 | 45 sp | Excellent vs armor, +2 vs AR 4+ |
-| **Spear** | 1d6+1 | 10 sp | Can be thrown (15m), 2m reach |
-| **Scimitar** | 2d6-1 | 45 sp | +1 to hit |
-| **Morningstar** | 2d6 | 35 sp | Armor piercing |
+| **Longsword** | 2d6-1 | 50 sp | Cutting/impaling (thrust -2 dmg/die), versatile, good balance |
+| **Battleaxe** | 2d6 | 40 sp | Cutting, high damage |
+| **War Hammer** | 2d6 | 45 sp | Bludgeoning, excellent vs armor, +2 vs AR 4+ |
+| **Spear** | 1d6+1 | 10 sp | Impaling (thrust -1 dmg/die), thrown 15m, 2m reach |
+| **Scimitar** | 2d6-1 | 45 sp | Cutting, +1 to hit |
+| **Morningstar** | 2d6 | 35 sp | Bludgeoning, armor piercing |
 
 ### Melee Weapons - Heavy (Two-Handed)
 | Weapon | Damage | Cost | Notes |
 |--------|--------|------|-------|
-| **Greatsword** | 3d6 | 100 sp | Massive damage, cannot use shield |
-| **Greataxe** | 3d6+1 | 90 sp | Highest damage, slow |
-| **Poleaxe** | 2d6+2 | 70 sp | 3m reach, versatile |
-| **Halberd** | 2d6+2 | 65 sp | 3m reach, trip attacks |
-| **Pike** | 2d6 | 50 sp | 4m reach, anti-cavalry |
-| **Maul** | 3d6 | 80 sp | Crushing damage, +3 vs armor |
-| **Quarterstaff** | 1d6+1 | 5 sp | Both ends, defensive bonus |
+| **Greatsword** | 3d6 | 100 sp | Cutting/impaling (thrust -3 dmg/die), massive damage, cannot use shield |
+| **Greataxe** | 3d6+1 | 90 sp | Cutting, highest damage, slow |
+| **Poleaxe** | 2d6+2 | 70 sp | Cutting/impaling (thrust -2 dmg/die), 3m reach, versatile |
+| **Halberd** | 2d6+2 | 65 sp | Cutting/impaling (thrust -2 dmg/die), 3m reach, trip attacks |
+| **Pike** | 2d6 | 50 sp | Impaling (thrust -2 dmg/die), 4m reach, anti-cavalry |
+| **Maul** | 3d6 | 80 sp | Bludgeoning, crushing damage, +3 vs armor |
+| **Quarterstaff** | 1d6+1 | 5 sp | Bludgeoning, both ends, defensive bonus |
 
 ### Ranged Weapons
 | Weapon | Damage | Range | Cost | Notes |
 |--------|--------|-------|------|-------|
-| **Shortbow** | 1d6+1 | 50m | 30 sp | Quick to draw |
-| **Longbow** | 2d6 | 100m | 60 sp | Powerful, requires ST 10+ |
-| **Crossbow, Light** | 2d6 | 80m | 50 sp | No ST requirement |
-| **Crossbow, Heavy** | 2d6+2 | 120m | 100 sp | Armor piercing, slow reload |
-| **Throwing Knife** | 1d6-3 | 10m | 5 sp | Quick throw, concealable |
-| **Throwing Axe** | 1d6 | 8m | 15 sp | Good damage |
-| **Javelin** | 1d6+1 | 20m | 8 sp | Cheap, effective |
-| **Sling** | 1d6-1 | 40m | 2 sp | Cheap ammunition |
+| **Shortbow** | 1d6+1 | 50m | 30 sp | Impaling (-1 dmg/die), quick to draw |
+| **Longbow** | 2d6 | 100m | 60 sp | Impaling (-2 dmg/die), powerful, requires ST 10+ |
+| **Crossbow, Light** | 2d6 | 80m | 50 sp | Impaling (-2 dmg/die), no ST requirement |
+| **Crossbow, Heavy** | 2d6+2 | 120m | 100 sp | Impaling (-2 dmg/die), armor piercing, slow reload |
+| **Throwing Knife** | 1d6-3 | 10m | 5 sp | Impaling (-1 dmg/die), quick throw, concealable |
+| **Throwing Axe** | 1d6 | 8m | 15 sp | Cutting, good damage |
+| **Javelin** | 1d6+1 | 20m | 8 sp | Impaling (-1 dmg/die), cheap, effective |
+| **Sling** | 1d6-1 | 40m | 2 sp | Bludgeoning, cheap ammunition |
 
 ### Ammunition
 | Item | Cost | Notes |

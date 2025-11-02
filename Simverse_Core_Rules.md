@@ -1,5 +1,5 @@
 # SIMVERSE
-## Core Rulebook v1.0
+## Core Rulebook v1.1
 
 ---
 
@@ -764,10 +764,13 @@ These modify the cost by a percentage:
 | **Instant Action** | +25% | Can interrupt or use mid-action |
 | **Persistent** | +20% | Effect continues without concentration |
 
+**Note on Skill Rolls:** By default, activating a power/spell/maneuver requires a successful skill roll (Spellcasting for spells, weapon skill for maneuvers, etc.). The "Reliable Activation" enhancement below removes this requirement.
+
 ### Enhancements (Fixed Cost)
 
 | Enhancement | Cost | Description |
 |-------------|------|-------------|
+| **Reliable Activation** | +10 CP | No skill roll needed, automatically activates (costs resources but always works) |
 | **Armor Piercing** | +5 CP | Ignores 2 points of armor |
 | **Homing** | +5 CP | Reroll one missed attack with this power |
 | **Knockback** | +3 CP | Push target 2m on successful hit |
@@ -781,7 +784,6 @@ These reduce the cost by a percentage:
 
 | Limitation | Cost Modifier | Description |
 |------------|---------------|-------------|
-| **Requires Skill Roll** | -20% | Must succeed on skill check to activate |
 | **Only in [Condition]** | -60% | Only works in rain/night/touching earth/etc. |
 | **Requires [Item]** | -20% | Need specific tool/weapon/holy symbol |
 | **Usage Limit** | -30% (3/day), -60% (1/day), -80% (1/week) | Limited uses |
@@ -791,6 +793,8 @@ These reduce the cost by a percentage:
 | **Backfire Risk** | -30% | On crit fail, lose resources or suffer effect |
 | **Increased Resource** | -20% (double), -30% (triple) | Costs more Mana/Stamina to use |
 | **Fragile** | -25% | Broken by any damage to user |
+
+**Note:** "Requires Skill Roll" is assumed by default for most powers unless the power description states otherwise. Powers that activate automatically without a roll must take the "Reliable Activation" enhancement below.
 
 ### Limitations (Fixed Cost)
 
@@ -926,6 +930,8 @@ You get **1 Reaction per turn** (3 if using Full Defense):
 
 **Damage = Weapon Damage Roll + ST Bonus - Armor Resistance (AR)**
 
+**Minimum Damage Rule:** If final damage after all modifiers is 0 or negative, before reducing AR, the attack still deals **1 Vitality damage** . Ex.: 1d-3 -1 for ST damage rolls for 2, the damage would be 2-3-1 = -2, but it will still be 1. But then, an AR of 1 will bring it down to zero.
+
 Weapons have damage dice notation:
 - Knife: 1d6-3
 - Sword: 2d6-1
@@ -956,9 +962,35 @@ Different damage types interact with armor differently:
 
 #### Impaling Damage
 - **Sources:** Spears, arrows, piercing weapons, stabs
-- **Effect:** Usually smaller base damage, but damage that penetrates AR is **doubled**
-- **Examples:** Spear thrust (1d6+1 impaling), arrow (1d6+2 impaling)
+- **Effect:** Subtract 1 damage per die rolled (before AR), but damage that penetrates AR is **doubled**
+- **Examples:** Spear thrust (1d6+1 impaling), arrow (1d6+2 impaling), dagger thrust (1d6-3 impaling)
 - **Calculation:** Roll damage + ST bonus, subtract AR, then double remaining damage
+- **Dual damage type weapons:** Swords and similar weapons that can be used for swinging or thrusting have the default listed damage for swingind, if you use the same weapon for thrusting, you just reduce 1 damage per dice. E
+
+**Example 1 - Arrow (1 die):**
+- Arrow (1d6+2 impaling) + ST 12 (+1): rolls 5 on die
+- 5 + 2 + 1 = 8 damage
+- vs AR 2: 7 - 2 = 5 gets through
+- Impaling doubles: 5 × 2 = **10 Vitality damage**
+
+**Example 2 - Heavy Spear (2 dice):**
+- Spear (2d6 impaling) + ST 14 (+2): rolls 9 on dice
+- 9 + 2 = 11 damage
+- vs AR 3: 11 - 3 = 8 gets through
+- Impaling doubles: 8 × 2 = **16 Vitality damage**
+
+**Example 2 - Longsword thrusting:**
+- Attacker with ST 14 (+2) uses longsword (2d6-1 cutting) thrusting target with AR 4.
+- Roll: 7 on 2d6-1 -2 (-1 per dice) = 4 damage + 2 ST = 6 damage total
+- vs AR 4: 6 - 4 = 2 (x2 because of impaling damage) = 4 damage to Vitality
+
+**Example 3 - Longsword swinging:**
+Attacker with ST 14 (+2) uses longsword (2d6-1 cutting) for swinging against target with AR 4.
+- Roll: 7 on 2d6-1 = 6 damage + 2 ST = 8 damage total
+- AR 4 counts as 8 vs cutting damage
+- 8 damage - 8 AR = 0 damage (armor absorbed it all)
+- If roll had been 10: 9 damage + 2 ST = 11 damage total
+- 11 - 8 AR = 3 damage to Vitality + bleeding starts
 
 #### Energy/Magical Damage
 - **Sources:** Fire, cold, lightning, acid, magical force
@@ -969,14 +1001,6 @@ Different damage types interact with armor differently:
   - **Lightning:** May stun or cause muscle spasms
   - **Acid:** May damage equipment or cause ongoing damage
   - **Force:** Pure magical energy, no special effects
-
-**Example - Cutting Damage:**
-Attacker with ST 14 (+2) uses longsword (2d6-1 cutting) against target with AR 4.
-- Roll: 7 on 2d6-1 = 6 damage + 2 ST = 8 damage total
-- AR 4 counts as 8 vs cutting damage
-- 8 damage - 8 AR = 0 damage (armor absorbed it all)
-- If roll had been 10: 9 damage + 2 ST = 11 damage total
-- 11 - 8 AR = 3 damage to Vitality + bleeding starts
 
 **Example - Impaling Damage:**
 Archer with ST 12 (+1) shoots arrow (1d6+2 impaling) against target with AR 3.
@@ -1100,6 +1124,21 @@ Shields add SD to Block defense rolls only
 - **Prone**: -4 to attacks, attackers get +4 in melee / -4 at range
 - **Range** (bows/guns): Penalties at long range per weapon
 
+**Ranged Combat Modifiers:**
+- **Range Penalty:** -1 to hit per 5 meters beyond optimal range
+- **Aiming Bonus:** Spend Major Action aiming, next shot gets +3 to hit (lost if you move or are hit)
+- **Point-Blank Range:** Shooting within 2 meters with ranged weapon = -2 to hit (weapon too long/awkward at close range)
+
+**Example Range Penalties:**
+- Shortbow (optimal 15m): Shooting at 25m = -2, at 35m = -4, at 45m = -6
+- Longbow (optimal 40m): Shooting at 60m = -4, at 80m = -8
+- Crossbow (optimal 20m): Shooting at 35m = -3
+
+**Example Aiming:**
+- Round 1: Use Major Action to aim at target
+- Round 2: Attack with +3 to hit (must shoot same target)
+- If hit or moved: lose aiming bonus
+
 **Called Shots:**
 - **Arm/Leg**: -4 to hit, may cause specific effects (drop item, slow movement)
 - **Head**: -6 to hit, **damage is doubled** after armor
@@ -1134,6 +1173,43 @@ Arrow (1d6+2 impaling) hits head (-6 to hit) against AR 2:
 **Dying** (0 or less Vitality): uncounscious and losing 1 Vitality per turn, roll every turn vs EN/2 after - 1 x Vitality to attempt to stabilize
 
 **Dead** (-2 x Vitality): instant death
+
+---
+
+### Morale and Panic Checks
+
+Characters must make **Morale Checks** (roll vs WS) when facing terrifying or overwhelming situations:
+
+**Common Triggers:**
+- First time seeing horrific violence or gore
+- Facing supernatural creatures (demons, undead, eldritch horrors)
+- Witnessing ally's death
+- Outnumbered 3-to-1 or more
+- Taking massive damage (half Vitality or more in one hit)
+- Supernatural fear effects (spells, dragon presence, etc.)
+
+**Difficulty Modifiers:**
+- Familiar with this threat: +2
+- Veteran combatant/Strong Willed perk: +2
+- Inexperienced or first adventure: -2
+- Panicked ally nearby: -2
+- Clear escape route visible: +2
+- No escape route/surrounded: -4
+
+**Roll Results:**
+- **Success by 5+:** Steeled, gain +2 to resist panic for rest of encounter
+- **Success:** Hold steady, continue fighting normally
+- **Failure:** Shaken, -2 to all actions for 1d6 rounds
+- **Failure by 5+:** Panic! Must flee or cower for 1d6 rounds, can't attack
+- **Critical Failure (666):** Total panic, flee screaming, drop weapons/items
+
+**Example - Encountering Undead Horde:**
+Party sees zombie horde for first time. All roll vs WS:
+- **Thorin** (WS 12, veteran +2): Target 14, rolls 10 = success
+- **Marcus** (WS 11): Rolls 13 = failure, shaken for 4 rounds (-2 all actions)
+- **Lyralei** (WS 14, inexperienced -2): Target 12, rolls 18 = failure by 6, panics and flees!
+
+**GM Note:** Use sparingly for dramatic effect. Veteran adventurers shouldn't panic at normal combat.
 
 ---
 
