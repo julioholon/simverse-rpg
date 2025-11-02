@@ -116,7 +116,7 @@ Characters have **7 primary attributes** that define their capabilities:
 | **Charisma** | CH | Social influence, leadership, attractiveness |
 | **Endurance** | EN | Stamina, health, resisting fatigue/poison |
 | **Awareness** | AW | Perception, initiative, luck, magical intuition |
-| **Strength** | ST | Physical power, melee damage, carrying capacity |
+| **Strength** | ST | Physical power, melee damage bonus, carrying capacity |
 
 ### Attribute Scale
 
@@ -196,6 +196,28 @@ Several important values are calculated from your attributes:
 
 - Used for noticing things, spotting hidden enemies
 - Can be modified by Acute Senses or penalties like One Eye
+
+### Strength Damage Bonus
+**Damage Bonus = (ST - 10) / 2** (round down)
+
+- Adds to melee and thrown weapon damage
+- ST 10-11: +0 damage
+- ST 12-13: +1 damage
+- ST 14-15: +2 damage
+- ST 16-17: +3 damage
+- ST 18-19: +4 damage
+- ST 8-9: -1 damage
+- ST 6-7: -2 damage
+
+**Dice Conversion:** When damage modifier reaches +7 or higher, convert to additional damage dice instead:
+- 1d6+7 becomes 3d6
+- 1d6+8 becomes 3d6+1
+- 2d6+7 becomes 4d6
+- Each additional +6 adds another 1d6
+
+**Example:** Character with ST 18 (+4 damage) using longsword (2d6-1):
+- Base: 2d6-1
+- With ST bonus: 2d6-1+4 = 2d6+3 damage
 
 ---
 
@@ -378,7 +400,7 @@ Perks represent advantages, talents, and special abilities. Flaws represent disa
 - +5 Vitality
 
 **Hard to Kill** (15 CP)
-- Don't fall unconscious until -1× Vitality
+- Don't fall unconscious until -2× Vitality
 - Survive injuries that would kill others
 
 **Armor Familiarity** (5 CP)
@@ -902,7 +924,7 @@ You get **1 Reaction per turn** (3 if using Full Defense):
 
 ### Damage
 
-**Damage = Weapon Damage Roll - Armor Resistance (AR)**
+**Damage = Weapon Damage Roll + ST Bonus - Armor Resistance (AR)**
 
 Weapons have damage dice notation:
 - Knife: 1d6-3
@@ -911,7 +933,119 @@ Weapons have damage dice notation:
 - Bow: 2d6
 - Crossbow: 2d6+2
 
+**Add ST Damage Bonus** to all melee and thrown weapon damage (see Derived Statistics).
+
 **Margin does not affect damage** - only hit/miss and defender's penalty
+
+---
+
+### Damage Types
+
+Different damage types interact with armor differently:
+
+#### Bludgeoning Damage (Most Common)
+- **Sources:** Clubs, maces, hammers, fists, falls, most magic
+- **Effect:** AR applies normally, remaining damage to Vitality
+- **Examples:** Warhammer (2d6 bludgeoning), punch (1d6-3 bludgeoning)
+
+#### Cutting Damage
+- **Sources:** Swords, axes, slashing weapons
+- **Effect:** AR applies **double** (AR 4 counts as 8 vs cutting), but damage that gets through causes **bleeding**
+- **Bleeding:** Victim loses 1 Vitality per turn until treated (First Aid roll as Minor Action)
+- **Examples:** Longsword (2d6-1 cutting), battleaxe (2d6 cutting)
+
+#### Impaling Damage
+- **Sources:** Spears, arrows, piercing weapons, stabs
+- **Effect:** Usually smaller base damage, but damage that penetrates AR is **doubled**
+- **Examples:** Spear thrust (1d6+1 impaling), arrow (1d6+2 impaling)
+- **Calculation:** Roll damage + ST bonus, subtract AR, then double remaining damage
+
+#### Energy/Magical Damage
+- **Sources:** Fire, cold, lightning, acid, magical force
+- **Effect:** Functions like bludgeoning (AR applies normally), but can cause additional effects
+- **Additional Effects:**
+  - **Fire:** May ignite flammable objects, ongoing burn damage (GM discretion)
+  - **Cold:** May slow or freeze targets
+  - **Lightning:** May stun or cause muscle spasms
+  - **Acid:** May damage equipment or cause ongoing damage
+  - **Force:** Pure magical energy, no special effects
+
+**Example - Cutting Damage:**
+Attacker with ST 14 (+2) uses longsword (2d6-1 cutting) against target with AR 4.
+- Roll: 7 on 2d6-1 = 6 damage + 2 ST = 8 damage total
+- AR 4 counts as 8 vs cutting damage
+- 8 damage - 8 AR = 0 damage (armor absorbed it all)
+- If roll had been 10: 9 damage + 2 ST = 11 damage total
+- 11 - 8 AR = 3 damage to Vitality + bleeding starts
+
+**Example - Impaling Damage:**
+Archer with ST 12 (+1) shoots arrow (1d6+2 impaling) against target with AR 3.
+- Roll: 4 on 1d6+2 = 6 damage + 1 ST = 7 damage total
+- 7 - 3 AR = 4 damage gets through
+- Impaling doubles: 4 × 2 = **8 Vitality damage**
+
+---
+
+### Unarmed Combat
+
+Characters can fight without weapons:
+
+**Basic Unarmed Attacks:**
+- **Punch:** 1d6-3 + ST bonus (bludgeoning)
+- **Kick:** 1d6 + ST bonus (bludgeoning)
+- Use Brawling skill (DX-based)
+
+**Martial Arts:** Characters with Martial Arts perks or special training may have enhanced unarmed damage and additional techniques (see Monk profession or martial arts expansion).
+
+---
+
+### Heavy Weapon Requirements
+
+Some weapons require minimum Strength to wield effectively:
+
+**Heavy Weapons:**
+- **Heavy Two-Handed Swords:** ST 12+ (Greatsword, Zweihander)
+- **Heavy Axes:** ST 12+ (Greataxe, Heavy Battleaxe)
+- **Heavy Maces/Hammers:** ST 12+ (Maul, Heavy Warhammer)
+- **Heavy Polearms:** ST 11+ (Halberd, Pike)
+- **Longbow:** ST 10+ (cannot use with less than ST 10)
+
+**Inadequate Strength Penalty:**
+If attempting to use a heavy weapon without meeting the ST requirement:
+- **-4 to all attack rolls** with that weapon
+- **Half damage** (after all other calculations)
+- May not be able to use weapon's special maneuvers (GM discretion)
+
+**Example:** Character with ST 10 tries to use Greatsword (requires ST 12):
+- Normal attack would be DX 13 + Swords 3 = 16
+- With penalty: 16 - 4 = 12 to hit
+- Greatsword normally deals 3d6+2 cutting
+- With inadequate ST: Rolls 12 damage, halved to 6 damage total
+
+**Note:** These requirements represent the strength needed to use the weapon effectively in combat, not just to lift it.
+
+---
+
+### Pain and Shock
+
+Taking significant damage in a single turn causes shock and pain:
+
+**Pain Penalty Rule:**
+- For every **5 Vitality damage taken in one turn**, suffer **-1 to all rolls on the next turn**
+- **Exception:** If already in active combat when damaged, adrenaline negates this penalty
+- Multiple hits in same turn: add all damage together to calculate penalty
+
+**Examples:**
+- Take 7 damage in one hit outside combat: -1 to all rolls next turn
+- Take 12 damage in one hit outside combat: -2 to all rolls next turn
+- Take 15 damage while already fighting: No penalty (combat adrenaline)
+- Take 4 damage, then 6 damage in same turn (10 total) while ambushed: -2 next turn
+
+**Active Combat Definition:** Character has acted in combat in the last 2 rounds, or is aware of immediate danger and prepared to fight.
+
+---
+
+### Damage
 
 ### Armor
 
@@ -967,69 +1101,17 @@ Shields add SD to Block defense rolls only
 - **Range** (bows/guns): Penalties at long range per weapon
 
 **Called Shots:**
-- **Arm/Leg**: -4 to hit
-- **Head**: -6 to hit
-- **Eye/Vitals**: -8 to hit
-- On success: GM may apply additional effects (disarm, stun, extra damage, etc.)
+- **Arm/Leg**: -4 to hit, may cause specific effects (drop item, slow movement)
+- **Head**: -6 to hit, **damage is doubled** after armor
+- **Eye/Vitals**: -8 to hit, **damage is doubled** after armor
+- **Doubling stacks with impaling:** Head shot with impaling weapon = ×4 total damage (×2 impaling, ×2 called shot)
+- On success: GM may apply additional effects (disarm, stun, knockout, etc.)
 
----
-
-### Surprise Attacks (General Rule)
-
-When attacking a **completely unaware** target, the attacker gains a significant advantage:
-
-**Completely Unaware Targets include:**
-- Sleeping characters
-- Paralyzed or unconscious targets
-- Characters who have absolutely no knowledge of the attacker's presence
-- Targets of successful assassination attempts (GM discretion)
-
-**Effect:**
-- **Double all damage dealt** from that attack
-- This applies to the first attack only
-- Subsequent attacks against the same target use normal damage
-- If the target survives and becomes aware, they are no longer unaware
-
-**Available to All:** This is a general combat rule available to all characters as a tactical reward for good planning and stealth.
-
-**Does NOT Apply To:**
-- Flanked enemies (they're aware, just poorly positioned - use flanking bonus instead)
-- Enemies in active combat (even if not looking at you)
-- Surprised enemies who rolled poorly on surprise rolls (they get initiative penalties but aren't completely unaware)
-
----
-
-## Examples
-
-**Example 1 - Assassinating a Guard:**
-Marcus sneaks up on a sleeping guard (Stealth vs the guard's Perception while asleep at -8). Success! Marcus attacks with his dagger. He rolls 1d6-3 and gets 2 total. This is doubled to 4 damage. Additionally, he uses his Sneak Attack maneuver (1 Stamina) for +2d6, rolling 7. Total damage: 4 (doubled base) + 14 (sneak attack, also doubled) = 18 damage to the sleeping guard.
-
-**Example 2 - Surprise Attack from Ambush:**
-Thorin hides behind a door (Stealth vs guards' Perception). When a guard walks through, Thorin attacks from complete surprise. His battleaxe deals 2d6, rolling 8. This is doubled to 16 damage on the first hit! The guard is badly wounded but now aware - subsequent attacks use normal damage.
-
-**Example 3 - Not a Surprise Attack:**
-Marcus flanks an enemy who's fighting Thorin. The enemy sees both combatants and is in active combat, just poorly positioned. Marcus gets the +2 flanking bonus to his attack roll, but does NOT double damage. However, he can still use his Sneak Attack maneuver against the flanked enemy for +2d6 bonus damage.
-
----
-
-## Interaction with Maneuvers
-
-**Sneak Attack Maneuver (8 CP):**
-Some rogues train in a special Sneak Attack maneuver that allows them to deal extra damage (+2d6) against **flanked OR unaware** enemies. This is more versatile than the general surprise attack rule:
-
-- Works against flanked enemies (not just unaware)
-- Adds +2d6 damage (not doubling base)
-- Costs 1 Stamina and can only be used once per target per combat
-- Can stack with surprise attack doubling
-
-**Combined Effect Example:**
-Marcus attacks a completely unaware guard:
-1. Base dagger damage: 1d6-3 = 2 damage
-2. Doubled for surprise: 2 × 2 = 4 damage
-3. Sneak Attack maneuver: +2d6 = +14 damage
-4. Total: 18 damage
-
----
+**Example - Head Shot with Impaling:**
+Arrow (1d6+2 impaling) hits head (-6 to hit) against AR 2:
+- Roll 5: 7 damage + ST bonus, -2 AR = 5 gets through
+- Impaling: 5 × 2 = 10 damage
+- Head shot: 10 × 2 = **20 Vitality damage total**
 
 ### Status Conditions
 
@@ -1119,7 +1201,7 @@ Follow the same CP costs as creation:
 
 ### Roll Resolution
 1. Roll 3d6
-2. Try to get <= target number (Attribute + Skill + modifiers)
+2. Try to get ≤ target number (Attribute + Skill + modifiers)
 3. Three 1s = crit success (+10 margin)
 4. Three 6s = crit failure (-10 margin, always fails)
 
