@@ -206,6 +206,7 @@ Several important values are calculated from your attributes:
 - ST 14-15: +2 damage
 - ST 16-17: +3 damage
 - ST 18-19: +4 damage
+- ST 20-21: +5 damage
 - ST 8-9: -1 damage
 - ST 6-7: -2 damage
 
@@ -408,6 +409,11 @@ Perks represent advantages, talents, and special abilities. Flaws represent disa
 - Medium armor: -0 penalty (instead of -2)
 - Heavy armor: -2 penalty (instead of -4)
 
+**Heavy Armor Familiarity** (10 CP)
+- Reduce armor penalties by 4
+- Medium armor: -0 penalty (instead of -2)
+- Heavy armor: -0 penalty (instead of -4)
+
 #### Physical Perks
 
 **Athletic** (10 CP)
@@ -562,6 +568,29 @@ Perks represent advantages, talents, and special abilities. Flaws represent disa
 **Code of Honor** (-10 CP)
 - Must follow strict personal rules
 - Cannot break code without severe guilt/consequences
+
+
+#### Character Size Modifiers
+
+Characters of different sizes experience significant changes to their physical capabilities and survivability. Size affects Strength, Dexterity, Vitality, and movement speed. Smaller creatures are more agile but fragile, while larger creatures are stronger and tougher but less nimble. Since ST affects damage output, size directly impacts combat effectiveness - smaller creatures deal less damage while larger creatures hit harder.
+
+**Size Categories and Modifiers:**
+
+| Size Category | Cost (CP) | Height | ST Mod | DX Mod | Vitality/Movement/AR × | Examples |
+|---------------|--------|--------|--------|--------|------------|----------|
+| **Tiny** | -80 | 1-5cm | -8 | +8 | ×0.1 | Ant, bee, mouse |
+| **Miniature** |-40 | 10-20cm | -6 | +6 | ×0.25 | Fairy, pixie, rat |
+| **Small** | -20 | 50cm-1m | -4 | +4 | ×0.5 | Small child, cat, small dog |
+| **Child/Dwarf** | -10 | 1m-1.3m | -2 | +2 | ×0.75 | Dwarf, human child, goblin |
+| **Human** | 0 | 1.5-2m | 0 | 0 | ×1 | Human, elf, orc |
+| **Large** | 10 | 2.5-3m | +2 | -2 | ×1.5 | Ogre, large troll, horse |
+| **Huge** | 20 | 4-5m | +4 | -4 | ×2.0 | Giant, elephant |
+| **Gigantic** | 40 | 8-10m | +6 | -6 | ×2.5 | Large dragon, titan |
+| **Colossal** | 80 | 16m+ | +8 | -8 | ×3.0 | Ancient dragon, kaiju |
+
+**Special Size Rules:**
+- **Armor and Equipment**: Armor AR values are proportional, but cost and weight scale with size (×2 cost per size category up, ×0.5 per category down)
+
 
 ---
 
@@ -898,7 +927,7 @@ Based on your Speed value:
 5. **Defender Rolls**: Roll chosen defense
 6. **Compare**: If defender succeeds, attack misses. If fails, attack hits.
 7. **Roll Damage**: Roll weapon damage dice
-8. **Apply Armor**: Subtract Armor Resistance (AR)
+8. **Apply Armor**: Subtract Armor Resistance (AR) of the targeted location
 9. **Apply to Vitality**: Remaining damage reduces Vitality
 
 ### Defense Options
@@ -942,6 +971,8 @@ Weapons have damage dice notation:
 **Add ST Damage Bonus** to all melee and thrown weapon damage (see Derived Statistics).
 
 **Margin does not affect damage** - only hit/miss and defender's penalty
+
+**Knockback** - each 10 points of sheer damage that is received (not blocked, parried or dodged), even if absorbed by armor will cause 1m knockback.
 
 ---
 
@@ -996,11 +1027,11 @@ Attacker with ST 14 (+2) uses longsword (2d6-1 cutting) for swinging against tar
 - **Sources:** Fire, cold, lightning, acid, magical force
 - **Effect:** Functions like bludgeoning (AR applies normally), but can cause additional effects
 - **Additional Effects:**
-  - **Fire:** May ignite flammable objects, ongoing burn damage (GM discretion)
+  - **Fire:** May ignite flammable objects and cause ongoing burn damage
   - **Cold:** May slow or freeze targets
   - **Lightning:** May stun or cause muscle spasms
-  - **Acid:** May damage equipment or cause ongoing damage
-  - **Force:** Pure magical energy, no special effects
+  - **Acid:** May damage equipment and cause ongoing damage
+  - **Force:** Pure magical energy, enhanced knockback
 
 **Example - Impaling Damage:**
 Archer with ST 12 (+1) shoots arrow (1d6+2 impaling) against target with AR 3.
@@ -1073,15 +1104,31 @@ Taking significant damage in a single turn causes shock and pain:
 
 ### Armor
 
-| Type | AD (Deflection) | AR (Resistance) | Penalty to Skills |
-|------|-----------------|-----------------|-------------------|
-| **Light** | 0 | 1-2 | 0 |
-| **Medium** | 1 | 3-4 | -2 |
-| **Heavy** | 2 | 5-10 | -4 |
+Armor pieces can be the difference between life and death in combat. Each armor piece offers different protection to each body part. Armor offers **deflection** (AD) that helps dodge blows, and also offer **resistance**(AR) that helps redurce damage directly and avoid bleeding.
 
-**Armor Penalties**: Apply to all physical actions involving body movement (climbing, stealth, acrobatics, etc.) and also casting skills, if gestures are required, pure mental skills are not affected
 
-**Armor Familiarity Perk**: Reduces penalties by 2
+| Type | AD (Deflection) | AR (Resistance) |
+|------|-----------------|-----------------|
+| **Light Torso** | 0 | 1-2 |
+| **Medium Torso** | 1 | 3-5 |
+| **Heavy Torso** | 2 | 6-10 |
+
+| **Light Legging** | 0 | 1-2 |
+| **Medium Legging** | 1 | 3-4 |
+| **Heavy Legging** | 2 | 5-6 |
+
+| **Light Gloves/Boots** | 0 | 0-1 |
+| **Medium Gloves/Boots** | 1 | 2-3 |
+| **Heavy Gloves/Boots** | 2 | 4-5 |
+
+| **Light Helmet** | 0 | 0-1 |
+| **Medium Helmet** | 1 | 2-3 |
+| **Heavy Helmet** | 2 | 4-6 |
+
+
+**Armor Skill Penalties**: -2 for Medium, -4 for Heavy. If wearing a single medium or heavy part, the penality for that group is used. Apply the penality to all physical actions involving body movement (climbing, stealth, acrobatics, etc.) and also casting skills, if gestures are required, pure mental skills are not affected.
+
+**Armor/Heavy Armor Familiarity Perk**: Reduces penalties by 2 or by 4.
 
 ### Shields
 
@@ -1125,14 +1172,15 @@ Shields add SD to Block defense rolls only
 - **Range** (bows/guns): Penalties at long range per weapon
 
 **Ranged Combat Modifiers:**
-- **Range Penalty:** -1 to hit per 5 meters beyond optimal range
+- **Range Penalty:** -1 to hit per 5 meters beyond half of maximum range
+- **Range Damage Penalty:** after weapon max range, the damage is halved
 - **Aiming Bonus:** Spend Major Action aiming, next shot gets +3 to hit (lost if you move or are hit)
 - **Point-Blank Range:** Shooting within 2 meters with ranged weapon = -2 to hit (weapon too long/awkward at close range)
 
 **Example Range Penalties:**
-- Shortbow (optimal 15m): Shooting at 25m = -2, at 35m = -4, at 45m = -6
-- Longbow (optimal 40m): Shooting at 60m = -4, at 80m = -8
-- Crossbow (optimal 20m): Shooting at 35m = -3
+- Shortbow (max 50m, penalties start after 25m): Shooting at 30m = -1, at 40m = -3, at 50m = -5, at 55m -6 and deal half damage
+- Longbow (max 100m, optimal 50m): Shooting at 60m = -2, at 80m = -6, at 105m = -11 and deal half damage onwards
+- Crossbow (max 80m, optimal 40m): Shooting at 60m = -4, at 85m -9 and deal half damage onwards
 
 **Example Aiming:**
 - Round 1: Use Major Action to aim at target

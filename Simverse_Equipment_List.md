@@ -47,23 +47,25 @@
 |--------|--------|------|-------|
 | **Greatsword** | 3d6 | 100 sp | Cutting/impaling (thrust -3 dmg/die), massive damage, cannot use shield |
 | **Greataxe** | 3d6+1 | 90 sp | Cutting, highest damage, slow |
-| **Poleaxe** | 2d6+2 | 70 sp | Cutting/impaling (thrust -2 dmg/die), 3m reach, versatile |
-| **Halberd** | 2d6+2 | 65 sp | Cutting/impaling (thrust -2 dmg/die), 3m reach, trip attacks |
-| **Pike** | 2d6 | 50 sp | Impaling (thrust -2 dmg/die), 4m reach, anti-cavalry |
+| **Poleaxe** | 2d6+2 | 70 sp | Cutting/impaling (thrust -1 dmg/die), 3m reach, versatile |
+| **Halberd** | 2d6+2 | 65 sp | Cutting/impaling (thrust -1 dmg/die), 3m reach, trip attacks |
+| **Pike** | 2d6 | 50 sp | Impaling, 4m reach, anti-cavalry |
 | **Maul** | 3d6 | 80 sp | Bludgeoning, crushing damage, +3 vs armor |
 | **Quarterstaff** | 1d6+1 | 5 sp | Bludgeoning, both ends, defensive bonus |
 
 ### Ranged Weapons
-| Weapon | Damage | Range | Cost | Notes |
-|--------|--------|-------|------|-------|
-| **Shortbow** | 1d6+1 | 50m | 30 sp | Impaling (-1 dmg/die), quick to draw |
-| **Longbow** | 2d6 | 100m | 60 sp | Impaling (-2 dmg/die), powerful, requires ST 10+ |
-| **Crossbow, Light** | 2d6 | 80m | 50 sp | Impaling (-2 dmg/die), no ST requirement |
-| **Crossbow, Heavy** | 2d6+2 | 120m | 100 sp | Impaling (-2 dmg/die), armor piercing, slow reload |
-| **Throwing Knife** | 1d6-3 | 10m | 5 sp | Impaling (-1 dmg/die), quick throw, concealable |
-| **Throwing Axe** | 1d6 | 8m | 15 sp | Cutting, good damage |
-| **Javelin** | 1d6+1 | 20m | 8 sp | Impaling (-1 dmg/die), cheap, effective |
-| **Sling** | 1d6-1 | 40m | 2 sp | Bludgeoning, cheap ammunition |
+| Weapon | Damage | Max Range | Cost | Notes |
+|--------|--------|-----------|------|-------|
+| **Shortbow** | 1d6+1 | 50m | 30 sp | Impaling, quick to draw, penalties after 25m |
+| **Longbow** | 2d6 | 100m | 60 sp | Impaling, powerful, requires ST 10+, penalties after 50m |
+| **Crossbow, Light** | 2d6 | 80m | 50 sp | Impaling, no ST requirement, penalties after 40m |
+| **Crossbow, Heavy** | 2d6+2 | 120m | 100 sp | Impaling, armor piercing, slow reload, penalties after 60m |
+| **Throwing Knife** | 1d6-3 | 10m | 5 sp | Impaling, quick throw, concealable, penalties after 5m |
+| **Throwing Axe** | 1d6 | 8m | 15 sp | Cutting, good damage, penalties after 4m |
+| **Javelin** | 1d6+1 | 20m | 8 sp | Impaling, cheap, effective, penalties after 10m |
+| **Sling** | 1d6-1 | 40m | 2 sp | Bludgeoning, cheap ammunition, penalties after 20m |
+
+**Range Penalties:** -1 to hit per 5m beyond half max range. Beyond max range: half damage and penalties continue.
 
 ### Ammunition
 | Item | Cost | Notes |
@@ -85,28 +87,51 @@
 
 ## Armor
 
-### Light Armor
-| Armor | AD | AR | Penalty | Cost | Notes |
-|-------|----|----|---------|------|-------|
-| **Padded Cloth** | 0 | 1 | 0 | 10 sp | Cheap, quiet |
-| **Leather** | 0 | 2 | 0 | 25 sp | Standard light armor |
-| **Studded Leather** | 0 | 2 | 0 | 40 sp | Reinforced |
+Armor is purchased by piece and protects specific body locations. **Armor Deflection (AD)** helps avoid attacks entirely, while **Armor Resistance (AR)** reduces damage from hits. Penalties apply based on the heaviest armor piece worn: **-2 for Medium, -4 for Heavy** (reduced by Armor Familiarity perks).
 
-### Medium Armor
-| Armor | AD | AR | Penalty | Cost | Notes |
-|-------|----|----|---------|------|-------|
-| **Hide Armor** | 1 | 3 | -2 | 35 sp | Primitive but effective |
-| **Scale Mail** | 1 | 3 | -2 | 60 sp | Metal scales on leather |
-| **Chain Shirt** | 1 | 4 | -2 | 80 sp | Good protection |
-| **Breastplate** | 1 | 4 | -2 | 100 sp | Solid torso protection |
+### Torso Armor (Chest/Back)
+| Armor Type | AD | AR | Cost | Notes |
+|------------|----|----|------|-------|
+| **Padded Cloth** (Light) | 0 | 1 | 10 sp | Cheap, quiet, no penalty |
+| **Leather Cuirass** (Light) | 0 | 2 | 25 sp | Standard light armor |
+| **Studded Leather** (Light) | 0 | 2 | 40 sp | Reinforced with metal studs |
+| **Hide Armor** (Medium) | 1 | 3 | 35 sp | Primitive but effective, -2 penalty |
+| **Scale Mail** (Medium) | 1 | 4 | 60 sp | Metal scales on leather, -2 penalty |
+| **Chain Shirt** (Medium) | 1 | 4 | 80 sp | Good protection, -2 penalty |
+| **Breastplate** (Medium) | 1 | 5 | 100 sp | Solid metal torso protection, -2 penalty |
+| **Chain Mail** (Heavy) | 2 | 6 | 150 sp | Full chain coverage, -4 penalty |
+| **Banded Mail** (Heavy) | 2 | 7 | 200 sp | Bands of metal, -4 penalty |
+| **Plate Mail** (Heavy) | 2 | 8 | 500 sp | Full plate armor, -4 penalty |
+| **Full Plate Cuirass** (Heavy) | 2 | 10 | 1,500 sp | Best torso protection, -4 penalty |
 
-### Heavy Armor
-| Armor | AD | AR | Penalty | Cost | Notes |
-|-------|----|----|---------|------|-------|
-| **Chain Mail** | 2 | 5 | -4 | 150 sp | Full chain coverage |
-| **Banded Mail** | 2 | 6 | -4 | 200 sp | Bands of metal |
-| **Plate Mail** | 2 | 8 | -4 | 500 sp | Full plate armor |
-| **Full Plate** | 2 | 10 | -4 | 1,500 sp | Best protection available |
+### Leg Armor (Leggings)
+| Armor Type | AD | AR | Cost | Notes |
+|------------|----|----|------|-------|
+| **Padded Leggings** (Light) | 0 | 1 | 5 sp | Cloth protection |
+| **Leather Leggings** (Light) | 0 | 2 | 15 sp | Standard leg armor |
+| **Hide Leggings** (Medium) | 1 | 3 | 20 sp | Thick hide, -2 penalty |
+| **Chain Leggings** (Medium) | 1 | 4 | 50 sp | Chain mail legs, -2 penalty |
+| **Plate Leggings** (Heavy) | 2 | 5 | 150 sp | Full plate legs, -4 penalty |
+| **Full Plate Leggings** (Heavy) | 2 | 6 | 300 sp | Best leg protection, -4 penalty |
+
+### Gloves and Boots
+| Armor Type | AD | AR | Cost | Notes |
+|------------|----|----|------|-------|
+| **Leather Gloves** (Light) | 0 | 1 | 5 sp | Basic hand protection |
+| **Leather Boots** (Light) | 0 | 1 | 5 sp | Basic foot protection |
+| **Chain Gloves** (Medium) | 1 | 2 | 15 sp | Metal gloves, -2 penalty |
+| **Chain Boots** (Medium) | 1 | 3 | 20 sp | Reinforced boots, -2 penalty |
+| **Plate Gauntlets** (Heavy) | 2 | 4 | 50 sp | Heavy metal gloves, -4 penalty |
+| **Plate Sabatons** (Heavy) | 2 | 5 | 75 sp | Heavy metal boots, -4 penalty |
+
+### Helmets
+| Armor Type | AD | AR | Cost | Notes |
+|------------|----|----|------|-------|
+| **Leather Cap** (Light) | 0 | 1 | 5 sp | Basic head protection |
+| **Chain Coif** (Medium) | 1 | 2 | 25 sp | Chain mail hood, -2 penalty |
+| **Open Helm** (Medium) | 1 | 3 | 40 sp | Metal helmet, face exposed, -2 penalty |
+| **Great Helm** (Heavy) | 2 | 4 | 100 sp | Full enclosed helmet, -4 penalty |
+| **Full Plate Helm** (Heavy) | 2 | 6 | 200 sp | Best head protection, -4 penalty |
 
 ### Shields
 | Shield | SD | Cost | Notes |

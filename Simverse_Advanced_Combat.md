@@ -149,6 +149,24 @@ Four main damage types affect armor and cause different effects:
 
 ---
 
+## KNOCKBACK
+
+Heavy impacts can push targets backward, even if armor absorbs the damage.
+
+**Rule:** Every 10 points of damage received (not blocked, parried, or dodged), even if absorbed by armor, causes **1m knockback**.
+
+**Examples:**
+- Character takes 15 damage hit: 1m knockback (even if AR reduces it to 5 actual Vitality damage)
+- Giant deals 32 damage with club: 3m knockback (victim may hit wall or fall)
+- Force magic deals 18 damage: 1m knockback (Force energy has enhanced knockback - GM may increase)
+
+**Tactical Implications:**
+- Knockback can push enemies off ledges, into hazards, or away from allies
+- Large creatures are harder to knock back (GM may increase threshold for huge/gigantic creatures)
+- Can interrupt movement or force enemies out of melee range
+
+---
+
 ## UNARMED COMBAT
 
 ### Basic Unarmed Attacks
@@ -299,8 +317,8 @@ Targeting specific body parts for extra effect:
 ### Melee Weapons - Light (One-Handed)
 | Weapon | Damage | Type | ST | Cost | Notes |
 |--------|--------|------|----|----|-------|
-| Dagger | 1d6-3 | Impaling | - | 5 sp | Conceal, throw 10m |
-| Shortsword | 1d6-1 | Cutting | - | 20 sp | Versatile |
+| Dagger | 1d6-3 | Cut/Imp (-1 thrust) | - | 5 sp | Conceal, throw 10m |
+| Shortsword | 1d6-1 | Cut/Imp (-1 thrust) | - | 20 sp | Versatile |
 | Hand Axe | 1d6 | Cutting | - | 15 sp | Throw 8m |
 | Mace | 1d6 | Bludgeoning | - | 15 sp | Good vs armor |
 | Rapier | 1d6 | Impaling | - | 30 sp | +1 parry |
@@ -309,7 +327,7 @@ Targeting specific body parts for extra effect:
 ### Melee Weapons - Medium (One/Two-Handed)
 | Weapon | Damage | Type | ST | Cost | Notes |
 |--------|--------|------|----|----|-------|
-| Longsword | 2d6-1 | Cutting | - | 50 sp | Versatile |
+| Longsword | 2d6-1 | Cut/Imp (-2 thrust) | - | 50 sp | Versatile |
 | Battleaxe | 2d6 | Cutting | - | 40 sp | High damage |
 | Warhammer | 2d6 | Bludgeoning | - | 45 sp | +2 vs AR 4+ |
 | Spear | 1d6+1 | Impaling | - | 10 sp | Throw 15m, 2m reach |
@@ -317,23 +335,27 @@ Targeting specific body parts for extra effect:
 ### Melee Weapons - Heavy (Two-Handed)
 | Weapon | Damage | Type | ST | Cost | Notes |
 |--------|--------|------|----|----|-------|
-| Greatsword | 3d6 | Cutting | 12 | 100 sp | Massive damage |
+| Greatsword | 3d6 | Cut/Imp (-3 thrust) | 12 | 100 sp | Massive damage |
 | Greataxe | 3d6+1 | Cutting | 12 | 90 sp | Highest damage |
 | Maul | 3d6 | Bludgeoning | 12 | 80 sp | +3 vs armor |
-| Halberd | 2d6+2 | Cutting | 11 | 65 sp | 3m reach |
+| Halberd | 2d6+2 | Cut/Imp (-2 thrust) | 11 | 65 sp | 3m reach |
 | Pike | 2d6 | Impaling | 11 | 50 sp | 4m reach |
 
 ### Ranged Weapons
-| Weapon | Damage | Type | ST | Range | Cost | Notes |
+| Weapon | Damage | Type | ST | Max Range | Cost | Notes |
 |--------|--------|------|----|----|------|-------|
-| Shortbow | 1d6+1 | Impaling | - | 50m | 30 sp | Quick draw |
-| Longbow | 2d6 | Impaling | 10 | 100m | 60 sp | Powerful |
-| Lt Crossbow | 2d6 | Impaling | - | 80m | 50 sp | No ST req |
-| Hv Crossbow | 2d6+2 | Impaling | - | 120m | 100 sp | Armor piercing |
-| Javelin | 1d6+1 | Impaling | - | 20m | 8 sp | Cheap |
-| Throwing Axe | 1d6 | Cutting | - | 8m | 15 sp | Good damage |
+| Shortbow | 1d6+1 | Impaling | - | 50m | 30 sp | Quick draw, penalties after 25m |
+| Longbow | 2d6 | Impaling | 10 | 100m | 60 sp | Powerful, penalties after 50m |
+| Lt Crossbow | 2d6 | Impaling | - | 80m | 50 sp | No ST req, penalties after 40m |
+| Hv Crossbow | 2d6+2 | Impaling | - | 120m | 100 sp | Armor piercing, penalties after 60m |
+| Javelin | 1d6+1 | Impaling | - | 20m | 8 sp | Cheap, penalties after 10m |
+| Throwing Axe | 1d6 | Cutting | - | 8m | 15 sp | Good damage, penalties after 4m |
 
-**Remember:** Add ST damage bonus to all melee and thrown weapons!
+**Remember:**
+- Add ST damage bonus to all melee and thrown weapons!
+- Dual-mode weapons (swords, daggers): subtract 1 damage per die when thrusting
+- Pure impaling weapons (spears, arrows, rapiers): no penalty
+- Range penalties: -1 per 5m beyond half max range; half damage beyond max range
 
 ---
 

@@ -143,9 +143,12 @@
 - **Parry (Axes):** 11 ((DX 11 + Axes 5 + Weapon Master 2)/2 = 9), -4 if acted = 7
 - **Block:** 11 ((DX 11 + Shield 4)/2 + AD 2 + SD 2)
 
-**Armor:** Plate Mail
-- AD: 2, AR: 8
-- Penalty: -4 (reduced to -2 with Armor Familiarity)
+**Armor:** Full Plate Mail (Heavy)
+- Torso: AD 2, AR 8 (Plate Mail Cuirass)
+- Legs: AD 2, AR 6 (Plate Leggings)
+- Hands/Feet: AD 2, AR 4/5 (Plate Gauntlets/Sabatons)
+- Head: AD 2, AR 6 (Full Plate Helm)
+- Total Penalty: -4 (reduced to -2 with Armor Familiarity)
 - Effective penalty on physical actions: -2
 
 **Shield:** Medium Shield (SD: 2)
@@ -478,9 +481,12 @@ Lyralei Moonwhisper (only 80 years old by elf standards - quite young) graduated
 - **Parry (Daggers):** 9 ((DX 15 + Daggers 3)/2 = 9), -4 if acted = 5
 - **Block:** None
 
-**Armor:** Studded Leather
-- AD: 0, AR: 2
-- Penalty: 0
+**Armor:** Studded Leather (Light)
+- Torso: AD 0, AR 2 (Studded Leather Cuirass)
+- Legs: AD 0, AR 2 (Leather Leggings)
+- Hands/Feet: AD 0, AR 1/1 (Leather Gloves/Boots)
+- Head: AD 0, AR 1 (Leather Cap)
+- Total Penalty: 0 (no penalty for light armor)
 
 **Weapons:**
 - **Twin Daggers:** Attack 18, Damage 1d6-3 each, Throw 10m
