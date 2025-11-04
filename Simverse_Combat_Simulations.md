@@ -208,7 +208,7 @@
 - Equipment: Longsword (2d6-1 cutting), Plate Mail (AR 8, AD 2), Medium Shield (SD 2)
 - Defense: Dodge 9 (15/2+2), Parry 12 ((15+5+2)/2), Block 15 ((15+4)/2+2+2)
 - Perks: Combat Reflexes, Weapon Master (Swords), Tough, Armor Familiarity (-2 armor penalty)
-- **Maneuvers:** Power Attack (5 CP), Defensive Stance (5 CP)
+- **Maneuvers:** Power Attack (4 CP), Defensive Stance (4 CP)
 
 **KAEL SHADOWBLADE - Master Duelist**
 - DX 17, ST 14 (+2 damage), EN 12, WS 15, AW 14
@@ -219,7 +219,7 @@
 - Equipment: Rapier (1d6 impaling), Studded Leather (AR 2, AD 0)
 - Defense: Dodge 8 (17/2), Parry 14 ((17+5+2)/2, +1 from rapier = 15)
 - Perks: Combat Reflexes, Weapon Master (Swords), Fast Healer, Ambidextrous
-- **Maneuvers:** Precision Strike (9 CP), Riposte (4 CP)
+- **Maneuvers:** Precision Strike (7 CP), Riposte (4 CP)
 
 ---
 

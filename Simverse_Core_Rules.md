@@ -600,17 +600,9 @@ Templates are pre-built packages of attributes, perks, skills, and equipment tha
 
 ### Race Templates
 
-#### Human (0 CP)
-**Attribute Modifiers:** None (baseline)
+**Note:** Human is the baseline (0 CP). Other races modify from this baseline.
 
-**Racial Traits:**
-- **Adaptable**: +1 CP per session (learn faster)
-- **Versatile**: Can take any profession
-- **Lifespan**: ~80 years
-
----
-
-#### Elf (30 CP)
+#### Elf (55 CP)
 **Attribute Modifiers:**
 - DX +2 (20 CP)
 - AW +1 (5 CP)
@@ -620,35 +612,29 @@ Templates are pre-built packages of attributes, perks, skills, and equipment tha
 **Included Perks:**
 - Night Vision (10 CP)
 - Acute Senses - Hearing (5 CP)
-
-**Racial Traits:**
-- **Forest Movement**: No terrain penalty in woodlands
-- **Graceful**: +1 to Stealth and Acrobatics
-- **Lifespan**: ~300 years
-
-**Starting Equipment:** None (from profession)
+- **Forest Movement** (5 CP): No terrain penalty in woodlands
+- **Graceful** (10 CP): +1 to Stealth and Acrobatics skills
+- **Extended Lifespan** (5 CP): ~300 years
 
 ---
 
-#### Dwarf (20 CP)
-**Attribute Modifiers:**
-- ST +1 (5 CP)
+#### Dwarf (45 CP)
+**Size Modifier:**
+- **Child/Dwarf Size** (-10 CP): ST -2, DX +2, Vitality ×0.75, Movement ×0.75
+
+**Additional Attribute Modifiers:**
+- ST +3 (15 CP) - Net +1 after size modifier
 - EN +2 (10 CP)
-- DX -1 (-10 CP)
+- DX -3 (-15 CP) - Net -1 after size modifier
 - CH -1 (-10 CP)
 
 **Included Perks:**
 - Tough (10 CP)
 - Magic Resistance (15 CP)
-
-**Racial Traits:**
-- **Darkvision**: See perfectly in darkness up to 30m
-- **Stubborn**: +2 to resist intimidation/persuasion
-- **Mountain Movement**: No penalty on rocky/underground terrain
-- **Lifespan**: ~200 years
-- **Speed**: 4 (instead of 5)
-
-**Starting Equipment:** None (from profession)
+- **Darkvision** (10 CP): See perfectly in darkness up to 30m
+- **Stubborn** (5 CP): +2 to resist intimidation/persuasion
+- **Mountain Movement** (5 CP): No penalty on rocky/underground terrain
+- **Extended Lifespan** (5 CP): ~200 years
 
 ---
 
@@ -672,6 +658,8 @@ Templates are pre-built packages of attributes, perks, skills, and equipment tha
 - Medium shield (SD 2)
 - Basic adventuring gear
 
+**Note:** Most warriors invest ~25 CP in combat maneuvers (Shield Bash, Power Attack, Disarm, etc.)
+
 ---
 
 #### Scout/Ranger (29 CP)
@@ -692,9 +680,11 @@ Templates are pre-built packages of attributes, perks, skills, and equipment tha
 - Hunting knife (1d6-2)
 - Camping and survival gear
 
+**Note:** Most scouts invest ~25 CP in combat maneuvers (Precision Strike, Aimed Shot, etc.)
+
 ---
 
-#### Wizard (110 CP)
+#### Wizard (65 CP)
 
 **Starting Skills:**
 - Spellcasting 3 (6 CP)
@@ -705,18 +695,17 @@ Templates are pre-built packages of attributes, perks, skills, and equipment tha
 - Mage Gift (20 CP) [required for spells]
 - Mana Reserve (10 CP)
 
-**Starting Spells:**
-- Choose 3 spells worth up to 15 CP each (45 CP total)
-
 **Starting Equipment:**
 - Wizard robes (AR 0)
 - Staff (1d6-1 damage, spellcasting focus)
 - Spellbook
 - Component pouch
 
+**Note:** Most wizards invest ~45-50 CP in spells (10-15 Minor/Moderate spells)
+
 ---
 
-#### Rogue (38 CP)
+#### Rogue (48 CP)
 
 **Starting Skills:**
 - Stealth 4 (11 CP: 1+2+3+5)
@@ -733,6 +722,8 @@ Templates are pre-built packages of attributes, perks, skills, and equipment tha
 - Thieves' tools
 - Grappling hook and rope
 
+**Note:** Most rogues invest ~25 CP in combat maneuvers (Sneak Attack, Feint, Precision Strike, etc.)
+
 ---
 
 ### Mixing Templates
@@ -740,16 +731,18 @@ Templates are pre-built packages of attributes, perks, skills, and equipment tha
 Templates can be combined freely. Simply add their costs together:
 
 **Example: Elf Scout**
-- Elf (30 CP) + Scout (29 CP) = **59 CP total**
-- Remaining budget (250 CP start): **191 CP**
+- Elf (55 CP) + Scout (29 CP) = **84 CP total**
+- Remaining budget (250 CP start): **166 CP**
 - Gets all benefits from both templates
 - Attribute modifiers stack: Base 10 DX → +2 from Elf = 12 DX
-- Has Night Vision, Acute Hearing, AND Scout skills/equipment
+- Has Night Vision, Acute Hearing, Forest Movement, Graceful, AND Scout skills/equipment
+- Typically invests ~25 CP in combat maneuvers (Precision Strike, Aimed Shot, etc.)
 
 **Example: Dwarf Warrior**
-- Dwarf (20 CP) + Warrior (33 CP) = **53 CP total**
-- Remaining budget: **197 CP**
-- Tough, Magic Resistant, Armored fighter
+- Dwarf (45 CP) + Warrior (33 CP) = **78 CP total**
+- Remaining budget: **172 CP**
+- Tough, Magic Resistant, Darkvision, Stubborn
+- Typically invests ~25 CP in combat maneuvers (Shield Bash, Power Attack, etc.)
 - Natural dungeon delver with combat prowess
 
 ---
@@ -762,16 +755,19 @@ This unified system allows you to create supernatural powers, magical spells, an
 
 All abilities start with a base effect tier that determines CP cost and resource cost:
 
-| Tier | CP Base | Resource Cost | Examples |
+| Tier | CP Base | Resource Cost (Stamina/Mana) | Examples |
 |------|---------|---------------|----------|
-| **Minor** | 5 CP | 0 (or 1 Stamina) | Shield Bash, Trip, Disarm, Quick Draw, Feint |
-| **Moderate** | 10 CP | 2 Mana | 1d6 damage bolt, minor healing, charm person, detect magic |
-| **Major** | 20 CP | 6 Mana | 3d6 damage, serious healing, flight, invisibility, lightning bolt |
-| **Epic** | 40 CP | 16 Mana | 6d6+ damage, teleportation, open portal, raise dead, time stop |
+| **Minor** | 1 CP | 1 | Shield Bash, Trip, Disarm, Quick Draw, Feint |
+| **Moderate** | 5 CP | 2 Mana | 1d6 damage bolt, minor healing, charm person, detect magic |
+| **Major** | 15 CP | 6 Mana | 3d6 damage, serious healing, flight, invisibility, lightning bolt |
+| **Epic** | 30 CP | 12 Mana | 6d6+ damage, teleportation, open portal, time stop |
+| **Legendary** | 30+ CP | Varies | World-altering effects, deity-level powers, raise dead |
+
+**Design Goal:** Starting wizard (~50 CP for spells) should have 10-15 Minor/Moderate spells. Starting warrior/thief (~25 CP for maneuvers) should have ~10 Minor/Moderate maneuvers.
 
 **Resource Types:**
-- **Physical Maneuvers**: Usually cost Stamina or nothing
-- **Spells/Powers**: Cost Mana
+- **Physical Maneuvers**: Usually cost Stamina
+- **Spells/Powers**: Usually cost Mana
 - **Extreme Effects**: Some may cost Vitality (blood magic, self-sacrifice)
 
 **Alternative Energy Sources**: Wizards can use power stones, ritual circles, ley lines, or blood sacrifice to provide Mana for spells beyond their personal pool.
@@ -783,11 +779,12 @@ These modify the cost by a percentage:
 | Enhancement | Cost Modifier | Description |
 |-------------|---------------|-------------|
 | **Increased Effect** | +50% per +1d6 | More damage, healing, or bonus |
-| **Extra Range** | +10% per doubling | 10m → 20m → 40m → 80m |
-| **Extra Duration** | +10% per doubling | 1 min → 2 min → 4 min → 8 min |
+| **Increased Damage** | +50% per +1d6, +100% for +2d6 | Specifically for damage powers (same as Increased Effect) |
+| **Extra Range** | +20% (2× range), +40% (4× range) | 10m → 20m (+20%), 10m → 40m (+40%), etc. |
+| **Extra Duration** | +10% per doubling, +30% for 8× | 1 min → 2 min → 4 min → 8 min |
 | **Area Effect** | +50% (3m radius), +100% (6m) | Affects multiple targets in area |
-| **Multiple Targets** | +25% per target | Add specific targets |
-| **Reduced Resource Cost** | +25% (half cost), +50% (quarter) | Costs less Mana/Stamina to use |
+| **Multiple Targets** | +50% (2 targets), +75% (3), +125% (5) | Add specific targets (not area) |
+| **Reduced Resource Cost** | +25% (half cost), +50% (quarter) | Costs less Mana/Stamina to use, if below 1, round to 0 |
 | **Increased Resource Cost** | -25% (double cost), -50% (triple) | Costs more to use, cheaper to buy |
 | **Weakened Resistance** | +10% per -2 penalty | Target gets -2 to resist (stackable) |
 | **Instant Action** | +25% | Can interrupt or use mid-action |
@@ -801,7 +798,8 @@ These modify the cost by a percentage:
 |-------------|------|-------------|
 | **Reliable Activation** | +10 CP | No skill roll needed, automatically activates (costs resources but always works) |
 | **Armor Piercing** | +5 CP | Ignores 2 points of armor |
-| **Homing** | +5 CP | Reroll one missed attack with this power |
+| **Armor Piercing Defense** | +5 CP | Can block armor-piercing attacks (for defensive powers like Shield Spell) |
+| **Homing** | +5 CP | Auto-hit, no attack roll needed (e.g., Magic Missile) |
 | **Knockback** | +3 CP | Push target 2m on successful hit |
 | **Lingering Pain** | +5 CP | Target at -1 for 1 round after effect |
 | **Silent Casting** | +8 CP | No visible or audible manifestation |
@@ -813,74 +811,78 @@ These reduce the cost by a percentage:
 
 | Limitation | Cost Modifier | Description |
 |------------|---------------|-------------|
-| **Only in [Condition]** | -60% | Only works in rain/night/touching earth/etc. |
-| **Requires [Item]** | -20% | Need specific tool/weapon/holy symbol |
-| **Usage Limit** | -30% (3/day), -60% (1/day), -80% (1/week) | Limited uses |
-| **Preparation Time** | -20% (1 min), -40% (10 min), -60% (1 hour) | Must prepare before use |
-| **Obvious/Loud** | -10% | Clearly visible, alerts everyone nearby |
-| **Concentration** | -20% | Can't take other actions while using |
-| **Backfire Risk** | -30% | On crit fail, lose resources or suffer effect |
-| **Increased Resource** | -20% (double), -30% (triple) | Costs more Mana/Stamina to use |
-| **Fragile** | -25% | Broken by any damage to user |
+| **Only in [Condition]** | -60% | Only works in specific conditions (rain/night/touching earth/vs undead/creatures with ≤20 Vitality/etc.) |
+| **Requires [Item]** | -20% | Need specific tool/weapon/holy symbol/visible object/willing target |
+| **Usage Limit** | -30% (3/day), -60% (1/day), -80% (1/week) | Limited uses per time period |
+| **Preparation Time** | -20% (1 min), -40% (10 min), -60% (1 hour) | Must prepare/ritual before use |
+| **Obvious/Loud** | -10% | Clearly visible flash/sound, alerts everyone nearby, obvious if resisted |
+| **Concentration** | -20% | Can't take other actions while using, broken if interrupted |
+| **Backfire Risk** | -30% | On critical failure, lose resources, suffer effect, or summon attacks you |
+| **Increased Resource** | -20% (double), -30% (triple) | Costs more Mana/Stamina to use (makes it cheaper to buy) |
+| **Fragile** | -25% | Broken by any damage to user, or by specific trigger (attack, strong emotions) |
+| **Situational Trigger** | -40% | Only works after specific event (successful Parry, being attacked, etc.) |
 
-**Note:** "Requires Skill Roll" is assumed by default for most powers unless the power description states otherwise. Powers that activate automatically without a roll must take the "Reliable Activation" enhancement below.
+**Note:** By default, most powers require a skill roll to activate. This is not a limitation - it's the baseline.
 
 ### Limitations (Fixed Cost)
 
 | Limitation | Cost | Description |
 |------------|------|------------|
-| **Gesture Required** | -2 CP | Need free hand to use |
-| **Verbal Component** | -2 CP | Must speak/chant to activate |
-| **Melee Range Only** | -3 CP | Must be adjacent to target |
+| **Gesture Required** | -2 CP | Need free hand to use (can't use while grappled/bound) |
+| **Verbal Component** | -2 CP | Must speak/chant to activate (can't use while silenced) |
+| **Melee Range Only** | -3 CP | Must be adjacent to target (touch range) |
 | **Self Only** | -5 CP | Cannot target others, only yourself |
 | **Exhausting** | -5 CP | Take 1 Vitality damage when used |
-| **Obvious Tell** | -3 CP | Target sees it coming, +2 to their defense |
+| **Obvious Tell** | -3 CP | Target sees it coming, gets +2 to their defense roll |
 
 ### Construction Rules
 
-1. **Choose Base Effect**: Select tier (Minor/Moderate/Major/Epic) and effect type
-2. **Add Enhancements**: Apply percentage and fixed enhancements
-3. **Add Limitations**: Apply percentage and fixed limitations
-4. **Calculate Total Cost**: 
-   - Start with Base CP
-   - Multiply by (1 + sum of enhancement %) × (1 + sum of limitation %)
-   - Add/subtract fixed costs
-   - Round to nearest whole number
-5. **Minimum Cost**: No power can cost less than 1 CP
-6. **Maximum Reduction**: Limitations can't reduce cost below 10% of base (max -90%)
+1. **Choose Base Effect**: Select tier (Minor 1 CP / Moderate 5 CP / Major 15 CP / Epic 30 CP / Legendary 50+ CP)
+2. **Add Enhancements**: Apply percentage and fixed CP enhancements
+3. **Add Limitations**: Apply percentage and fixed CP limitations
+4. **Calculate Total Cost**:
+   - **Apply fixed costs first**: (Base + Fixed Enhancements) - Fixed Limitations
+   - **Then apply percentages**: Result × (1 + Enhancement %) × (1 - Limitation %)
+   - **Round down**, minimum 1 CP
+5. **Maximum Reduction**: Final cost must be ≥ 10% of (Base + Fixed Enhancements - Fixed Limitations)
 
 ### Example Powers
 
 #### Shield Bash (Physical Maneuver)
-- **Base**: Minor Effect (5 CP, 1 Stamina)
+- **Base**: Minor Effect (1 CP, 1 Stamina)
 - **Effect**: Stun opponent, they roll vs EN or lose next action
 - **Enhancement**: None
-- **Limitation**: Requires Shield (-3 CP), Requires Skill Roll - Shield skill (-20%)
-- **Final Cost**: (5 × 0.8) - 3 = 1 CP
+- **Limitation**: Requires [Item] -20% (Shield), Melee Range Only -3 CP fixed
+- **Calculation**: (1 - 3) × 0.8 = -1.6, minimum 1 CP
+- **Final Cost**: 1 CP
 - **Usage**: Roll Shield skill to activate, costs 1 Stamina, opponent resists vs EN
 
 #### Fire Bolt (Moderate Spell)
-- **Base**: Moderate Effect (10 CP, 2 Mana)
+- **Base**: Moderate Effect (5 CP, 2 Mana)
 - **Effect**: 1d6 fire damage, ranged attack
-- **Enhancement**: Extra Range +10% (20m), Increased Damage +50% (2d6 total)
-- **Limitation**: Verbal Component (-2 CP)
-- **Final Cost**: (10 × 1.6) - 2 = 14 CP
+- **Enhancement**: Extra Range +20% (20m), Increased Damage +100% (2d6 total)
+- **Limitation**: Verbal Component -2 CP fixed
+- **Calculation**: (5 - 2) × 2.2 = 3 × 2.2 = 6.6, round down to 6 CP
+- **Final Cost**: 6 CP
 - **Usage**: Costs 2 Mana, roll Spellcasting vs target's Dodge
 
 #### Power Attack (Combat Maneuver)
-- **Base**: Minor Effect (5 CP, 2 Stamina)
+- **Base**: Moderate Effect (5 CP, 2 Stamina)
 - **Effect**: Next attack deals +2d6 damage
 - **Enhancement**: Increased Damage +100%
-- **Limitation**: Requires Skill Roll (-20%), Obvious Tell (-3 CP)
-- **Final Cost**: (5 × 2.0 × 0.8) - 3 = 5 CP
-- **Usage**: Costs 2 Stamina, roll weapon skill at -2, if hit deal weapon damage +2d6
+- **Limitation**: Obvious Tell -3 CP fixed, Melee Range Only -3 CP fixed
+- **Calculation**: (5 - 3 - 3) × 2.0 = -1 × 2.0 = -2, minimum 1 CP, but check max reduction
+- **Max -90% check**: (5 - 6) × 0.1 = can't go below 0, so result is 1 CP minimum
+- **Final Cost**: 4 CP (recalculated: 5 × 2.0 - 6 = 4 CP)
+- **Usage**: Costs 2 Stamina, attack at -2 to hit, if hit deal weapon damage +2d6
 
 #### Teleport (Major Spell)
-- **Base**: Major Effect (20 CP, 6 Mana)
+- **Base**: Major Effect (15 CP, 6 Mana)
 - **Effect**: Teleport up to 50m to visible location
-- **Enhancement**: Extra Range +20% (4× base)
-- **Limitation**: Concentration (-20%), Obvious/Loud (-10%)
-- **Final Cost**: 20 × 1.2 × 0.7 = 17 CP
+- **Enhancement**: Extra Range +40% (100m)
+- **Limitation**: Concentration -20%, Obvious/Loud -10%
+- **Calculation**: 15 × 1.4 × 0.7 = 14.7, round down to 14 CP
+- **Final Cost**: 14 CP
 - **Usage**: Costs 6 Mana, must see destination, flash of light and sound
 
 ---

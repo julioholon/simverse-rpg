@@ -7,9 +7,9 @@
 ## Dwarf Warrior - The Unbreakable Shield
 
 ### CHARACTER INFORMATION
-**Race:** Dwarf (20 CP)
-**Profession:** Warrior (33 CP)  
-**Power Level:** Heroic (250 CP Budget)  
+**Race:** Dwarf (45 CP)
+**Profession:** Warrior (58 CP)
+**Power Level:** Heroic (250 CP Budget)
 **Concept:** Elite frontline tank and battlefield commander
 
 ---
@@ -46,13 +46,23 @@
 
 ---
 
-### RACIAL TRAITS (Dwarf - 20 CP)
-**Perks:**
-- Tough (+5 Vitality) - 10 CP
-- Magic Resistance (+4 to resist spells) - 15 CP
+### RACIAL TRAITS (Dwarf - 45 CP)
+**Size Modifier:**
+- Child/Dwarf Size (-10 CP): ST -2, DX +2, Vitality ×0.75, Movement ×0.75
 
-**Flavor:**
-- Darkvision 30m, Stubborn (+2 vs intimidation/persuasion), Mountain Movement
+**Additional Attribute Modifiers:**
+- ST +3 (15 CP) - Net +1 after size modifier
+- EN +2 (10 CP)
+- DX -3 (-15 CP) - Net -1 after size modifier
+- CH -1 (-10 CP)
+
+**Included Perks:**
+- Tough (10 CP): +5 Vitality
+- Magic Resistance (15 CP): +4 to resist spells
+- Darkvision (10 CP): See perfectly in darkness up to 30m
+- Stubborn (5 CP): +2 to resist intimidation/persuasion
+- Mountain Movement (5 CP): No penalty on rocky/underground terrain
+- Extended Lifespan (5 CP): ~200 years
 
 ---
 
@@ -81,8 +91,13 @@
 | **Wrestling** | ST | 2 | 17 (15+2) | 3 CP |
 | **Throwing** | DX | 2 | 13 (11+2) | 3 CP |
 | **First Aid** | IN | 1 | 12 (11+1) | 1 CP |
+| **Survival** | AW | 2 | 14 (12+2) | 3 CP |
+| **Climbing** | ST | 2 | 17 (15+2) | 3 CP |
+| **Animal Handling** | AW | 1 | 13 (12+1) | 1 CP |
+| **Riding** | DX | 1 | 12 (11+1) | 1 CP |
+| **History** | IN | 2 | 13 (11+2) | 3 CP |
 
-**Skills Total:** 13 (template) + 50 (additional) = **63 CP**
+**Skills Total:** 13 (template) + 50 + 11 (new) = **74 CP**
 
 ---
 
@@ -98,41 +113,48 @@
 
 ---
 
-### COMBAT MANEUVERS (24 CP)
+### COMBAT MANEUVERS (21 CP)
 
 **Shield Bash** (1 CP)
-- Type: Minor Maneuver (5 CP)
-- Limitations: Requires Shield -3 CP, Requires Skill Roll -20%
+- Type: Minor Maneuver (1 CP)
+- Limitations: Requires Shield -20%, Melee Range Only -3 CP
 - Cost: 1 Stamina | Effect: Shield roll, target EN or stunned
 
-**Power Attack** (5 CP)
-- Type: Minor Maneuver (5 CP)
+**Power Attack** (4 CP)
+- Type: Moderate Maneuver (5 CP)
 - Enhancements: Increased Damage +100%
-- Limitations: Requires Skill Roll -20%, Obvious Tell -3 CP
+- Limitations: Obvious Tell -3 CP, Melee Range Only -3 CP
 - Cost: 2 Stamina | Effect: +2d6 damage, -2 to hit
 
-**Defensive Stance** (5 CP)
-- Type: Minor Maneuver (5 CP)
+**Defensive Stance** (4 CP)
+- Type: Moderate Maneuver (5 CP)
 - Enhancements: Persistent +20%
 - Limitations: Concentration -20%
 - Cost: 1 Stamina/turn | Effect: +4 defenses, can't attack
 
 **Knockback Strike** (5 CP)
-- Type: Minor Maneuver (5 CP)
+- Type: Moderate Maneuver (5 CP)
 - Enhancements: Knockback +3 CP
 - Limitations: Melee Only -3 CP
 - Cost: 2 Stamina | Effect: Push 3m, ST or prone
 
 **Disarm** (1 CP)
-- Type: Minor Maneuver (5 CP)
-- Limitations: Requires Skill Roll -20%, Obvious Tell -3 CP
+- Type: Minor Maneuver (1 CP)
 - Cost: 0 Stamina | Effect: Opposed roll, win by 5+ disarms
 
-**Stunning Blow** (7 CP)
-- Type: Minor Maneuver (5 CP)
-- Enhancements: Weakened Resistance +20% (-4 to resist)
-- Limitations: Requires Skill Roll -20%, Melee Only -3 CP
-- Cost: 3 Stamina | Effect: Hit + target WS-4 or dazed
+**Power Strike** (4 CP)
+- Type: Moderate Maneuver (5 CP)
+- Enhancements: Increased Damage +50% (+1d6)
+- Limitations: Melee Only -3 CP
+- Cost: 2 Stamina | Effect: +1d6 damage on hit
+
+**Trip Attack** (1 CP)
+- Type: Minor Maneuver (1 CP)
+- Cost: 0 Stamina | Effect: Opposed roll vs DX, knock prone
+
+**Feint** (1 CP)
+- Type: Minor Maneuver (1 CP)
+- Cost: 0 Stamina | Effect: Weapon skill vs Perception, +4 to hit on success
 
 ---
 
@@ -191,15 +213,15 @@ Thorin Ironforge is a veteran of the Iron Mountain clan wars, having defended th
 ---
 
 ### CP BREAKDOWN
-- **Race (Dwarf):** 20 CP
+- **Race (Dwarf):** 45 CP
 - **Profession (Warrior):** 33 CP
+- **Combat Maneuvers:** 21 CP
 - **Attributes (net):** 80 CP
-- **Additional Skills:** 50 CP
+- **Additional Skills:** 61 CP
 - **Additional Perks:** 20 CP
-- **Combat Maneuvers:** 24 CP
 - **Flaws:** -10 CP gained
-- **TOTAL:** 20 + 33 + 80 + 50 + 20 + 24 - 10 = **217 CP**
-- **REMAINING:** 250 - 217 = **33 CP**
+- **TOTAL:** 45 + 33 + 21 + 80 + 61 + 20 - 10 = **250 CP**
+- **REMAINING:** **0 CP** ✓
 
 ---
 ---
@@ -208,9 +230,9 @@ Thorin Ironforge is a veteran of the Iron Mountain clan wars, having defended th
 ## Elf Wizard - The Arcane Scholar
 
 ### CHARACTER INFORMATION
-**Race:** Elf (30 CP)
-**Profession:** Wizard (110 CP)  
-**Power Level:** Heroic (250 CP Budget)  
+**Race:** Elf (55 CP)
+**Profession:** Wizard (110 CP)
+**Power Level:** Heroic (250 CP Budget)
 **Concept:** Versatile spellcaster with battlefield control
 
 ---
@@ -221,14 +243,14 @@ Thorin Ironforge is a veteran of the Iron Mountain clan wars, having defended th
 | Attribute | Base | Racial | Additional | Final | CP Cost |
 |-----------|------|--------|------------|-------|---------|
 | **DX** | 10 | +2 | +0 | 12 | 0 CP |
-| **IN** | 10 | +0 | +4 | 14 | 40 CP |
-| **WS** | 10 | +0 | +4 | 14 | 40 CP |
+| **IN** | 10 | +0 | +3 | 13 | 30 CP |
+| **WS** | 10 | +0 | +3 | 13 | 30 CP |
 | **CH** | 10 | +0 | +0 | 10 | 0 CP |
 | **ST** | 10 | -1 | +0 | 9 | +5 CP gained |
 | **AW** | 10 | +1 | +2 | 13 | 10 CP |
 | **EN** | 10 | -1 | +0 | 9 | +5 CP gained |
 
-**Attribute CP:** Gained 10 CP, spent 90 CP = **Net 80 CP spent**
+**Attribute CP:** Gained 10 CP, spent 70 CP = **Net 60 CP spent**
 
 ---
 
@@ -246,36 +268,45 @@ Thorin Ironforge is a veteran of the Iron Mountain clan wars, having defended th
 
 ---
 
-### RACIAL TRAITS (Elf - 30 CP)
+### RACIAL TRAITS (Elf - 55 CP)
+**Attribute Modifiers:**
+- DX +2 (20 CP)
+- AW +1 (5 CP)
+- EN -1 (-5 CP)
+- ST -1 (-5 CP)
+
+**Included Perks:**
 - Night Vision (10 CP): No penalties in darkness
 - Acute Senses - Hearing (5 CP): +2 to hearing-based Perception
-- Forest Movement, Graceful (+1 Stealth/Acrobatics)
+- Forest Movement (5 CP): No terrain penalty in woodlands
+- Graceful (10 CP): +1 to Stealth and Acrobatics skills
+- Extended Lifespan (5 CP): ~300 years
 
 ---
 
-### PROFESSION TRAITS (Wizard - 110 CP)
+### PROFESSION TRAITS (Wizard - 65 CP)
 - Mage Gift (20 CP): Can cast spells
 - Mana Reserve (10 CP): +10 Mana
 
 **Skills from template (35 CP):**
-- Spellcasting 3 = 17 (14+3)
-- Occult Knowledge 3 (Hard) = 17 (14+3)
-- Research 2 = 16 (14+2)
-
-**Spells from template (45 CP):**
-- Fire Bolt (14 CP): 2 Mana, 2d6 fire, 20m
-- Magic Missile (13 CP): 2 Mana, 3×1d6 auto-hit, 30m
-- Shield Spell (12 CP): 2 Mana, +3 AR for 1 hour
-- Detect Magic (6 CP): 0 Mana, see auras 20m for 10 min
+- Spellcasting 3 = 16 (13+3)
+- Occult Knowledge 3 (Hard) = 16 (13+3)
+- Research 2 = 15 (13+2)
 
 ---
 
-### ADDITIONAL SPELLS (30 CP)
-- **Invisibility** (17 CP): 6 Mana, invisible 8 minutes, +8 Stealth, breaks on attack/damage
-- **Dispel Magic** (8 CP): 3 Mana, roll Spellcasting vs spell level to end magic
-- **Light** (5 CP): 0 Mana, create torch-light on object for 10 minutes
+### SPELLS (70 CP)
+- **Fire Bolt** (6 CP): 2 Mana, 2d6 fire, 20m range, attack roll
+- **Magic Missile** (10 CP): 2 Mana, 3×1d6 auto-hit, 30m range
+- **Fireball** (27 CP): 6 Mana, 3d6 fire in 6m radius, 40m range, all targets dodge or take damage
+- **Shield Spell** (6 CP): 2 Mana, +3 AR for 1 hour, self only
+- **Detect Magic** (1 CP): 0 Mana, see auras 20m for 10 min, concentration
+- **Light** (3 CP): 0 Mana, torch-light on object for 1 hour
+- **Invisibility** (10 CP): 6 Mana, invisible 8 minutes, +8 Stealth, breaks on attack/damage
+- **Dispel Magic** (4 CP): 3 Mana, roll Spellcasting vs spell level to end magic
+- **Sleep** (3 CP): 2 Mana, 3m radius, creatures ≤20 Vitality roll WS or sleep 1 minute
 
-**Total Spells:** 45 (template) + 30 (additional) = **75 CP in spells**
+**Total:** 70 CP in spells
 
 ---
 
@@ -284,11 +315,13 @@ Thorin Ironforge is a veteran of the Iron Mountain clan wars, having defended th
 |-------|------|--------|-------|
 | Fire Bolt | 2 | 2d6 fire, 20m | Attack roll |
 | Magic Missile | 2 | 3×1d6, 30m | Auto-hit |
+| Fireball | 6 | 3d6 fire, 6m radius, 40m | Area damage, dodge for half |
 | Shield Spell | 2 | +3 AR, 1 hour | Self, persistent |
 | Detect Magic | 0 | See auras, 10 min | Concentration |
+| Light | 0 | Torch-light, 1 hour | Utility |
 | Invisibility | 6 | Invisible 8 min | Fragile |
 | Dispel Magic | 3 | End magic | Opposed roll |
-| Light | 0 | Torch-light 10 min | Utility |
+| Sleep | 2 | 3m radius, ≤20 Vit | Crowd control |
 
 ---
 
@@ -353,11 +386,11 @@ Lyralei Moonwhisper (only 80 years old by elf standards - quite young) graduated
 ---
 
 ### CP BREAKDOWN
-- **Race (Elf):** 30 CP
-- **Profession (Wizard):** 110 CP
-- **Attributes (net):** 80 CP
-- **Additional Spells:** 30 CP
-- **TOTAL:** 30 + 110 + 80 + 30 = **250 CP**
+- **Race (Elf):** 55 CP
+- **Profession (Wizard):** 65 CP
+- **Spells:** 70 CP
+- **Attributes (net):** 60 CP
+- **TOTAL:** 55 + 65 + 70 + 60 = **250 CP**
 - **REMAINING:** **0 CP** ✓
 
 ---
@@ -368,8 +401,8 @@ Lyralei Moonwhisper (only 80 years old by elf standards - quite young) graduated
 
 ### CHARACTER INFORMATION
 **Race:** Human (0 CP)
-**Profession:** Rogue (48 CP)  
-**Power Level:** Heroic (250 CP Budget)  
+**Profession:** Rogue (63 CP)
+**Power Level:** Heroic (250 CP Budget)
 **Concept:** Elite skill specialist and scout
 
 ---
@@ -406,8 +439,7 @@ Lyralei Moonwhisper (only 80 years old by elf standards - quite young) graduated
 ---
 
 ### RACIAL TRAITS (Human - 0 CP)
-- Adaptable: +1 CP per session earned during play
-- Versatile: Any profession
+**Note:** Human is the baseline race (0 CP). Other races modify from this baseline.
 
 ---
 
@@ -437,8 +469,10 @@ Lyralei Moonwhisper (only 80 years old by elf standards - quite young) graduated
 - Bows 3 (DX): 6 CP, roll 18
 - Intimidation 2 (CH): 3 CP, roll 14
 - Tracking 1 (AW): 1 CP, roll 13
+- Disguise 2 (IN): 3 CP, roll 13
+- Bluff 1 (CH): 1 CP, roll 13
 
-**Skills Total:** 43 (template) + 65 (additional) = **108 CP**
+**Skills Total:** 43 (template) + 65 + 4 (new) = **112 CP**
 
 ---
 
@@ -455,22 +489,36 @@ Lyralei Moonwhisper (only 80 years old by elf standards - quite young) graduated
 
 ---
 
-### COMBAT MANEUVERS (17 CP)
+### COMBAT MANEUVERS (13 CP)
 
-**Sneak Attack** (8 CP)
-- Type: Minor Maneuver (5 CP)
+**Sneak Attack** (4 CP)
+- Type: Moderate Maneuver (5 CP)
 - Enhancements: Increased Damage +100% (+2d6)
 - Limitations: Only vs unaware/flanked -40%, Once per target per combat -20%
+- Calculation: 5 × 2.0 × 0.4 = 4 CP
 - Cost: 1 Stamina
-- Final Cost: 8 CP
 - Effect: When attacking unaware or flanked enemies, deal +2d6 damage. Once per target per combat.
 
-**Precision Strike** (9 CP)
-- Type: Minor Maneuver (5 CP)
+**Precision Strike** (7 CP)
+- Type: Moderate Maneuver (5 CP)
 - Enhancements: Armor Piercing +5 CP fixed, Weakened Resistance +10%
-- Limitations: Requires Skill Roll -20%
-- Cost: 2 Stamina 
+- Limitations: Melee Range Only -3 CP
+- Calculation: (5 × 1.1) + 5 - 3 = 7 CP
+- Cost: 2 Stamina
 - Effect: Ignore 2 AR, target -2 to defend
+
+**Rapid Strike** (1 CP)
+- Type: Moderate Maneuver (5 CP)
+- Enhancements: Multiple Targets +50% (2 attacks)
+- Limitations: Obvious Tell -3 CP, Melee Range Only -3 CP
+- Calculation: (5 × 1.5) - 6 = 1.5, round down to 1 CP
+- Cost: 3 Stamina
+- Effect: Two attacks at -4 each with same weapon
+
+**Trip Attack** (1 CP)
+- Type: Minor Maneuver (1 CP)
+- Cost: 0 Stamina
+- Effect: Opposed weapon/brawling vs DX, knock prone on success
 
 ---
 
@@ -570,12 +618,12 @@ His skills are too valuable for most adventuring parties to care about his crimi
 ### CP BREAKDOWN
 - **Race (Human):** 0 CP
 - **Profession (Rogue):** 48 CP
+- **Combat Maneuvers:** 13 CP
 - **Attributes:** 110 CP
-- **Additional Skills:** 65 CP
+- **Additional Skills:** 69 CP
 - **Additional Perks:** 30 CP
-- **Combat Maneuvers:** 17 CP
 - **Flaws:** -20 CP gained
-- **TOTAL:** 0 + 48 + 110 + 65 + 30 + 17 - 20 = **250 CP**
+- **TOTAL:** 0 + 48 + 13 + 110 + 69 + 30 - 20 = **250 CP**
 - **REMAINING:** **0 CP** ✓
 
 ---
