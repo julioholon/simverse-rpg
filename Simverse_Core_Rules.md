@@ -532,6 +532,20 @@ Perks represent advantages, talents, and special abilities. Flaws represent disa
 - Injuries take double time to heal
 - Slower recovery from wounds
 
+**Undead** (-30 CP)
+- Character is undead (resurrected as zombie, vampire, lich, etc.)
+- **Advantages:**
+  - No need to breathe, sleep, eat, or drink
+  - Immune to poison, disease, and suffocation
+  - Resistant to impaling and cutting damage (takes half damage from these types, as they don't bleed or have vital organs)
+- **Disadvantages:**
+  - Unable to heal naturally (must use magic or necromancy to restore Vitality)
+  - Vulnerable to holy damage (takes double damage from holy/divine sources)
+  - Vulnerable to fire damage (takes double damage from fire)
+  - Social stigma in most civilizations (-4 to social interactions with living)
+  - May be turned or destroyed by clerics/paladins
+  - Cannot benefit from normal healing magic (Cure spells, etc.)
+
 #### Mental Flaws
 
 **Phobia** (-5 to -15 CP, severity varies)
@@ -550,6 +564,12 @@ Perks represent advantages, talents, and special abilities. Flaws represent disa
 **Low Mana** (-10 CP)
 - -10 to Mana pool
 - Less magical/mental endurance
+
+**Partial Amnesia** (-15 CP)
+- Character doesn't remember recent events or portions of their past
+- May recover memories over time by rolling WS vs 12 (GM determines frequency and what is recovered)
+- -2 to Knowledge skills relating to forgotten period
+- Often acquired through resurrection or traumatic brain injury
 
 #### Social Flaws
 
@@ -755,13 +775,15 @@ This unified system allows you to create supernatural powers, magical spells, an
 
 All abilities start with a base effect tier that determines CP cost and resource cost:
 
-| Tier | CP Base | Resource Cost (Stamina/Mana) | Examples |
-|------|---------|---------------|----------|
-| **Minor** | 1 CP | 1 | Shield Bash, Trip, Disarm, Quick Draw, Feint |
-| **Moderate** | 5 CP | 2 Mana | 1d6 damage bolt, minor healing, charm person, detect magic |
-| **Major** | 15 CP | 6 Mana | 3d6 damage, serious healing, flight, invisibility, lightning bolt |
-| **Epic** | 30 CP | 12 Mana | 6d6+ damage, teleportation, open portal, time stop |
-| **Legendary** | 30+ CP | Varies | World-altering effects, deity-level powers, raise dead |
+| Tier | Min Skill Level | CP Base | Resource Cost (Stamina/Mana) | Examples |
+|------|-----------------|---------|------------------------------|----------|
+| **Minor** | 2 | 1 CP | 1 | Shield Bash, Trip, Disarm, Quick Draw, Feint |
+| **Moderate** | 3 | 5 CP | 2 Mana | 1d6 damage bolt, minor healing, charm person, detect magic |
+| **Major** | 5 | 15 CP | 6 Mana | 3d6 damage, serious healing, flight, invisibility, lightning bolt |
+| **Epic** | 8 | 30 CP | 12 Mana | 6d6+ damage, teleportation, open portal, time stop, raise dead |
+| **Legendary** | 13 | 50 CP | Varies | World-altering effects, deity-level powers |
+
+**Skill Level Requirement**: To purchase a power of a given tier, you must have the minimum skill level in the relevant skill (Spellcasting for spells, weapon skill for combat maneuvers, etc.). This represents the mastery needed to learn and perform that tier of ability.
 
 **Design Goal:** Starting wizard (~50 CP for spells) should have 10-15 Minor/Moderate spells. Starting warrior/thief (~25 CP for maneuvers) should have ~10 Minor/Moderate maneuvers.
 
@@ -781,7 +803,7 @@ These modify the cost by a percentage:
 | **Increased Effect** | +50% per +1d6 | More damage, healing, or bonus |
 | **Increased Damage** | +50% per +1d6, +100% for +2d6 | Specifically for damage powers (same as Increased Effect) |
 | **Extra Range** | +20% (2× range), +40% (4× range) | 10m → 20m (+20%), 10m → 40m (+40%), etc. |
-| **Extra Duration** | +10% per doubling, +30% for 8× | 1 min → 2 min → 4 min → 8 min |
+| **Extra Duration** | +10% (2×), +20% (6×), +30% (12×), +40% (72×), +50% (288×), then +10% per doubling | Default 5 min: +10% (10 min), +20% (30 min), +30% (1 hour), +40% (6 hours), +50% (1 day), +60% (2 days), etc. |
 | **Area Effect** | +50% (3m radius), +100% (6m) | Affects multiple targets in area |
 | **Multiple Targets** | +50% (2 targets), +75% (3), +125% (5) | Add specific targets (not area) |
 | **Reduced Resource Cost** | +25% (half cost), +50% (quarter) | Costs less Mana/Stamina to use, if below 1, round to 0 |
@@ -792,18 +814,16 @@ These modify the cost by a percentage:
 
 **Note on Skill Rolls:** By default, activating a power/spell/maneuver requires a successful skill roll (Spellcasting for spells, weapon skill for maneuvers, etc.). The "Reliable Activation" enhancement below removes this requirement.
 
-### Enhancements (Fixed Cost)
+### Enhancements (Additional)
 
-| Enhancement | Cost | Description |
-|-------------|------|-------------|
-| **Reliable Activation** | +10 CP | No skill roll needed, automatically activates (costs resources but always works) |
-| **Armor Piercing** | +5 CP | Ignores 2 points of armor |
-| **Armor Piercing Defense** | +5 CP | Can block armor-piercing attacks (for defensive powers like Shield Spell) |
-| **Homing** | +5 CP | Auto-hit, no attack roll needed (e.g., Magic Missile) |
-| **Knockback** | +3 CP | Push target 2m on successful hit |
-| **Lingering Pain** | +5 CP | Target at -1 for 1 round after effect |
-| **Silent Casting** | +8 CP | No visible or audible manifestation |
-| **Fast Cast** | +10 CP | Reduce casting/activation time by 50% |
+| Enhancement | Cost Modifier | Description |
+|-------------|---------------|-------------|
+| **Reliable Activation** | +100% | No skill roll needed, automatically activates (costs resources but always works) |
+| **Armor Piercing** | +50% | Ignores 2 points of armor |
+| **Homing** | +50% | Auto-hit, no attack roll needed (e.g., Magic Missile) |
+| **Knockback** | +30% | Push target 2m on successful hit |
+| **Silent Casting** | +80% | No visible or audible manifestation |
+| **Fast Cast** | +100% | Reduce casting/activation time by 50% |
 
 ### Limitations (Percentage-Based)
 
@@ -811,40 +831,34 @@ These reduce the cost by a percentage:
 
 | Limitation | Cost Modifier | Description |
 |------------|---------------|-------------|
-| **Only in [Condition]** | -60% | Only works in specific conditions (rain/night/touching earth/vs undead/creatures with ≤20 Vitality/etc.) |
-| **Requires [Item]** | -20% | Need specific tool/weapon/holy symbol/visible object/willing target |
-| **Usage Limit** | -30% (3/day), -60% (1/day), -80% (1/week) | Limited uses per time period |
-| **Preparation Time** | -20% (1 min), -40% (10 min), -60% (1 hour) | Must prepare/ritual before use |
+| **Only in [Condition]** | -5% to -40% | Only works in specific conditions. **Frequency determines discount**: -5% common (day/night/sunlight), -10% uncommon (rain/dark/touching earth), -20% rare (solar eclipse/vs undead/target ≤20 Vitality), -40% nearly impossible (lunar eclipse at midnight/target willing to die) |
+| **Requires [Item]** | -10% | Need specific tool/weapon/holy symbol/visible object/willing target that must be present |
+| **Usage Limit** | -15% (3/day), -30% (1/day), -40% (1/week) | Limited uses per time period |
+| **Preparation Time** | -10% (1 min), -20% (10 min), -30% (1 hour) | Must prepare/ritual before use |
 | **Obvious/Loud** | -10% | Clearly visible flash/sound, alerts everyone nearby, obvious if resisted |
 | **Concentration** | -20% | Can't take other actions while using, broken if interrupted |
 | **Backfire Risk** | -30% | On critical failure, lose resources, suffer effect, or summon attacks you |
 | **Increased Resource** | -20% (double), -30% (triple) | Costs more Mana/Stamina to use (makes it cheaper to buy) |
 | **Fragile** | -25% | Broken by any damage to user, or by specific trigger (attack, strong emotions) |
-| **Situational Trigger** | -40% | Only works after specific event (successful Parry, being attacked, etc.) |
+| **Situational Trigger** | -20% | Only works after specific event (successful Parry, being attacked, ally knocked out, etc.) |
+| **Gesture Required** | -10% | Need free hand to use (can't use while grappled/bound) |
+| **Verbal Component** | -10% | Must speak/chant to activate (can't use while silenced) |
+| **Melee Range Only** | -15% | Must be adjacent to target (touch range) |
+| **Self Only** | -25% | Cannot target others, only yourself |
+| **Exhausting** | -25% | Take 1 Vitality damage when used |
 
 **Note:** By default, most powers require a skill roll to activate. This is not a limitation - it's the baseline.
-
-### Limitations (Fixed Cost)
-
-| Limitation | Cost | Description |
-|------------|------|------------|
-| **Gesture Required** | -2 CP | Need free hand to use (can't use while grappled/bound) |
-| **Verbal Component** | -2 CP | Must speak/chant to activate (can't use while silenced) |
-| **Melee Range Only** | -3 CP | Must be adjacent to target (touch range) |
-| **Self Only** | -5 CP | Cannot target others, only yourself |
-| **Exhausting** | -5 CP | Take 1 Vitality damage when used |
-| **Obvious Tell** | -3 CP | Target sees it coming, gets +2 to their defense roll |
 
 ### Construction Rules
 
 1. **Choose Base Effect**: Select tier (Minor 1 CP / Moderate 5 CP / Major 15 CP / Epic 30 CP / Legendary 50+ CP)
-2. **Add Enhancements**: Apply percentage and fixed CP enhancements
-3. **Add Limitations**: Apply percentage and fixed CP limitations
+2. **Add Enhancements**: Apply percentage-based enhancements from the tables above
+3. **Add Limitations**: Apply percentage-based limitations from the tables above
 4. **Calculate Total Cost**:
-   - **Apply fixed costs first**: (Base + Fixed Enhancements) - Fixed Limitations
-   - **Then apply percentages**: Result × (1 + Enhancement %) × (1 - Limitation %)
+   - **Formula**: Base × (1 + Sum of Enhancements - Sum of Limitations)
+   - **Example**: 5 CP × (1 + 0.50 - 0.10 - 0.15) = 5 × 1.25 = 6.25 → 6 CP
    - **Round down**, minimum 1 CP
-5. **Maximum Reduction**: Final cost must be ≥ 10% of (Base + Fixed Enhancements - Fixed Limitations)
+5. **Maximum Reduction**: Total limitations cannot exceed -75% (net modifier cannot go below 0.25 = 25% of base cost)
 
 ### Example Powers
 
@@ -852,37 +866,36 @@ These reduce the cost by a percentage:
 - **Base**: Minor Effect (1 CP, 1 Stamina)
 - **Effect**: Stun opponent, they roll vs EN or lose next action
 - **Enhancement**: None
-- **Limitation**: Requires [Item] -20% (Shield), Melee Range Only -3 CP fixed
-- **Calculation**: (1 - 3) × 0.8 = -1.6, minimum 1 CP
+- **Limitation**: Requires [Item] -10%, Melee Range Only -15%
+- **Calculation**: 1 × (1 + 0 - 0.10 - 0.15) = 1 × 0.75 = 0.75, round down minimum 1 CP
 - **Final Cost**: 1 CP
 - **Usage**: Roll Shield skill to activate, costs 1 Stamina, opponent resists vs EN
 
 #### Fire Bolt (Moderate Spell)
 - **Base**: Moderate Effect (5 CP, 2 Mana)
 - **Effect**: 1d6 fire damage, ranged attack
-- **Enhancement**: Extra Range +20% (20m), Increased Damage +100% (2d6 total)
-- **Limitation**: Verbal Component -2 CP fixed
-- **Calculation**: (5 - 2) × 2.2 = 3 × 2.2 = 6.6, round down to 6 CP
-- **Final Cost**: 6 CP
+- **Enhancement**: Extra Range +20%, Increased Damage +100% (2d6 total)
+- **Limitation**: Verbal Component -10%
+- **Calculation**: 5 × (1 + 0.20 + 1.00 - 0.10) = 5 × 2.10 = 10.5, round down to 10 CP
+- **Final Cost**: 10 CP
 - **Usage**: Costs 2 Mana, roll Spellcasting vs target's Dodge
 
 #### Power Attack (Combat Maneuver)
 - **Base**: Moderate Effect (5 CP, 2 Stamina)
 - **Effect**: Next attack deals +2d6 damage
 - **Enhancement**: Increased Damage +100%
-- **Limitation**: Obvious Tell -3 CP fixed, Melee Range Only -3 CP fixed
-- **Calculation**: (5 - 3 - 3) × 2.0 = -1 × 2.0 = -2, minimum 1 CP, but check max reduction
-- **Max -90% check**: (5 - 6) × 0.1 = can't go below 0, so result is 1 CP minimum
-- **Final Cost**: 4 CP (recalculated: 5 × 2.0 - 6 = 4 CP)
+- **Limitation**: Obvious/Loud -10%, Melee Range Only -15%
+- **Calculation**: 5 × (1 + 1.00 - 0.10 - 0.15) = 5 × 1.75 = 8.75, round down to 8 CP
+- **Final Cost**: 8 CP
 - **Usage**: Costs 2 Stamina, attack at -2 to hit, if hit deal weapon damage +2d6
 
 #### Teleport (Major Spell)
 - **Base**: Major Effect (15 CP, 6 Mana)
 - **Effect**: Teleport up to 50m to visible location
-- **Enhancement**: Extra Range +40% (100m)
-- **Limitation**: Concentration -20%, Obvious/Loud -10%
-- **Calculation**: 15 × 1.4 × 0.7 = 14.7, round down to 14 CP
-- **Final Cost**: 14 CP
+- **Enhancement**: Extra Range +40%
+- **Limitation**: Concentration -20%, Obvious/Loud -10%, Verbal Component -10%
+- **Calculation**: 15 × (1 + 0.40 - 0.20 - 0.10 - 0.10) = 15 × 1.00 = 15 CP
+- **Final Cost**: 15 CP
 - **Usage**: Costs 6 Mana, must see destination, flash of light and sound
 
 ---
