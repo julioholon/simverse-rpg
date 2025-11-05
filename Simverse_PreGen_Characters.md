@@ -230,7 +230,7 @@ Thorin Ironforge is a veteran of the Iron Mountain clan wars, having defended th
 ### DERIVED STATISTICS
 - **Vitality:** 18 (EN 9 × 2)
 - **Stamina:** 18 (ST 9 × 2)
-- **Mana:** 36 (AW 13 × 2 + 10 from Mana Reserve)
+- **Mana:** 36 (AW 13 × 2 + 10 from Extra Mana)
 - **Speed:** 5.25 ((DX 12 + EN 9) / 4)
 - **Perception:** 13 (chose AW)
 
@@ -259,7 +259,7 @@ Thorin Ironforge is a veteran of the Iron Mountain clan wars, having defended th
 
 ### PROFESSION TRAITS (Wizard - 65 CP)
 - Mage Gift (20 CP): Can cast spells
-- Mana Reserve (10 CP): +10 Mana
+- Extra Mana (10 CP): +10 Mana
 
 **Skills from template + additional (48 CP):**
 - Spellcasting 5 = 17 (12+5) [35 CP template +13 CP additional = 48 CP]

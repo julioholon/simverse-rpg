@@ -135,6 +135,18 @@
 
 ---
 
+### CHI STRIKE
+**Type:** Moderate Physical Maneuver (5 CP)
+**Resource Cost:** 2 Stamina
+**Enhancements:** Reliable Activation +100%
+**Limitations:** Melee Range Only -15%
+**Calculation:** 5 × (1 + 1.00 - 0.15) = 5 × 1.85 = 9.25, round down to 9 CP
+**Final Cost:** 9 CP
+
+**Effect:** Channel inner energy to double all innate and ST bonus damage on one unarmed attack. Typically used by monks and martial artists to deliver devastating strikes.
+
+---
+
 ## Arcane Spells
 
 ### FIRE BOLT
@@ -540,6 +552,249 @@
 **Final Cost:** 1 CP
 
 **Effect:** Understand and speak with animals for 1 hour. They're not compelled to help but will listen. Intelligence varies by animal.
+
+---
+
+### POISON ARROW
+**Type:** Minor Spell (1 CP)
+**Mana Cost:** 1
+**Enhancements:** Increased Damage +50% (+1d6 poison), Extra Duration +10% (poison lasts 3 turns)
+**Limitations:** Requires [Item] -10% (arrow or ammunition)
+**Calculation:** 1 × (1 + 0.50 + 0.10 - 0.10) = 1 × 1.50 = 1.5, round down to 1 CP
+**Final Cost:** 1 CP
+
+**Effect:** Enchant one arrow with poison. Next attack with that arrow deals +1d6 poison damage. Target takes additional 1d6-2 poison damage per turn for 3 turns (minimum 1/turn).
+
+---
+
+### CREATE POISON
+**Type:** Moderate Spell (5 CP)
+**Mana Cost:** 3
+**Enhancements:** Reliable Activation +100%
+**Limitations:** Preparation Time -20% (10 minutes), Obvious/Loud -10%
+**Calculation:** 5 × (1 + 1.00 - 0.20 - 0.10) = 5 × 1.70 = 8.5, round down to 8 CP
+**Final Cost:** 8 CP
+
+**Effect:** Create one dose of poison (ingested, contact, or injury type). Choose effect: **Paralyzing** (target stunned for 1d6 turns, EN roll to resist), **Weakening** (-4 to ST and DX for 1 hour, EN roll to halve), **Damaging** (2d6 damage, EN roll to halve), or **Choking** (1d6 damage/turn for 5 turns, EN roll to end early). Lasts 24 hours before becoming inert.
+
+---
+
+### SENSE POISON
+**Type:** Minor Spell (1 CP)
+**Mana Cost:** 0
+**Enhancements:** Extra Range +20% (20m), Reliable Activation +100%
+**Limitations:** Concentration -20%
+**Calculation:** 1 × (1 + 0.20 + 1.00 - 0.20) = 1 × 2.00 = 2 CP
+**Final Cost:** 2 CP
+
+**Effect:** Detect presence and location of poisons within 20m. Requires concentration. Reveals type of poison if you succeed on Alchemy or Nature check.
+
+---
+
+## Necromantic Spells
+
+### ANIMATE DEAD
+**Type:** Major Spell (15 CP)
+**Mana Cost:** 6
+**Enhancements:** Extra Duration +40% (72 hours instead of default), Reliable Activation +100%
+**Limitations:** Requires [Item] -10% (corpse), Preparation Time -20% (10 minutes)
+**Calculation:** 15 × (1 + 0.40 + 1.00 - 0.10 - 0.20) = 15 × 2.10 = 31.5, round down to 31 CP
+**Final Cost:** 31 CP
+
+**Effect:** Animate one corpse as zombie or skeleton. Lasts 72 hours. Undead has half your IN in intelligence, follows simple commands. Can control total undead Vitality = IN × 5.
+
+---
+
+### LIFE DRAIN
+**Type:** Moderate Spell (5 CP)
+**Mana Cost:** 2
+**Enhancements:** Increased Damage +50% (2d6), Homing +50% (auto-hit)
+**Limitations:** Obvious/Loud -10%
+**Calculation:** 5 × (1 + 0.50 + 0.50 - 0.10) = 5 × 1.90 = 9.5, round down to 9 CP
+**Final Cost:** 9 CP
+
+**Effect:** Drain 2d6 Vitality from target within 10m. You heal for half the damage dealt (round up). Works on living creatures only.
+
+---
+
+### SPEAK WITH DEAD
+**Type:** Moderate Spell (5 CP)
+**Mana Cost:** 3
+**Enhancements:** Extra Duration +20% (30 minutes), Reliable Activation +100%
+**Limitations:** Requires [Item] -10% (intact corpse with mouth), Preparation Time -10% (1 minute ritual)
+**Calculation:** 5 × (1 + 0.20 + 1.00 - 0.10 - 0.10) = 5 × 2.00 = 10 CP
+**Final Cost:** 10 CP
+
+**Effect:** Ask corpse up to 5 questions. It answers based on knowledge it had in life. Corpse is not compelled to be helpful or honest.
+
+---
+
+### COMMAND UNDEAD
+**Type:** Moderate Spell (5 CP)
+**Mana Cost:** 2
+**Enhancements:** Extra Duration +30% (1 hour), Reliable Activation +100%
+**Limitations:** Only in [Condition] -20% (vs undead only), Concentration -20%
+**Calculation:** 5 × (1 + 0.30 + 1.00 - 0.20 - 0.20) = 5 × 1.90 = 9.5, round down to 9 CP
+**Final Cost:** 9 CP
+
+**Effect:** Take control of one undead within 10m for 1 hour. Target rolls WS vs your Necromancy. If you succeed, you control it. Requires concentration.
+
+---
+
+### DEATH BOLT
+**Type:** Moderate Spell (5 CP)
+**Mana Cost:** 3
+**Enhancements:** Increased Damage +100% (2d6), Homing +50% (auto-hit)
+**Limitations:** Only in [Condition] -10% (heals undead instead of harming)
+**Calculation:** 5 × (1 + 1.00 + 0.50 - 0.10) = 5 × 2.40 = 12 CP
+**Final Cost:** 12 CP
+
+**Effect:** Fire bolt of necrotic energy at target within 10m. Deals 2d6 damage to living creatures. Heals undead for 2d6 Vitality instead.
+
+---
+
+## Utility Spells
+
+### IDENTIFY
+**Type:** Minor Spell (1 CP)
+**Mana Cost:** 1
+**Enhancements:** Extra Duration +30% (1 hour), Reliable Activation +100%
+**Limitations:** Requires [Item] -10% (object to identify), Concentration -20%
+**Calculation:** 1 × (1 + 0.30 + 1.00 - 0.10 - 0.20) = 1 × 2.00 = 2 CP
+**Final Cost:** 2 CP
+
+**Effect:** Reveal magical properties of one item you touch. Learn enchantments, curses, and how to activate it. Requires concentration for 1 hour.
+
+---
+
+### REPAIR
+**Type:** Moderate Spell (5 CP)
+**Mana Cost:** 3
+**Enhancements:** Reliable Activation +100%
+**Limitations:** Requires [Item] -10% (broken object), Preparation Time -10% (1 minute)
+**Calculation:** 5 × (1 + 1.00 - 0.10 - 0.10) = 5 × 1.80 = 9 CP
+**Final Cost:** 9 CP
+
+**Effect:** Restore one broken non-magical object to working condition. Size up to 1 cubic meter. Cannot repair magical items or restore completely destroyed objects.
+
+---
+
+### ENHANCE WEAPON
+**Type:** Moderate Spell (5 CP)
+**Mana Cost:** 3
+**Enhancements:** Extra Duration +30% (1 hour), Reliable Activation +100%
+**Limitations:** Requires [Item] -10% (weapon to enhance), Self Only -25%
+**Calculation:** 5 × (1 + 0.30 + 1.00 - 0.10 - 0.25) = 5 × 1.95 = 9.75, round down to 9 CP
+**Final Cost:** 9 CP
+
+**Effect:** Enchant one weapon you touch for 1 hour. Weapon deals +1d6 damage and counts as magical for purposes of overcoming resistances.
+
+---
+
+### DETECT TRAPS
+**Type:** Minor Spell (1 CP)
+**Mana Cost:** 1
+**Enhancements:** Extra Range +20% (20m), Reliable Activation +100%
+**Limitations:** Concentration -20%
+**Calculation:** 1 × (1 + 0.20 + 1.00 - 0.20) = 1 × 2.00 = 2 CP
+**Final Cost:** 2 CP
+
+**Effect:** Sense presence and general location of mechanical and magical traps within 20m. Requires concentration. Does not reveal how to disarm them.
+
+---
+
+### SEEKER
+**Type:** Moderate Spell (5 CP)
+**Mana Cost:** 3
+**Enhancements:** Expansive Range +100% (1km)
+**Limitations:** Requires [Item] -10% (object belonging to target), Concentration -20%
+**Calculation:** 5 × (1 + 1.00 - 0.10 - 0.20) = 5 × 1.70 = 8.5, round down to 8 CP
+**Final Cost:** 8 CP
+
+**Effect:** Track specific person within 1km. Roll Spellcasting - for each point you succeed by, double the maximum range (2km at +1, 4km at +2, etc.). You know general direction and approximate distance while concentrating. Requires item belonging to target (clothing, hair, possession). Can be resisted by concealing spells.
+
+---
+
+## Summoning Spells
+
+### SUMMON ELEMENTAL
+**Type:** Major Spell (15 CP)
+**Mana Cost:** 6
+**Enhancements:** Extra Duration +30% (1 hour)
+**Limitations:** Concentration -20%, Preparation Time -20% (10 minutes)
+**Calculation:** 15 × (1 + 0.30 - 0.20 - 0.20) = 15 × 0.90 = 13.5, round down to 13 CP
+**Final Cost:** 13 CP
+
+**Effect:** After 10 minutes of ritual, summon one medium elemental (fire, water, earth, or air). Elemental has ~75 CP worth of stats (ST 12, DX 12, EN 12, AW 10, ~24 Vitality, AR 3-5 depending on type). Follows your commands for 1 hour. Requires concentration to maintain control.
+
+**Elemental Abilities:** Each elemental has one elemental attack (Moderate Power, 5 CP base): deals 3d6 elemental damage at range or by touch.
+- **Fire Elemental:** 3d6 fire damage, ignites flammables, immune to fire
+- **Water Elemental:** 3d6 cold damage, can extinguish fires, breathes underwater
+- **Earth Elemental:** 3d6 bludgeoning damage, can move through stone, AR 5
+- **Air Elemental:** 3d6 lightning damage, can fly, hard to hit (+2 defense)
+
+---
+
+### SUMMON BEAST
+**Type:** Moderate Spell (5 CP)
+**Mana Cost:** 3
+**Enhancements:** Extra Duration +30% (1 hour), Reliable Activation +100%
+**Limitations:** Concentration -20%, Preparation Time -20% (10 minutes), Increased Resource Cost -20%
+**Calculation:** 5 × (1 + 0.30 + 1.00 - 0.20 - 0.20 - 0.20) = 5 × 1.50 = 7.5, round down to 7 CP
+**Final Cost:** 7 CP
+
+**Effect:** After 10 minutes of ritual, summon one beast (wolf, dire wolf, bear, eagle, etc.). Beast has ~50 CP worth of stats. Follows your commands for 1 hour. Requires concentration to maintain control.
+
+**Quick Build Example - Wolf (Small size):** ST 8 (10-4 from Small, +2 purchased), DX 14 (10+4 from Small), EN 10, AW 12, IN 4, Vitality 10 (EN 10 ×2 = 20, ×0.5 from Small = 10), AR 1, bite attack 1d6, Speed 3 (6 ×0.5 from Small), Pack Tactics (+2 when ally adjacent)
+
+**Quick Build Example - Dire Wolf (Child/Dwarf size):** ST 10 (10-2 from size, +2 purchased), DX 12 (10+2 from size), EN 12, AW 12, IN 4, Vitality 18 (EN 12 ×2 = 24, ×0.75 from Child/Dwarf = 18), AR 2, bite attack 1d6+2, Speed 4.5 (6 ×0.75), Pack Tactics
+
+---
+
+### SUMMON SPIRIT
+**Type:** Moderate Spell (5 CP)
+**Mana Cost:** 3
+**Enhancements:** Extra Duration +30% (1 hour), Reliable Activation +100%
+**Limitations:** Concentration -20%, Preparation Time -20% (10 minutes), Increased Resource Cost -20%
+**Calculation:** 5 × (1 + 0.30 + 1.00 - 0.20 - 0.20 - 0.20) = 5 × 1.50 = 7.5, round down to 7 CP
+**Final Cost:** 7 CP
+
+**Effect:** After 10 minutes of ritual, summon one spirit creature (ghost, shade, wraith). Spirit has ~50 CP worth of stats. Follows your commands for 1 hour. Requires concentration to maintain control.
+
+**Spirit Abilities (choose 2):**
+- **Intangible:** Can pass through solid objects, +4 to defense vs physical attacks
+- **Cause Fear:** Target rolls WS or flees for 1d6 turns (Moderate Power)
+- **Possess:** Take control of weak-willed target (WS ≤8) for 10 minutes (Moderate Power)
+- **Life Drain:** Touch attack deals 2d6 damage, spirit heals half (Moderate Power)
+
+**Quick Build Example - Wraith (Human size):** ST 8, DX 14, EN 8, AW 12, WS 10, Vitality 16 (EN 8 ×2), AR 2, touch attack 1d6, Speed 6, Intangible + Life Drain abilities
+
+---
+
+### PLANAR BINDING
+**Type:** Epic Spell (30 CP)
+**Mana Cost:** 12
+**Enhancements:** Extra Duration +40% (6 hours), Reliable Activation +100%
+**Limitations:** Preparation Time -30% (1 hour), Concentration -20%, Backfire Risk -30% (on failure, creature attacks you)
+**Calculation:** 30 × (1 + 0.40 + 1.00 - 0.30 - 0.20 - 0.30) = 30 × 1.60 = 48 CP
+**Final Cost:** 48 CP
+
+**Effect:** After 1 hour ritual, summon and bind one powerful extraplanar creature (demon, angel, powerful elemental, djinn, efreeti, etc.). Creature has ~150 CP worth of stats. Follows your commands for 6 hours. On critical failure, creature breaks free and attacks you. Requires concentration to maintain control.
+
+**Quick Build Example - Lesser Demon (Large size):** ST 16 (10+2 from Large, +4 purchased), DX 10 (10-2 from Large, +2 purchased), EN 14, AW 12, IN 10, WS 8, CH 6, Vitality 42 (EN 14 ×2 = 28, ×1.5 from Large = 42), AR 4, claws 2d6+6, Speed 9 (6 ×1.5), fire immunity, 2-3 Moderate powers (Fire Bolt, Fear Aura, Minor Teleport)
+
+---
+
+**Quick Guide to Building Summoned Creatures:**
+1. **Determine CP Budget** based on spell tier (~50 CP for Moderate summons, ~75 CP for Major, ~150 CP for Epic)
+2. **Choose Size Category** and apply modifiers (ST, DX, Vitality multiplier, Movement multiplier)
+3. **Set Major Attributes** (10 CP per +1 from base 10, gain 10 CP per -1 for IN, WS, CH, DX)
+3. **Set Minor Attributes** (5 CP per +1 from base 10, gain 5 CP per -1 for ST, EN, AW)
+4. **Calculate Vitality** = EN × 2 × Size multiplier (or add More Vitality perk for +10 Vitality)
+5. **Calculate Speed** = 6 × Size multiplier (base human speed is 6m per action), can use Extra Speed perk
+6. **Add Natural AR** if appropriate (tough hide, scales, etc.)
+7. **Add 1-3 Powers/Abilities** from remaining CP budget
+8. **Keep it Simple** - summoned creatures should be easy to run in combat
 
 ---
 

@@ -165,6 +165,7 @@ Several important values are calculated from your attributes:
 - At 0 Vitality: unconscious
 - At -EN Vitality: death (unless you have Hard to Kill perk)
 - Recovers AW/2 per long rest (8 hours sleep)
+- Can purchase Extra Vitality / Low Vitality to increase/decrease individually
 
 ### Stamina
 **Stamina = ST × 2**
@@ -173,6 +174,7 @@ Several important values are calculated from your attributes:
 - Spent on: running, climbing, heavy lifting, physical combat maneuvers
 - At 0 Stamina: exhausted (-4 to all physical actions)
 - Recovers ST/2 per short rest (1 hour break)
+- Can purchase Extra Stamina / Low Stamina to increase/decrease individually
 
 ### Mana
 **Mana = AW × 2**
@@ -182,6 +184,7 @@ Several important values are calculated from your attributes:
 - At 0 Mana: mentally depleted (-4 to all mental actions)
 - Reduced by: mental strain, trauma, shock, extended study
 - Recovers AW/2 per short rest (1 hour break)
+- Can purchase Extra Mana / Low Mana to increase/decrease individually
 
 ### Speed
 **Speed = (DX + EN) / 4** (don't round)
@@ -189,6 +192,7 @@ Several important values are calculated from your attributes:
 - Determines initiative order in combat
 - Determines movement rate
 - Average human: Speed 5
+- Used for dodging
 - Used for surprise rolls (roll vs Speed × 2)
 
 ### Perception
@@ -389,13 +393,15 @@ Perks represent advantages, talents, and special abilities. Flaws represent disa
 - Choose one weapon type
 - +2 to attack and parry with that weapon
 
+**Martial Arts Training** (20 CP)
+- Unarmed attacks deal +2 damage
+- Can make unarmed attack as Minor Action
+- +2 to all defense rolls when unarmored
+- Can parry ranged attacks at -4 (requires hand free)
+
 **Ambidextrous** (5 CP)
 - No penalty for using off-hand
 - Can wield two weapons effectively
-
-**Rapid Strike** (20 CP)
-- Make 2 attacks in one action at -4 each
-- Costs 2 Stamina per use
 
 **Tough** (10 CP)
 - +5 Vitality
@@ -403,6 +409,10 @@ Perks represent advantages, talents, and special abilities. Flaws represent disa
 **Hard to Kill** (15 CP)
 - Don't fall unconscious until -2× Vitality
 - Survive injuries that would kill others
+
+**Relentless** (10 CP)
+- When reduced to 0 Vitality, can take one more action before falling unconscious
+- Adrenaline surge keeps you fighting for crucial moments
 
 **Armor Familiarity** (5 CP)
 - Reduce armor penalties by 2
@@ -436,6 +446,32 @@ Perks represent advantages, talents, and special abilities. Flaws represent disa
 - Ignore first -2 from injury penalties
 - Can function better when wounded
 
+**Natural Armor** (10 CP)
+- +2 AR from thick skin, scales, or chitin
+- Stacks with worn armor
+
+**Damage Resistance** (15 CP per type)
+- Take half damage from chosen damage type
+- Options: Fire, Cold, Lightning, Acid, Poison
+- Can be taken multiple times for different types
+
+**Resilient** (10 CP)
+- +2 to resist poison and disease
+- Hardy constitution and strong immune system
+
+**Sneaky** (5 CP)
+- +2 to Stealth checks
+- Natural talent for moving quietly and unseen
+
+**Extra Speed** (10 CP / level)
+- +1 to Speed 
+
+**Extra Vitality** (10 CP / level)
+- +5 to Vitality 
+
+**Extra Stamina** (10 CP / level)
+- +5 to Stamina
+
 #### Mental Perks
 
 **Eidetic Memory** (15 CP)
@@ -450,13 +486,32 @@ Perks represent advantages, talents, and special abilities. Flaws represent disa
 - Learn all skills 50% faster
 - Reduces training time significantly
 
-**Mana Reserve** (10 CP)
-- +10 to Mana pool
-- More magical/mental endurance
-
 **Natural Talent** (5 CP)
 - Choose one skill
 - Learn that skill at half CP cost (round up)
+
+**Curious** (5 CP)
+- +2 to Investigation and Research
+- Natural inquisitiveness and desire to learn
+
+**Tinker** (15 CP)
+- Can create magical gadgets and devices
+- Spend 1 week and materials worth spell's CP × 10 sp to create single-use item that casts a spell you know
+- Can have IN/2 active items at once
+- Requires Mage Gift perk
+
+**Animal Companion** (15 CP)
+- Loyal animal companion follows and aids you
+- GM determines stats (typically ~50 CP creature)
+- Can be replaced if killed (requires time and training)
+
+**Familiar** (30 CP)
+- Permanent bond with summoned magical creature (up to ~100 CP worth)
+- Mental contact allows communication and seeing through its eyes
+- Can possess familiar to control it directly
+- Can resummon if killed (costs 10 Mana, 1 hour ritual)
+- Requires Mage Gift perk
+- Common choices: imp, pseudodragon, sprite, cat, owl, raven
 
 #### Social Perks
 
@@ -476,6 +531,10 @@ Perks represent advantages, talents, and special abilities. Flaws represent disa
 - +2 to social rolls based on appearance
 - First impressions and charm
 
+**Intimidating** (5 CP)
+- +2 to Intimidation rolls
+- Imposing presence and commanding demeanor
+
 #### Supernatural Perks
 
 **Mage Gift** (20 CP)
@@ -494,21 +553,24 @@ Perks represent advantages, talents, and special abilities. Flaws represent disa
 - Can see invisible creatures and magical auras
 - Perceive supernatural phenomena
 
+**Lucky** (10 CP)
+- Once per session, reroll any one failed roll
+- Must use second result even if worse
+
+**Extra Mana** (10 CP / level)
+- +10 to Mana pool
+
 ### Flaws
 
 #### Combat Flaws
 
-**Slow Reflexes** (-15 CP)
-- -2 to Speed
+**Slow Reflexes** (-10 CP / level)
+- -1 to Speed
 - React slower than others
 
-**Poor Vision** (-10 CP)
-- -2 to all ranged attack rolls
+**Poor Vision** (-5 CP / level)
+- -1 to all ranged attack rolls
 - Difficulty seeing at distance
-
-**Weak** (-10 CP)
-- -5 Vitality
-- Less resilient to injury
 
 **Pacifist** (-15 CP)
 - Will not kill or seriously harm except in extreme self-defense
@@ -516,12 +578,18 @@ Perks represent advantages, talents, and special abilities. Flaws represent disa
 
 #### Physical Flaws
 
+**Low Vitality** (-10 CP)
+- -10 Vitality
+
+**Low Stamina** (-10 CP)
+- -10 Stamina
+
 **One Eye** (-15 CP)
 - -3 to ranged attacks
 - -2 to Perception rolls
 
-**Lame** (-10 to -20 CP)
-- Speed reduced by 1 (-10 CP) or 2 (-20 CP)
+**Lame** (-5 CP / level)
+- Movement speed reduced by 1, dodge not affected
 - Permanent injury or condition
 
 **Chronic Pain** (-10 CP)
@@ -572,6 +640,10 @@ Perks represent advantages, talents, and special abilities. Flaws represent disa
 - Often acquired through resurrection or traumatic brain injury
 
 #### Social Flaws
+
+**Hideous Appearance** (-10 CP)
+- -2 to reaction rolls with common folk
+- Demonic, monstrous, or disfigured features
 
 **Social Stigma** (-10 CP)
 - -2 to social interactions with certain groups
@@ -651,7 +723,7 @@ Templates are pre-built packages of attributes, perks, skills, and equipment tha
 **Included Perks:**
 - Tough (10 CP)
 - Magic Resistance (15 CP)
-- **Darkvision** (10 CP): See perfectly in darkness up to 30m
+- **Night vision** (10 CP): See perfectly in darkness up to 30m
 - **Stubborn** (5 CP): +2 to resist intimidation/persuasion
 - **Mountain Movement** (5 CP): No penalty on rocky/underground terrain
 - **Extended Lifespan** (5 CP): ~200 years
@@ -678,7 +750,7 @@ Templates are pre-built packages of attributes, perks, skills, and equipment tha
 - Medium shield (SD 2)
 - Basic adventuring gear
 
-**Note:** Most warriors invest ~25 CP in combat maneuvers (Shield Bash, Power Attack, Disarm, etc.)
+**Note:** Most warriors invest 20-30 CP in combat maneuvers (Shield Bash, Power Attack, Disarm, etc.). See [Simverse_Powers_Library.md](Simverse_Powers_Library.md) for available maneuvers
 
 ---
 
@@ -700,7 +772,7 @@ Templates are pre-built packages of attributes, perks, skills, and equipment tha
 - Hunting knife (1d6-2)
 - Camping and survival gear
 
-**Note:** Most scouts invest ~25 CP in combat maneuvers (Precision Strike, Aimed Shot, etc.)
+**Note:** Most scouts invest 20-30 CP in combat maneuvers (Precision Strike, Aimed Shot, etc.). See [Simverse_Powers_Library.md](Simverse_Powers_Library.md) for available maneuvers
 
 ---
 
@@ -713,7 +785,7 @@ Templates are pre-built packages of attributes, perks, skills, and equipment tha
 
 **Included Perks:**
 - Mage Gift (20 CP) [required for spells]
-- Mana Reserve (10 CP)
+- Extra Mana (10 CP)
 
 **Starting Equipment:**
 - Wizard robes (AR 0)
@@ -742,7 +814,7 @@ Templates are pre-built packages of attributes, perks, skills, and equipment tha
 - Thieves' tools
 - Grappling hook and rope
 
-**Note:** Most rogues invest ~25 CP in combat maneuvers (Sneak Attack, Feint, Precision Strike, etc.)
+**Note:** Most rogues invest 15-25 CP in combat maneuvers (Sneak Attack, Feint, Precision Strike, etc.). See [Simverse_Powers_Library.md](Simverse_Powers_Library.md) for available maneuvers
 
 ---
 
@@ -756,13 +828,13 @@ Templates can be combined freely. Simply add their costs together:
 - Gets all benefits from both templates
 - Attribute modifiers stack: Base 10 DX → +2 from Elf = 12 DX
 - Has Night Vision, Acute Hearing, Forest Movement, Graceful, AND Scout skills/equipment
-- Typically invests ~25 CP in combat maneuvers (Precision Strike, Aimed Shot, etc.)
+- Typically invests 20-30 CP in combat maneuvers and attributes
 
 **Example: Dwarf Warrior**
 - Dwarf (45 CP) + Warrior (33 CP) = **78 CP total**
 - Remaining budget: **172 CP**
-- Tough, Magic Resistant, Darkvision, Stubborn
-- Typically invests ~25 CP in combat maneuvers (Shield Bash, Power Attack, etc.)
+- Tough, Magic Resistant, Night vision, Stubborn
+- Typically invests 20-30 CP in combat maneuvers and attributes
 - Natural dungeon delver with combat prowess
 
 ---
@@ -803,27 +875,23 @@ These modify the cost by a percentage:
 | **Increased Effect** | +50% per +1d6 | More damage, healing, or bonus |
 | **Increased Damage** | +50% per +1d6, +100% for +2d6 | Specifically for damage powers (same as Increased Effect) |
 | **Extra Range** | +20% (2× range), +40% (4× range) | 10m → 20m (+20%), 10m → 40m (+40%), etc. |
+| **Expansive Range** | +100% (100× range) | For very long range effects. 10m → 1km (+100%). Each point skill roll succeeds by doubles maximum range. |
 | **Extra Duration** | +10% (2×), +20% (6×), +30% (12×), +40% (72×), +50% (288×), then +10% per doubling | Default 5 min: +10% (10 min), +20% (30 min), +30% (1 hour), +40% (6 hours), +50% (1 day), +60% (2 days), etc. |
 | **Area Effect** | +50% (3m radius), +100% (6m) | Affects multiple targets in area |
 | **Multiple Targets** | +50% (2 targets), +75% (3), +125% (5) | Add specific targets (not area) |
 | **Reduced Resource Cost** | +25% (half cost), +50% (quarter) | Costs less Mana/Stamina to use, if below 1, round to 0 |
-| **Increased Resource Cost** | -25% (double cost), -50% (triple) | Costs more to use, cheaper to buy |
 | **Weakened Resistance** | +10% per -2 penalty | Target gets -2 to resist (stackable) |
 | **Instant Action** | +25% | Can interrupt or use mid-action |
 | **Persistent** | +20% | Effect continues without concentration |
-
-**Note on Skill Rolls:** By default, activating a power/spell/maneuver requires a successful skill roll (Spellcasting for spells, weapon skill for maneuvers, etc.). The "Reliable Activation" enhancement below removes this requirement.
-
-### Enhancements (Additional)
-
-| Enhancement | Cost Modifier | Description |
-|-------------|---------------|-------------|
 | **Reliable Activation** | +100% | No skill roll needed, automatically activates (costs resources but always works) |
 | **Armor Piercing** | +50% | Ignores 2 points of armor |
 | **Homing** | +50% | Auto-hit, no attack roll needed (e.g., Magic Missile) |
 | **Knockback** | +30% | Push target 2m on successful hit |
 | **Silent Casting** | +80% | No visible or audible manifestation |
 | **Fast Cast** | +100% | Reduce casting/activation time by 50% |
+
+**Note on Skill Rolls:** By default, activating a power/spell/maneuver requires a successful skill roll (Spellcasting for spells, weapon skill for maneuvers, etc.). The "Reliable Activation" enhancement below removes this requirement.
+
 
 ### Limitations (Percentage-Based)
 
@@ -838,7 +906,7 @@ These reduce the cost by a percentage:
 | **Obvious/Loud** | -10% | Clearly visible flash/sound, alerts everyone nearby, obvious if resisted |
 | **Concentration** | -20% | Can't take other actions while using, broken if interrupted |
 | **Backfire Risk** | -30% | On critical failure, lose resources, suffer effect, or summon attacks you |
-| **Increased Resource** | -20% (double), -30% (triple) | Costs more Mana/Stamina to use (makes it cheaper to buy) |
+| **Increased Resource Cost** | -25% (double cost), -50% (triple) | Costs more to use, cheaper to buy |
 | **Fragile** | -25% | Broken by any damage to user, or by specific trigger (attack, strong emotions) |
 | **Situational Trigger** | -20% | Only works after specific event (successful Parry, being attacked, ally knocked out, etc.) |
 | **Gesture Required** | -10% | Need free hand to use (can't use while grappled/bound) |
@@ -846,6 +914,8 @@ These reduce the cost by a percentage:
 | **Melee Range Only** | -15% | Must be adjacent to target (touch range) |
 | **Self Only** | -25% | Cannot target others, only yourself |
 | **Exhausting** | -25% | Take 1 Vitality damage when used |
+| **Strenuous** | -25% | After use, suffer -2 to all actions for 10 minutes |
+| **Cannot Cast** | -25% | Cannot use spellcasting or other powers while this power is active (only for powers with duration) |
 
 **Note:** By default, most powers require a skill roll to activate. This is not a limitation - it's the baseline.
 
