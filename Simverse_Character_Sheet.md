@@ -111,7 +111,7 @@
 |---------|---------|-------|
 | **Dodge** | DX/2 + AD | _____ |
 | **Parry** | (DX + Weapon)/2 | _____ (-4 if acted) |
-| **Block** | (DX + Shield)/2 + AD + SD | _____ |
+| **Block** | (DX + Shield)/2 + SD | _____ |
 
 ### Armor
 **Armor Type:** _______________________________  

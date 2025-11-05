@@ -75,7 +75,7 @@
 - CH +1 (10 CP)
 
 **Included Perks:**
-- Tough (10 CP): +5 Vitality
+- Extra Vitality (10 CP): +10 Vitality
 - Intimidating (5 CP): +2 to Intimidation
 - Natural Armor (10 CP): +2 AR from scales, stacks with worn armor
 
@@ -191,7 +191,7 @@
 - Survival 2 (3 CP)
 
 **Included Perks:**
-- Tough (10 CP): +5 Vitality
+- Extra Vitality (10 CP): +10 Vitality
 - High Pain Threshold (10 CP): Ignore first -2 from injury penalties
 
 **Template Power - Rage (18 CP):**
@@ -213,7 +213,7 @@
 
 ---
 
-### Paladin (68 CP)
+### Paladin (58 CP)
 
 **Starting Skills:**
 - Swords 3 (6 CP)
@@ -223,7 +223,7 @@
 
 **Included Perks:**
 - Mage Gift (20 CP): Can cast spells (divine magic)
-- Combat Reflexes (15 CP): +2 Speed for initiative
+- Combat Reflexes (5 CP): +2 Speed for initiative
 - Armor Familiarity (5 CP): Reduce armor penalties by 2
 - Charismatic Leader (10 CP): Allies within 10m get +1 to morale rolls
 
@@ -419,40 +419,12 @@
 
 ---
 
-## Mixing Multiple Templates
-
-You can take multiple profession templates if the GM allows, but most campaigns work best with one race + one profession:
-
-**Example Combinations:**
-
-**Elven Wizard** = 30 CP (Elf) + 110 CP (Wizard) = 140 CP
-- High DX and AW, great spellcaster
-- Good with ranged weapons as backup
-- Forest movement and night vision for exploration
-
-**Dwarven Paladin** = 20 CP (Dwarf) + 75 CP (Paladin) = 95 CP
-- Incredibly tough and magic resistant
-- Slow but unstoppable in heavy armor
-- Natural dungeon delver with divine power
-
-**Halfling Rogue** = 20 CP (Halfling) + 38 CP (Rogue) = 58 CP
-- Extremely sneaky and lucky
-- Perfect scout and infiltrator
-- Hard to hit, great at hiding
-
-**Dragonborn Barbarian** = 40 CP (Dragonborn) + 40 CP (Barbarian) = 80 CP
-- Massive damage output
-- Natural armor + rage + breath weapon
-- Terrifying in melee combat
-
----
-
 ## Creating Custom Templates
 
 Want to make your own? Follow these guidelines:
 
 **For Race Templates:**
-1. Total should be 0-40 CP
+1. Total should be around 50 CP
 2. Include 2-4 attribute modifiers (balanced positive and negative)
 3. Include 1-3 perks that define the race
 4. Add unique racial traits (no CP cost, flavor abilities)

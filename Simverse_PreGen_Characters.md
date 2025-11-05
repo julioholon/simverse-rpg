@@ -8,7 +8,7 @@
 
 ### CHARACTER INFORMATION
 **Race:** Dwarf (45 CP)
-**Profession:** Warrior (58 CP)
+**Profession:** Warrior (33 CP)
 **Power Level:** Heroic (250 CP Budget)
 **Concept:** Elite frontline tank and battlefield commander
 
@@ -32,15 +32,15 @@
 ---
 
 ### DERIVED STATISTICS
-- **Vitality:** 37 (EN 16 × 2 + 5 from Tough)
+- **Vitality:** 32 (EN 16 × 2 + 10 from Extra Vitality x 0.75 from size)
 - **Stamina:** 30 (ST 15 × 2)
 - **Mana:** 24 (AW 12 × 2)
-- **Speed:** 6.75 ((DX 11 + EN 16) / 4)
-- **Initiative Speed:** 8.75 (Speed + 2 from Combat Reflexes)
+- **Speed:** 5.06 (((DX 11 + EN 16) / 4) x 0.75 from size)
+- **Initiative Speed:** 7.06 (Speed + 2 from Combat Reflexes)
 - **Perception:** 12 (chose AW)
 
 **Recovery:**
-- Vitality: 6 per long rest (AW 12/2)
+- Vitality: 8 per long rest (EN 16/2)
 - Stamina: 7 per short rest (ST 15/2)
 - Mana: 6 per short rest (AW 12/2)
 
@@ -57,11 +57,11 @@
 - CH -1 (-10 CP)
 
 **Included Perks:**
-- Tough (10 CP): +5 Vitality
+- Extra Vitality (10 CP): +10 Vitality
 - Magic Resistance (15 CP): +4 to resist spells
-- Darkvision (10 CP): See perfectly in darkness up to 30m
+- Night vision (10 CP): See perfectly in darkness up to 30m
 - Stubborn (5 CP): +2 to resist intimidation/persuasion
-- Mountain Movement (5 CP): No penalty on rocky/underground terrain
+- Facilitated Movement (Mountain) (5 CP): No penalty on rocky/underground terrain
 - Extended Lifespan (5 CP): ~200 years
 
 ---
@@ -69,7 +69,8 @@
 ### PROFESSION TRAITS (Warrior - 33 CP)
 **Perks:**
 - Armor Familiarity (reduce armor penalty by 2) - 5 CP
-- Combat Reflexes (+2 Speed for initiative) - 15 CP
+- Combat Reflexes (+2 Speed for initiative) - 10 CP
+- Fast Healer (recovers vitality faster) - 10 CP
 
 **Skills from template (13 CP):**
 - Axes 3 (6 CP)
@@ -83,7 +84,7 @@
 | Skill | Attribute | Level | Total | Cost |
 |-------|-----------|-------|-------|------|
 | **Axes** | DX | **5** | 16 (11+5) | +13 CP (total 19 CP) |
-| **Shield** | (DX+ST)/2 | **4** | 17 (13+4) | +8 CP (total 11 CP) |
+| **Shield** | ST | **4** | 19 (15+4) | +8 CP (total 11 CP) |
 | **Tactics** | IN | **4** | 15 (11+4) | +8 CP (total 11 CP) |
 | **Intimidation** | ST | 3 | 18 (15+3) | 6 CP |
 | **Perception** | AW | 2 | 14 (12+2) | 3 CP |
@@ -111,23 +112,15 @@
 
 ---
 
-### COMBAT MANEUVERS (23 CP)
-
-**Shield Bash** (1 CP) - See [Simverse_Powers_Library.md:8](Simverse_Powers_Library.md#L8)
-
-**Power Attack** (8 CP) - See [Simverse_Powers_Library.md:31](Simverse_Powers_Library.md#L31)
-
-**Defensive Stance** (5 CP) - See [Simverse_Powers_Library.md:43](Simverse_Powers_Library.md#L43)
-
-**Knockback Strike** (5 CP) - See [Simverse_Powers_Library.md:114](Simverse_Powers_Library.md#L114)
-
-**Disarm** (1 CP) - See [Simverse_Powers_Library.md:20](Simverse_Powers_Library.md#L20)
-
-**Trip Attack** (1 CP) - See [Simverse_Powers_Library.md:55](Simverse_Powers_Library.md#L55)
-
-**Feint** (1 CP) - See [Simverse_Powers_Library.md:67](Simverse_Powers_Library.md#L67)
-
-**Riposte** (1 CP) - See [Simverse_Powers_Library.md:90](Simverse_Powers_Library.md#L90)
+### COMBAT MANEUVERS (23 CP) - See [Simverse_Powers_Library.md](Simverse_Powers_Library.md)
+**Shield Bash** (1 CP)
+**Power Attack** (8 CP)
+**Defensive Stance** (5 CP)
+**Knockback Strike** (5 CP)
+**Disarm** (1 CP)
+**Trip Attack** (1 CP)
+**Feint** (1 CP)
+**Riposte** (1 CP)
 
 ---
 
@@ -135,8 +128,8 @@
 
 **Defense:**
 - **Dodge:** 7 (DX 11/2 + AD 2)
-- **Parry (Axes):** 11 ((DX 11 + Axes 5 + Weapon Master 2)/2 = 9), -4 if acted = 7
-- **Block:** 11 ((DX 11 + Shield 4)/2 + AD 2 + SD 2)
+- **Parry (Axes):** 10 ((DX 11 + Axes 5)/2 + Weapon Master(2) = 10), -4 if acted = 6
+- **Block:** 9 ((DX 11 + Shield 4)/2 + SD 2)
 
 **Armor:** Full Plate Mail (Heavy)
 - Torso: AD 2, AR 8 (Plate Mail Cuirass)
@@ -156,7 +149,7 @@
 - Weapon Master: +2 attack and parry with axes
 - Hard to Kill: Conscious until -37 Vitality
 - Magic Resistance: +4 vs spells
-- Darkvision: 30m
+- Night vision: 30m
 
 ---
 
@@ -204,7 +197,7 @@ Thorin Ironforge is a veteran of the Iron Mountain clan wars, having defended th
 
 ### CHARACTER INFORMATION
 **Race:** Elf (55 CP)
-**Profession:** Wizard (110 CP)
+**Profession:** Wizard (65 CP)
 **Power Level:** Heroic (250 CP Budget)
 **Concept:** Versatile spellcaster with battlefield control
 
@@ -262,21 +255,21 @@ Thorin Ironforge is a veteran of the Iron Mountain clan wars, having defended th
 - Extra Mana (10 CP): +10 Mana
 
 **Skills from template + additional (48 CP):**
-- Spellcasting 5 = 17 (12+5) [35 CP template +13 CP additional = 48 CP]
+- Spellcasting 5 = 18 (13+5) [35 CP template +13 CP additional = 48 CP]
 - Occult Knowledge 3 (Hard) = 15 (12+3)
 - Research 2 = 14 (12+2)
 
 ---
 
-### SPELLS (67 CP)
-- **Fire Bolt** (10 CP) - See [Simverse_Powers_Library.md:140](Simverse_Powers_Library.md#L140)
-- **Magic Missile** (9 CP) - See [Simverse_Powers_Library.md:152](Simverse_Powers_Library.md#L152)
-- **Fireball** (30 CP) - See [Simverse_Powers_Library.md:164](Simverse_Powers_Library.md#L164)
-- **Shield Spell** (6 CP) - See [Simverse_Powers_Library.md:236](Simverse_Powers_Library.md#L236)
-- **Detect Magic** (1 CP) - See [Simverse_Powers_Library.md:296](Simverse_Powers_Library.md#L296)
-- **Light** (1 CP) - See [Simverse_Powers_Library.md:308](Simverse_Powers_Library.md#L308)
-- **Dispel Magic** (4 CP) - See [Simverse_Powers_Library.md:284](Simverse_Powers_Library.md#L284)
-- **Sleep** (6 CP) - See [Simverse_Powers_Library.md:272](Simverse_Powers_Library.md#L272)
+### SPELLS (67 CP) - See [Simverse_Powers_Library.md](Simverse_Powers_Library.md)
+- **Fire Bolt** (10 CP)
+- **Magic Missile** (9 CP)
+- **Fireball** (30 CP)
+- **Shield Spell** (6 CP)
+- **Detect Magic** (1 CP)
+- **Light** (1 CP)
+- **Dispel Magic** (4 CP)
+- **Sleep** (6 CP)
 
 **Total:** 67 CP in spells
 
@@ -291,7 +284,6 @@ Thorin Ironforge is a veteran of the Iron Mountain clan wars, having defended th
 | Shield Spell | 2 | +3 AR, 1 hour | Self, persistent |
 | Detect Magic | 0 | See auras, 10 min | Concentration |
 | Light | 0 | Torch-light, 1 hour | Utility |
-| Invisibility | 6 | Invisible 8 min | Fragile |
 | Dispel Magic | 3 | End magic | Opposed roll |
 | Sleep | 2 | 3m radius, ≤20 Vit | Crowd control |
 
@@ -461,13 +453,10 @@ Lyralei Moonwhisper (only 80 years old by elf standards - quite young) graduated
 
 ---
 
-### COMBAT MANEUVERS (13 CP)
-
-**Sneak Attack** (8 CP) - See [Simverse_Powers_Library.md:126](Simverse_Powers_Library.md#L126)
-
-**Precision Strike** (7 CP) - See [Simverse_Powers_Library.md:102](Simverse_Powers_Library.md#L102)
-
-**Trip Attack** (1 CP) - See [Simverse_Powers_Library.md:55](Simverse_Powers_Library.md#L55)
+### COMBAT MANEUVERS (13 CP) - See [Simverse_Powers_Library.md](Simverse_Powers_Library.md)
+**Sneak Attack** (8 CP)
+**Precision Strike** (7 CP)
+**Trip Attack** (1 CP)
 
 ---
 

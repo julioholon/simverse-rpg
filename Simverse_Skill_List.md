@@ -16,6 +16,8 @@
 - **Whips** - Whips, chains, flails
 - **Fencing** - Rapiers, epees, dueling weapons
 - **Firearms** - Pistols, rifles, shotguns (if applicable to setting)
+- **Shield** - Using shields for blocking and shield bash
+
 
 ### Physical Skills (Regular)
 - **Acrobatics** - Tumbling, flips, aerial maneuvers, breakfalls
@@ -35,12 +37,11 @@
 ## STRENGTH (ST) Skills
 
 ### Combat Skills (Regular)
-- **Shield** - Using shields for blocking and shield bash
 - **Wrestling** - Grappling, holds, throws
 
 ### Physical Skills (Regular)
-- **Climbing** - (ST / DX) - Scaling walls, ropes, cliffs
-- **Swimming** - (ST / EN) - Swimming, diving, underwater movement
+- **Climbing** - (ST or DX) - Scaling walls, ropes, cliffs
+- **Swimming** - (ST or EN) - Swimming, diving, underwater movement
 - **Lifting** - Moving heavy objects, breaking down doors
 - **Jumping** - Long jumps, high jumps, leaping obstacles
 
@@ -125,16 +126,16 @@
 - **Animal Training** - Teaching tricks, commands to animals
 
 ### Special Skills
-- **Intimidation** - (ST / CH) - Threatening, coercing through fear
+- **Intimidation** - (ST or CH) - Threatening, coercing through fear
 
 ---
 
 ## AWARENESS (AW) Skills
 
 ### Perception Skills (Regular)
-- **Perception** - (AW / IN) - Noticing details, spotting hidden things
-- **Tracking** - (AW / WS) - Following trails, reading signs
-- **Survival** - (AW / IN) - Finding food/water, shelter, navigation in wilderness
+- **Perception** - (AW or IN) - Noticing details, spotting hidden things
+- **Tracking** - (AW or WS) - Following trails, reading signs
+- **Survival** - (AW or IN) - Finding food/water, shelter, navigation in wilderness
 - **Search** - Methodically looking for hidden objects or clues
 - **Navigation** - Using stars, compass, maps to find direction
 
@@ -148,11 +149,11 @@
 
 Some skills use the best one of two attributes:
 
-- **Climbing**: (ST / DX)
-- **Swimming**: (ST / EN)
-- **Perception**: (AW / IN)
-- **Tracking**: (AW / WS)
-- **Survival**: (AW / IN)
+- **Climbing**: (ST or DX)
+- **Swimming**: (ST or EN)
+- **Perception**: (AW or IN)
+- **Tracking**: (AW or WS)
+- **Survival**: (AW or IN)
 
 ---
 

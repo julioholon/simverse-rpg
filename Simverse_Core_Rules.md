@@ -385,9 +385,9 @@ Perks represent advantages, talents, and special abilities. Flaws represent disa
 
 #### Combat Perks
 
-**Combat Reflexes** (15 CP)
-- +2 to Speed for initiative purposes
-- Never surprised in combat
+**Combat Reflexes** (5 CP)
+- +2 to Speed for initiative only
+- Will never be surprised in combat or be caught off guard
 
 **Weapon Master** (10 CP)
 - Choose one weapon type
@@ -402,9 +402,6 @@ Perks represent advantages, talents, and special abilities. Flaws represent disa
 **Ambidextrous** (5 CP)
 - No penalty for using off-hand
 - Can wield two weapons effectively
-
-**Tough** (10 CP)
-- +5 Vitality
 
 **Hard to Kill** (15 CP)
 - Don't fall unconscious until -2× Vitality
@@ -467,10 +464,10 @@ Perks represent advantages, talents, and special abilities. Flaws represent disa
 - +1 to Speed 
 
 **Extra Vitality** (10 CP / level)
-- +5 to Vitality 
+- +10 to Vitality 
 
 **Extra Stamina** (10 CP / level)
-- +5 to Stamina
+- +10 to Stamina
 
 #### Mental Perks
 
@@ -559,6 +556,17 @@ Perks represent advantages, talents, and special abilities. Flaws represent disa
 
 **Extra Mana** (10 CP / level)
 - +10 to Mana pool
+
+#### Racial Perks
+
+**Facilitated Movement** (5 CP)
+- No terrain penalty in a selected type of terrain (woodlands, desert, cities)
+
+**Graceful** (10 CP)
+- +1 to Stealth and Acrobatics skills
+
+**Extended Lifespan** (5 CP)
+-  Longer than human lifespan (~80 years) up to around 500 years, specify per race
 
 ### Flaws
 
@@ -704,9 +712,9 @@ Templates are pre-built packages of attributes, perks, skills, and equipment tha
 **Included Perks:**
 - Night Vision (10 CP)
 - Acute Senses - Hearing (5 CP)
-- **Forest Movement** (5 CP): No terrain penalty in woodlands
-- **Graceful** (10 CP): +1 to Stealth and Acrobatics skills
-- **Extended Lifespan** (5 CP): ~300 years
+- Facilitated Movement (Forest) (5 CP): No terrain penalty in woodlands
+- Graceful (10 CP): +1 to Stealth and Acrobatics skills
+- Extended Lifespan (5 CP): ~300 years
 
 ---
 
@@ -721,12 +729,12 @@ Templates are pre-built packages of attributes, perks, skills, and equipment tha
 - CH -1 (-10 CP)
 
 **Included Perks:**
-- Tough (10 CP)
+- Extra Vitality (10 CP)
 - Magic Resistance (15 CP)
-- **Night vision** (10 CP): See perfectly in darkness up to 30m
-- **Stubborn** (5 CP): +2 to resist intimidation/persuasion
-- **Mountain Movement** (5 CP): No penalty on rocky/underground terrain
-- **Extended Lifespan** (5 CP): ~200 years
+- Night vision (10 CP): See perfectly in darkness up to 30m
+- Strong Willed (5 CP): +2 to resist mental effects
+- Facilitated Movement (Mountain) (5 CP): No penalty on rocky/underground terrain
+- Extended Lifespan (5 CP): ~200 years
 
 ---
 
@@ -742,7 +750,8 @@ Templates are pre-built packages of attributes, perks, skills, and equipment tha
 
 **Included Perks:**
 - Armor Familiarity (5 CP)
-- Combat Reflexes (15 CP)
+- Combat Reflexes (5 CP)
+- Fast Healer (10 CP)
 
 **Starting Equipment:**
 - Medium armor (AR 3, AD 1)
@@ -827,13 +836,13 @@ Templates can be combined freely. Simply add their costs together:
 - Remaining budget (250 CP start): **166 CP**
 - Gets all benefits from both templates
 - Attribute modifiers stack: Base 10 DX → +2 from Elf = 12 DX
-- Has Night Vision, Acute Hearing, Forest Movement, Graceful, AND Scout skills/equipment
+- Has Night Vision, Acute Hearing, Facilitated Movement (Forest), Graceful, AND Scout skills/equipment
 - Typically invests 20-30 CP in combat maneuvers and attributes
 
 **Example: Dwarf Warrior**
 - Dwarf (45 CP) + Warrior (33 CP) = **78 CP total**
 - Remaining budget: **172 CP**
-- Tough, Magic Resistant, Night vision, Stubborn
+- Extra Vitality, Fast Healer, Magic Resistant, Night vision, Stubborn
 - Typically invests 20-30 CP in combat maneuvers and attributes
 - Natural dungeon delver with combat prowess
 
@@ -1034,7 +1043,7 @@ You get **1 Reaction per turn** (3 if using Full Defense):
 - Weapon damage rules apply if you fail badly
 
 #### Block
-**Target Number: (DX + Shield Skill)/2 + AD + Shield Deflection (SD)**
+**Target Number: (DX + Shield Skill)/2 + Shield Deflection (SD)**
 - Use shield to block attack
 - Best defense values when specialized
 - Only works against frontal attacks
@@ -1427,7 +1436,7 @@ Follow the same CP costs as creation:
 ### Combat Quick Reference
 **Initiative**: Highest Speed first
 **Actions**: 1 Major, 1 Minor, 1 Reaction, Free actions
-**Defense**: Dodge (DX/2+AD), Parry ((DX+Skill)/2, -4 if acted), Block ((DX+Skill)/2+AD+SD)
+**Defense**: Dodge (DX/2+AD), Parry ((DX+Skill)/2, -4 if acted), Block ((DX+Skill)/2+SD)
 **Damage**: Weapon roll - AR = Vitality loss
 
 ### Starting Character (250 CP Budget)

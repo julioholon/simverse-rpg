@@ -206,7 +206,7 @@
 - Speed: 7.5, Initiative Speed: 9.5 (Combat Reflexes)
 - Skills: Swords 5 (DX 15 + 5 = 20) + Weapon Master +2 = **22 to hit, 12 to parry**
 - Equipment: Longsword (2d6-1 cutting), Plate Mail (AR 8, AD 2), Medium Shield (SD 2)
-- Defense: Dodge 9 (15/2+2), Parry 12 ((15+5+2)/2), Block 15 ((15+4)/2+2+2)
+- Defense: Dodge 9 (15/2+2), Parry 12 ((15+5+2)/2), Block 13 ((15+4)/2+2)
 - Perks: Combat Reflexes, Weapon Master (Swords), Tough, Armor Familiarity (-2 armor penalty)
 - **Maneuvers:** Power Attack (8 CP), Defensive Stance (5 CP)
 
@@ -241,7 +241,7 @@
   - Immediately counter-attacks at +2
   - **Roll:** 3d6 = 7 vs target 26 (24 + 2 riposte bonus)
   - **Success!** Margin: 19 (incredible!)
-  - **Aldric's Defense:** Block at -3 (margin 19 ÷ 5), needs 12 or less
+  - **Aldric's Defense:** Block at -3 (margin 19 ÷ 5), needs 10 or less
   - **Aldric rolls:** 3d6 = 13 - **FAILS! Hit through shield**
   - **Damage:** Rapier 1d6 impaling + ST +2
     - Rolls 1d6 = 5, so 5+2-1(impaling, 1 die) = 6 damage
@@ -295,7 +295,7 @@
 - **Precision Strike:** Costs 2 Stamina (25/28), ignores 2 AR, target -2 to defend
 - **Roll:** 3d6 = 11 vs target 18 (24 - 6 head shot)
 - **Success!** Margin: 7
-- **Aldric's Defense:** Block at -3 (margin 7 ÷ 5 + 2 from Precision Strike), needs 12 or less
+- **Aldric's Defense:** Block at -3 (margin 7 ÷ 5 + 2 from Precision Strike), needs 10 or less
 - **Aldric rolls:** 3d6 = 15 - **FAILS!**
 - **Damage:** Rapier 1d6 impaling + ST +2
   - Rolls 1d6 = 6, so 6+2-1(impaling, 1 die) = 7 damage
@@ -332,8 +332,8 @@
 - **Action:** Aimed thrust at Aldric's visor slit (-8 eye shot)
 - **Roll:** 3d6 = 13 vs target 16 (24 - 8)
 - **Success!** Margin: 3
-- **Aldric's Defense:** Block at -0, needs 15 or less
-- **Aldric rolls:** 3d6 = 16 - **FAILS by 1!**
+- **Aldric's Defense:** Block at -0, needs 13 or less
+- **Aldric rolls:** 3d6 = 16 - **FAILS by 3**
 - **Damage:** Rapier 1d6 impaling + ST +2
   - Rolls 1d6 = 5, so 5+2-1(impaling, 1 die) = 6 damage
   - vs AR 8: 6-8 = -2, minimum 1 before AR
@@ -386,8 +386,8 @@
 ### The Party (4 adventurers)
 
 **THORIN IRONFORGE** (Dwarf Warrior)
-- Speed: 8.75 (initiative), Vitality: 37/37
-- Attack: Axes 18, Defense: Block 11
+- Speed: 8.75 (initiative), Vitality: 32/32
+- Attack: Axes 18, Defense: Block 9
 - Equipment: Battleaxe (2d6 cutting + ST+4), Plate (AR 8), Medium Shield
 
 **LYRALEI MOONWHISPER** (Elf Wizard)
@@ -452,7 +452,7 @@
 **Surprise Round Summary:**
 - Vark got off a devastating surprise shot
 - Lyralei wounded before combat even starts
-- Party now alert and rolling initiative
+- Party now alert and checking for initiative
 
 ---
 
@@ -497,7 +497,6 @@
 - **Vark rolls:** 3d6 = 8 - **FAILS!**
 - **Damage:** Thrown dagger 1d6-3 impaling + ST +0
   - Rolls 1d6 = 5, so 5-3+0-1(impaling, 1 die) = 1 damage (minimum before AR)
-  - vs AR 2: 1-2 = -1, but minimum 1 before AR applies
   - AR reduces: 1-2 = 0 damage (leather stops the thrown dagger!)
   - **Vark: 18/18 Vitality** (dagger bounces off!)
 - Marcus: "Damn, armor!" (draws second dagger)
@@ -508,7 +507,7 @@
 - **Action:** Counter-attack Thorin
 - **Roll:** 3d6 = 9 vs target 16
 - **Success!** Margin: 7
-- **Thorin's Defense:** Block at -1 (margin 7 ÷ 5), needs 10 or less
+- **Thorin's Defense:** Block at -1 (margin 7 ÷ 5), needs 8 or less
 - **Thorin rolls:** 3d6 = 7 - **SUCCESS! Shield block**
 - No damage, Thorin's shield holds
 
@@ -547,8 +546,8 @@
 - **Elena rolls:** 3d6 = 11 - **FAILS! Hit from the side**
 - **Damage:** Hand axe 1d6 cutting + ST +1
   - Rolls 1d6 = 4, so 4+1 = 5 damage
-  - vs AR 6 (3×2 for cutting): 5-6 = minimum **1 Vitality damage**
-  - **Elena: 23/24 Vitality**
+  - vs AR 6 (3×2 for cutting): 5-6 = 0 **Armor absorbed**
+  - **Elena: 24/24 Vitality**
 
 ---
 
@@ -607,8 +606,8 @@
   - Sneak Attack: rolls 2d6 = 9 (precision trauma damage)
   - Total before AR: 1 (impaling) + 9 (sneak) = 10 damage
   - vs AR 2: 10-2 = 8 gets through
-  - Impaling doubles the base dagger damage that penetrated: 0 base penetrated, so only sneak damage
-  - **Vark: 10/18 Vitality** (brutal strike finds gap in armor!)
+  - Impaling doubles the damage that penetrated: 8 x 2 = 16 damage
+  - **Vark: 2/18 Vitality** (brutal strike finds gap in armor!)
 - **Morale Check for Vark:** Badly wounded
   - Rolls vs WS 10: 3d6 = 14 - **FAILS by 4! Panics!**
   - Vark drops bow and flees into forest
