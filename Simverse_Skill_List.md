@@ -89,6 +89,10 @@
 - **Investigation** - Analyzing crime scenes, gathering clues
 - **Appraisal** - Determining value and authenticity of items
 
+### Magic Skills (varies)
+- **Psionics** - Mental powers, telepathy, telekinesis
+- **Ritual Magic** - Extended magical ceremonies
+
 ---
 
 ## WISDOM (WS) Skills
@@ -102,9 +106,6 @@
 
 ### Magic Skills (varies)
 - **Spellcasting** - Casting and controlling arcane magic
-- **Divine Magic** - Channeling power from deities
-- **Psionics** - Mental powers, telepathy, telekinesis
-- **Ritual Magic** - Extended magical ceremonies
 
 ### Knowledge Skills (Hard)
 - **Occult Knowledge** - Magical theory, supernatural lore, forbidden knowledge
@@ -125,6 +126,9 @@
 - **Streetwise** - Navigating criminal underworld, finding black markets
 - **Animal Training** - Teaching tricks, commands to animals
 
+### Magic Skills (varies)
+- **Divine Magic** - Channeling power from deities
+
 ### Special Skills
 - **Intimidation** - (ST or CH) - Threatening, coercing through fear
 
@@ -133,7 +137,7 @@
 ## AWARENESS (AW) Skills
 
 ### Perception Skills (Regular)
-- **Perception** - (AW or IN) - Noticing details, spotting hidden things
+- **Spotting** - (AW or IN) - Noticing details, spotting hidden things
 - **Tracking** - (AW or WS) - Following trails, reading signs
 - **Survival** - (AW or IN) - Finding food/water, shelter, navigation in wilderness
 - **Search** - Methodically looking for hidden objects or clues
@@ -151,7 +155,7 @@ Some skills use the best one of two attributes:
 
 - **Climbing**: (ST or DX)
 - **Swimming**: (ST or EN)
-- **Perception**: (AW or IN)
+- **Spotting**: (AW or IN)
 - **Tracking**: (AW or WS)
 - **Survival**: (AW or IN)
 
@@ -162,18 +166,37 @@ Some skills use the best one of two attributes:
 **Regular Skills:**
 - Default value: Attribute - 2
 - Can attempt untrained at -2
-- Cost: 1, 2, 3, 5, 8, 13, 21, 34, 55, 89 CP (Fibonacci)
+- **Cost Formula:** N × (N+1) / 2 (sum progression)
+- **Cumulative costs:** 1, 3, 6, 10, 15, 21, 28, 36, 45, 55 CP
+- **Incremental costs:** +1, +2, +3, +4, +5, +6, +7, +8, +9, +10 CP
 
 **Hard Skills:**
 - No default value
 - Cannot attempt without training
-- Cost: 5, 8, 13, 21, 34, 55, 89, 144, 233, 377 CP (Fibonacci × ~4)
+- **Cost Formula:** N × (N+1) (double regular skills)
+- **Cumulative costs:** 2, 6, 12, 20, 30, 42, 56, 72, 90, 110 CP
+- **Incremental costs:** +2, +4, +6, +8, +10, +12, +14, +16, +18, +20 CP
+
+### Quick Cost Table
+
+| Skill Level | Regular (Cumulative) | Regular (Increment) | Hard (Cumulative) | Hard (Increment) |
+|-------------|----------------------|---------------------|-------------------|------------------|
+| 1 | 1 CP | +1 | 2 CP | +2 |
+| 2 | 3 CP | +2 | 6 CP | +4 |
+| 3 | 6 CP | +3 | 12 CP | +6 |
+| 4 | 10 CP | +4 | 20 CP | +8 |
+| 5 | 15 CP | +5 | 30 CP | +10 |
+| 6 | 21 CP | +6 | 42 CP | +12 |
+| 7 | 28 CP | +7 | 56 CP | +14 |
+| 8 | 36 CP | +8 | 72 CP | +16 |
+| 9 | 45 CP | +9 | 90 CP | +18 |
+| 10 | 55 CP | +10 | 110 CP | +20 |
 
 ---
 
 ## Specializations
 
-At skill level 6+, you can specialize for +2 bonus in that specialty (costs 2 CP):
+At skill level 5+, you can specialize for +2 bonus in that specialty (costs 2 CP):
 
 **Examples:**
 - Swords → Longsword Specialization

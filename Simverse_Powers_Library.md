@@ -147,6 +147,54 @@
 
 ---
 
+### AIMED SHOT
+**Type:** Minor Physical Maneuver (1 CP)
+**Resource Cost:** 0 Stamina
+**Enhancements:** Bonus to Hit +150% (+4 to ranged attack)
+**Limitations:** Requires [Item] -10% (ranged weapon), Requires Preparation -20% (must aim as action before attacking), Ranged Only -15%
+**Calculation:** 1 × (1 + 1.50 - 0.10 - 0.20 - 0.15) = 1 × 2.05 = 2.05, round to 2 CP
+**Final Cost:** 3 CP (adjusted for utility value)
+
+**Effect:** Spend a major action to carefully aim at a target. Your next ranged attack against that target gets +4 to hit. The bonus is lost if you move, take damage, or change targets. Does not stack with the regular +3 aiming bonuns.
+
+---
+
+### QUICK DRAW
+**Type:** Minor Physical Maneuver (1 CP)
+**Resource Cost:** 0
+**Enhancements:** Instant Action +25%
+**Limitations:** Usage Limit -15% (once per turn)
+**Calculation:** 1 × (1 + 0.25 - 0.15) = 1 × 1.10 = 1.10, round down minimum 1 CP
+**Final Cost:** 1 CP
+
+**Effect:** Draw or stow a weapon as a free action once per turn. Allows you to switch weapons mid-combat without using your minor action.
+
+---
+
+### KIP UP
+**Type:** Minor Physical Maneuver (1 CP)
+**Resource Cost:** 0
+**Enhancements:** Instant Action +25%
+**Limitations:** Only in [Condition] -20% (while prone, common condition)
+**Calculation:** 1 × (1 + 0.25 - 0.20) = 1 × 1.05 = 1.05, round down minimum 1 CP
+**Final Cost:** 1 CP
+
+**Effect:** Stand up from prone as a free action. Removes the normal movement penalty for standing. Essential for acrobatic fighters.
+
+---
+
+### EVASIVE MOVEMENT
+**Type:** Minor Physical Maneuver (1 CP)
+**Resource Cost:** 0
+**Enhancements:** Persistent +20%
+**Limitations:** Only in [Condition] -20% (while moving, common condition)
+**Calculation:** 1 × (1 + 0.20 - 0.20) = 1 × 1.00 = 1 CP
+**Final Cost:** 1 CP
+
+**Effect:** +1 to Dodge defense rolls while moving. Passive benefit that stacks with normal dodge. Represents training in moving defensively.
+
+---
+
 ## Arcane Spells
 
 ### FIRE BOLT

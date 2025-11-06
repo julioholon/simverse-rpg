@@ -1,6 +1,8 @@
 # SIMVERSE: Combat Simulations
 ## Detailed Combat Examples
 
+> **Note:** The group combat scenario uses higher-CP versions of the party characters (approximately 150-200 CP each) for demonstration purposes. These characters have enhanced abilities compared to the 100 CP starting adventurers in [Simverse_PreGen_Characters.md](Simverse_PreGen_Characters.md). The combat mechanics and tactical principles remain the same regardless of character power level.
+
 ---
 
 ## TABLE OF CONTENTS

@@ -30,7 +30,7 @@
 - **Character Points (CP)** - Build any character concept with point-buy customization
 - **Unified Powers System** - Spells, combat maneuvers, and psychic powers all use the same construction rules
 - **Tactical Combat** - Meaningful choices with armor by location, multiple defense types, and strategic positioning
-- **Scalable Power Levels** - Works from 200 CP street heroes to 500+ CP cosmic beings
+- **Scalable Power Levels** - Works from 100 CP starting adventurers to 500+ CP cosmic beings
 - **Template System** - Quick character creation with race and profession packages
 
 ---
@@ -139,88 +139,88 @@ Characters have 7 attributes starting at 10 (human average):
 
 ## Character Creation Example
 
-Let's create **Lyra, an Elven Scout** using the standard 250 CP budget.
+Let's create **Lyra, an Elven Scout** using the standard starting budget (100 CP + 30 CP from flaws = 130 CP).
 
 ### Step 1: Choose Templates
 
-**Elf Template** (55 CP):
+**Elf Template** (50 CP):
 - DX +2, AW +1, EN -1, ST -1
-- Night Vision, Acute Hearing, Facilitated Movement (Forest), Graceful, Extended Lifespan
+- Night Vision, Acute Senses (Hearing), Facilitated Movement (Forest), Graceful, Extended Lifespan
 
 **Scout Template** (29 CP):
 - Bow 3, Stealth 3, Tracking 3, Survival 2, Perception 2
-- Acute Senses (choose one)
+- Acute Senses (choose one - we'll pick Sight)
 - Light armor, bow, hunting knife, camping gear
 
-**Total Spent:** 84 CP
-**Remaining:** 166 CP
+**Total Spent:** 79 CP
+**Remaining:** 51 CP
 
 ### Step 2: Set Attributes
 
 Starting from baseline 10, applying racial modifiers:
 
-- **DX:** 10 + 2 (racial) + 3 (30 CP) = **15**
-- **IN:** 10 + 0 + 2 (20 CP) = **12**
-- **WS:** 10 + 0 + 1 (10 CP) = **11**
-- **CH:** 10 + 0 + 1 (10 CP) = **11**
-- **ST:** 10 - 1 (racial) + 0 = **9**
-- **EN:** 10 - 1 (racial) + 1 (5 CP) = **10**
-- **AW:** 10 + 1 (racial) + 2 (10 CP) = **13**
+- **DX:** 10 + 2 (racial) + 1 (10 CP) = **13**
+- **IN:** 10 + 0 = **10**
+- **WS:** 10 + 0 = **10**
+- **CH:** 10 + 0 = **10**
+- **ST:** 10 - 1 (racial) = **9**
+- **EN:** 10 - 1 (racial) = **9**
+- **AW:** 10 + 1 (racial) + 1 (5 CP) = **12**
 
-**Spent:** 85 CP
-**Remaining:** 81 CP
+**Spent:** 15 CP
+**Remaining:** 36 CP
 
 ### Step 3: Calculate Derived Stats
 
-- **Vitality:** 10 × 2 = **20 HP**
+- **Vitality:** 9 × 2 = **18 HP**
 - **Stamina:** 9 × 2 = **18**
-- **Mana:** 13 × 2 = **26**
-- **Speed:** (15 + 10) / 4 = **6.25**
-- **Perception:** (12 + 13) / 2 = **12.5**
-- **Damage Bonus:** (9 - 10) / 2 = **-1** (round down = -1)
+- **Mana:** 12 × 2 = **24**
+- **Speed:** (13 + 9) / 4 = **5.5**
+- **Perception:** (10 + 12) / 2 = **11**
+- **Damage Bonus:** (9 - 10) / 2 = **-1** (round down)
 
 ### Step 4: Buy Perks
 
-- **Acute Senses - Sight** (0 CP) - from Scout template, choosing sight
+- **Acute Senses - Sight** (0 CP) - from Scout template
 - **Quick Learner** (15 CP) - Learn skills 50% faster
-- **Athletic** (10 CP) - +2 to outdoor physical skills
 
-**Spent:** 25 CP
-**Remaining:** 56 CP
+**Spent:** 15 CP
+**Remaining:** 21 CP
 
 ### Step 5: Improve Skills
 
 Boosting key skills (from template base):
-- **Bow:** 3 → 5 (+5+8 = 13 CP)
-- **Stealth:** 3 → 4 (+5 CP)
-- **Tracking:** 3 → 4 (+5 CP)
+- **Bow:** 3 → 4 (+4 CP using sum formula: 10 total)
+- **Stealth:** 3 → 4 (+4 CP using sum formula: 10 total)
 
-**Spent:** 23 CP
-**Remaining:** 33 CP
+**Spent:** 8 CP
+**Remaining:** 13 CP
 
 ### Step 6: Combat Maneuvers
 
 - **Aimed Shot** (3 CP) - +4 to hit after aiming
 - **Precision Strike** (8 CP) - +2d6 damage with ranged weapons
 - **Quick Draw** (1 CP) - Draw weapon as free action
-- **Evasive Movement** (5 CP) - +2 to dodge while moving
-- **Power Attack** (8 CP) - next melee attack +2d6. -2 to hit
 
-**Spent:** 25 CP
-**Remaining:** 8 CP
+**Spent:** 12 CP
+**Remaining:** 1 CP
 
-### Step 7: Final Touches
+### Step 7: Take Flaws
 
-Reserve 8 CP for future advancement or emergency purchases.
+To reach our 130 CP budget, we took flaws worth -30 CP:
+- **Curious** (-10 CP) - Must roll WS to resist investigating
+- **Code of Honor** (-10 CP) - Cannot attack helpless, must keep word
+- **Overconfident** (-10 CP) - Struggles to back down from challenges
 
 ### Lyra's Final Stats
 
-**Attributes:** DX 15, IN 12, WS 11, CH 11, ST 9, EN 10, AW 13
-**Derived:** Vitality 20, Stamina 18, Mana 26, Speed 6.25, Perception 12.5
-**Combat:** Bow +20 to hit (DX 15 + Bow 5), deals 2d6-1 damage (1d6+2 base -1 ST)
-**Skills:** Bow 5, Stealth 4, Tracking 4, Survival 2, Perception 2
-**Perks:** Night Vision, Acute Senses (Hearing & Sight), Forest Movement, Graceful, Quick Learner, Athletic
-**Maneuvers:** Aimed Shot, Precision Strike, Quick Draw, Evasive Movement
+**Attributes:** DX 13, IN 10, WS 10, CH 10, ST 9, EN 9, AW 12
+**Derived:** Vitality 18, Stamina 18, Mana 24, Speed 5.5, Perception 11
+**Combat:** Bow +17 to hit (DX 13 + Bow 4), deals 2d6-1 damage (2d6 base +0 ST -1)
+**Skills:** Bow 4, Stealth 4, Tracking 3, Survival 2, Perception 2
+**Perks:** Night Vision, Acute Senses (Hearing & Sight), Forest Movement, Graceful, Quick Learner
+**Maneuvers:** Aimed Shot, Precision Strike, Quick Draw
+**Flaws:** Curious, Code of Honor, Overconfident
 
 ---
 
@@ -230,10 +230,10 @@ Reserve 8 CP for future advancement or emergency purchases.
 
 **Round 1:**
 
-**Initiative:** Lyra (Speed 6.25) vs Orc Raider (Speed 4.5) - Lyra acts first
+**Initiative:** Lyra (Speed 5.5) vs Orc Raider (Speed 4.5) - Lyra acts first
 
 **Lyra's Turn:**
-1. **Major Action:** Aim at orc (next shot gets +3 to hit from Aimed Shot maneuver, +4 total)
+1. **Major Action:** Use Aimed Shot maneuver (carefully aim at the orc)
 2. **Minor Action:** Assess terrain
 3. **Movement:** Half-move to better position (3 meters)
 
@@ -245,23 +245,23 @@ Reserve 8 CP for future advancement or emergency purchases.
 **Round 2:**
 
 **Lyra's Turn:**
-1. **Major Action:** Fire arrow with Aimed Shot bonus
-   - Target number: DX 15 + Bow 5 + Aimed bonus 4 = **24**
-   - Roll 3d6: Gets **11** - Success with margin 13!
-   - Orc must defend at -2 (margin 13 / 5 = 2.6, round down to -2)
+1. **Major Action:** Fire arrow with Aimed Shot bonus from last turn
+   - Target number: DX 13 + Bow 4 + Aimed bonus 4 = **21**
+   - Roll 3d6: Gets **10** - Success with margin 11!
+   - Orc must defend at -2 (margin 11 / 5 = 2.2, round down to -2)
 
 **Orc's Defense:**
 - Chooses to **Dodge** (DX 10 / 2 = 5, +1 for leather armor AD = 6, -2 for Lyra's margin = **4**)
-- Rolls 3d6: Gets **8** - Failure! Arrow hits!
+- Rolls 3d6: Gets **7** - Failure! Arrow hits!
 
 **Damage:**
-- Arrow base: 1d6+2 (impaling)
-- ST penalty: -1
-- Roll: Gets 4 on die = 4 + 2 - 1 = **5 damage**
-- Subtract 1 per die for impaling: 5 - 1 = 4
-- Orc's leather torso AR 2: 4 - 2 = 2 gets through
-- Impaling doubles penetrating damage: 2 × 2 = **4 Vitality damage**
-- Orc takes 4 damage, now at 16/20 Vitality
+- Bow base: 2d6 (impaling)
+- ST bonus: +0 (ST 9)
+- Roll: Gets 7 on 2d6 = **7 damage**
+- Subtract 1 per die for impaling: 7 - 2 = 5
+- Orc's leather torso AR 2: 5 - 2 = 3 gets through
+- Impaling doubles penetrating damage: 3 × 2 = **6 Vitality damage**
+- Orc takes 6 damage, now at 14/20 Vitality
 
 **Orc's Turn:**
 - Still too far away, charges closer...
@@ -272,7 +272,7 @@ Reserve 8 CP for future advancement or emergency purchases.
 
 Lyra needs to track bandits through the forest.
 
-- **Base:** WS 11 + Tracking 4 = **15**
+- **Base:** AW 12 + Tracking 3 = **15** (Tracking can use AW or WS, she uses AW)
 - **Modifiers:** Forest terrain (no penalty due to Facilitated Movement perk), recent rain makes tracks clearer (+2)
 - **Final Target:** **17**
 - **Roll:** 3d6 = **14**
@@ -286,15 +286,15 @@ Success! Lyra picks up the trail. The margin of 3 means she gets good informatio
 
 Lyra tries to convince a city guard to let her pass after curfew.
 
-- **Base:** CH 11 + Persuasion 0 (untrained = CH - 2) = **9**
-- **Modifiers:** Guard is suspicious (-2), but Lyra's Attractive race (+1 social)
-- **Final Target:** **8**
-- **Roll:** 3d6 = **10**
-- **Result:** Failure by 2
+- **Base:** CH 10 + Persuasion 0 (untrained = CH - 2) = **8**
+- **Modifiers:** Guard is suspicious (-2), nighttime (-1)
+- **Final Target:** **5**
+- **Roll:** 3d6 = **9**
+- **Result:** Failure by 4
 
 The guard shakes his head. "Nice try, elf, but rules are rules. Come back in the morning or pay the fine."
 
-Lyra could try a different approach (bribe, sneak, or accept the fine).
+Lyra could try a different approach (bribe, sneak past him using Stealth 17, or accept the fine).
 
 ---
 

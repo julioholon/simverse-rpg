@@ -47,7 +47,7 @@
 
 ---
 
-### Half-Elf (35 CP)
+### Half-Elf (40 CP)
 **Attribute Modifiers:**
 - DX +1 (10 CP)
 - AW +1 (5 CP)
@@ -59,6 +59,8 @@
 - Natural Talent ×2 (10 CP): Choose two skills to learn at half CP cost
 - Night Vision (10 CP): No penalties in darkness or low light
 - Extended Lifespan (5 CP): ~180 years
+
+**Total Cost Breakdown:** 10 + 5 + 10 - 5 - 5 + 25 (perks) = **40 CP**
 
 **Notes:**
 - **Mixed Heritage**: Can use both human and elf gear/magic (flavor, no CP cost)
@@ -89,7 +91,7 @@
 
 ---
 
-### Gnome (60 CP)
+### Gnome (30 CP)
 **Size Modifier:**
 - **Small Size** (-20 CP): ST -4, DX +4, Vitality ×0.5, Movement ×0.5
 
@@ -107,13 +109,15 @@
 - Curious (5 CP): +2 to Investigation and Research
 - Extended Lifespan (5 CP): ~400 years
 
+**Total Cost Breakdown:** -20 (size) + 30 - 30 + 10 - 5 + 45 (perks) = **30 CP**
+
 **Starting Equipment:** None (from profession)
 
 ---
 
 ### Tiefling (55 CP)
 **Attribute Modifiers:**
-- CH +2 (20 CP)
+- CH +1 (10 CP)
 - IN +1 (10 CP)
 - WS +1 (10 CP)
 
@@ -126,23 +130,24 @@
 **Flaws:**
 - Hideous Appearance (-10 CP): -2 to reaction rolls with common folk due to demonic features (horns, tail, red skin)
 
+**Total Cost Breakdown:** 10 + 10 + 10 + 35 (perks) - 10 (flaw) = **55 CP**
+
 **Starting Equipment:** None (from profession)
 
 ---
 
 ## Additional Profession Templates
 
-### Cleric (78 CP)
+### Cleric (54 CP)
 
 **Starting Skills:**
 - Divine Magic 3 (6 CP)
-- Religion 3 - Hard (26 CP: 5+8+13)
+- Religion 3 - Hard (12 CP: 2+4+6)
 - Medicine 2 (3 CP)
 - Persuasion 2 (3 CP)
 
 **Included Perks:**
 - Mage Gift (20 CP): Can cast spells (divine magic)
-- Extra Mana (10 CP): +10 Mana
 - Strong Willed (10 CP): +2 to resist mental effects
 
 **Starting Equipment:**
@@ -153,21 +158,22 @@
 - Healer's kit
 - Holy texts
 
-**Notes:** Most clerics invest 25-35 CP in healing and divine spells. Common spells: Healing Touch, Bless, Turn Undead, Divine Protection.
+**Total Cost Breakdown:** 6 + 12 + 3 + 3 + 30 (perks) = **54 CP**
+
+**Notes:** Most clerics invest 25-35 CP in healing and divine spells. Common spells: Healing Touch, Bless, Turn Undead, Divine Protection. Characters can add Extra Mana perk (10 CP) if desired.
 
 ---
 
-### Druid (64 CP)
+### Druid (59 CP)
 
 **Starting Skills:**
-- Nature Magic 3 (6 CP)
+- Spellcasting 3 (6 CP)
 - Nature 3 (6 CP)
 - Survival 3 (6 CP)
 - Animal Handling 3 (6 CP)
 
 **Included Perks:**
 - Mage Gift (20 CP): Can cast spells (nature magic)
-- Extra Mana (10 CP): +10 Mana
 - Animal Companion (15 CP): Loyal animal companion (GM determines stats, typically ~50 CP worth)
 
 **Starting Equipment:**
@@ -178,14 +184,16 @@
 - Herbalism kit
 - Animal companion
 
-**Notes:** Most druids invest 25-40 CP in nature spells. Common spells: Entangle, Speak with Animals, Healing Touch, Barkskin, Animal Form.
+**Total Cost Breakdown:** 6+6+6+6 + 35 (perks) = **59 CP**
+
+**Notes:** Most druids invest 25-40 CP in nature spells. Common spells: Entangle, Speak with Animals, Healing Touch, Barkskin, Animal Form. Can add Extra Mana perk (10 CP) if desired.
 
 ---
 
-### Barbarian (61 CP)
+### Barbarian (60 CP)
 
 **Starting Skills:**
-- Axes or Swords 4 (11 CP: 1+2+3+5)
+- Axes or Swords 4 (10 CP: 1+2+3+4)
 - Athletics 3 (6 CP)
 - Intimidation 2 (3 CP)
 - Survival 2 (3 CP)
@@ -208,6 +216,8 @@
 - Greataxe or greatsword
 - Two hand axes
 - Explorer's pack
+
+**Total Cost Breakdown:** 10+6+3+3 + 20 (perks) + 18 (rage) = **60 CP**
 
 **Notes:** Most barbarians invest 15-25 CP in combat maneuvers (Power Attack, Cleave, Knockback Strike, etc.).
 
@@ -234,14 +244,16 @@
 - Holy symbol
 - Warhorse (if campaign allows)
 
+**Total Cost Breakdown:** 6+6+3+3 + 40 (perks) = **58 CP**
+
 **Notes:** Most paladins invest 20-30 CP in divine powers and combat maneuvers. Common powers: Divine Smite, Lay on Hands, Divine Protection, Turn Undead.
 
 ---
 
-### Monk (56 CP)
+### Monk (55 CP)
 
 **Starting Skills:**
-- Brawling 4 (11 CP: 1+2+3+5)
+- Brawling 4 (10 CP: 1+2+3+4)
 - Acrobatics 3 (6 CP)
 - Meditation 3 (6 CP)
 - Stealth 2 (3 CP)
@@ -256,16 +268,18 @@
 - Travel gear
 - Meditation beads
 
-**Notes:** Most monks invest 10-20 CP in combat maneuvers. Common maneuvers: Chi Strike (9 CP), Stunning Strike, Flurry of Blows, Deflect Missiles. See [Simverse_Powers_Library.md:138](Simverse_Powers_Library.md#L138) for Chi Strike.
+**Total Cost Breakdown:** 10+6+6+3 + 30 (perks) = **55 CP**
+
+**Notes:** Most monks invest 10-20 CP in combat maneuvers. Common maneuvers: Chi Strike (9 CP), Stunning Strike, Flurry of Blows, Deflect Missiles. See [Simverse_Powers_Library.md](Simverse_Powers_Library.md) and search for Chi Strike.
 
 ---
 
-### Bard (64 CP)
+### Bard (63 CP)
 
 **Starting Skills:**
-- Performance 4 (11 CP: 1+2+3+5)
+- Performance 4 (10 CP: 1+2+3+4)
 - Persuasion 3 (6 CP)
-- Arcane Magic 2 (3 CP)
+- Spellcasting 2 (3 CP)
 - Deception 2 (3 CP)
 
 **Included Perks:**
@@ -288,15 +302,17 @@
 - Fine clothes
 - Entertainer's pack
 
+**Total Cost Breakdown:** 10+6+3+3 + 30 (perks) + 11 (power) = **63 CP**
+
 **Notes:** Most bards invest 25-35 CP in enchantment and charm spells. Common spells: Charm Person, Sleep, Invisibility, Suggestion.
 
 ---
 
-### Necromancer (86 CP)
+### Necromancer (59 CP)
 
 **Starting Skills:**
-- Necromancy 3 (6 CP)
-- Occult Knowledge 4 - Hard (47 CP: 5+8+13+21)
+- Spellcasting 3 (6 CP)
+- Occult Knowledge 4 - Hard (20 CP: 2+4+6+8)
 - Medicine 2 (3 CP)
 
 **Included Perks:**
@@ -310,16 +326,18 @@
 - Grave dust components
 - Skull focus
 
-**Notes:** Most necromancers invest 40-60 CP in necromancy spells. Common spells: Animate Dead (31 CP), Life Drain (9 CP), Speak with Dead (10 CP), Command Undead (9 CP), Death Bolt (12 CP). See [Simverse_Powers_Library.md:558](Simverse_Powers_Library.md#L558) for Necromantic Spells section.
+**Total Cost Breakdown:** 6+20+3 + 30 (perks) = **59 CP**
+
+**Notes:** Most necromancers invest 40-60 CP in necromancy spells. Common spells: Animate Dead (31 CP), Life Drain (9 CP), Speak with Dead (10 CP), Command Undead (9 CP), Death Bolt (12 CP). See [Simverse_Powers_Library.md](Simverse_Powers_Library.md) for Necromantic Spells section.
 
 ---
 
-### Artificer (113 CP)
+### Artificer (79 CP)
 
 **Starting Skills:**
-- Engineering 4 - Hard (47 CP: 5+8+13+21)
-- Alchemy 2 - Hard (13 CP: 5+8)
-- Arcane Magic 2 (3 CP)
+- Engineering 4 - Hard (20 CP: 2+4+6+8)
+- Alchemy 2 - Hard (6 CP: 2+4)
+- Spellcasting 2 (3 CP)
 
 **Included Perks:**
 - Mage Gift (20 CP): Can cast spells
@@ -333,16 +351,18 @@
 - Alchemist supplies
 - Workshop access (plot dependent)
 
+**Total Cost Breakdown:** 20+6+3 + 50 (perks) = **79 CP**
+
 **Notes:** Most artificers invest 20-30 CP in utility spells. Common spells: Mage Armor, Identify, Repair, Enhance Weapon, Detect Magic.
 
 ---
 
-### Assassin (76 CP)
+### Assassin (61 CP)
 
 **Starting Skills:**
-- Stealth 4 (11 CP: 1+2+3+5)
+- Stealth 4 (10 CP: 1+2+3+4)
 - Daggers 3 (6 CP)
-- Poison Knowledge 3 - Hard (26 CP: 5+8+13)
+- Poison Knowledge 3 - Hard (12 CP: 2+4+6)
 - Disguise 2 (3 CP)
 
 **Included Perks:**
@@ -365,14 +385,16 @@
 - Thieves' tools
 - Cloak and mask
 
+**Total Cost Breakdown:** 10+6+12+3 + 5 (perk) + 25 (power) = **61 CP**
+
 **Notes:** Most assassins invest 10-20 CP in stealth and poison-related powers.
 
 ---
 
-### Ranger (83 CP)
+### Ranger (61 CP)
 
 **Starting Skills:**
-- Bow 4 (11 CP: 1+2+3+5)
+- Bow 4 (10 CP: 1+2+3+4)
 - Survival 3 (6 CP)
 - Tracking 3 (6 CP)
 - Stealth 3 (6 CP)
@@ -382,29 +404,28 @@
 - Favored Enemy (10 CP): Choose enemy type, +4 to track and fight them
 - Acute Senses - Sight (5 CP): +2 to visual Perception
 - Natural Explorer (15 CP): No terrain penalties in chosen terrain type
-- Animal Companion (15 CP): Loyal animal companion (GM determines stats, typically ~50 CP creature)
 
 **Starting Equipment:**
 - Light armor
 - Longbow and 40 arrows
 - Two shortswords or hand axes
 - Explorer's pack
-- Animal companion
 
-**Notes:** Most rangers invest 15-25 CP in combat maneuvers (Aimed Shot, Rapid Shot, Precision Strike, etc.).
+**Total Cost Breakdown:** 10+6+6+6+3 + 30 (perks) = **61 CP**
+
+**Notes:** Most rangers invest 15-25 CP in combat maneuvers (Aimed Shot, Rapid Shot, Precision Strike, etc.). Consider adding Animal Companion perk (15 CP) for a loyal beast ally.
 
 ---
 
-### Summoner (95 CP)
+### Summoner (71 CP)
 
 **Starting Skills:**
-- Summoning Magic 3 (6 CP)
-- Occult Knowledge 3 - Hard (26 CP: 5+8+13)
+- Spellcasting 3 (6 CP)
+- Occult Knowledge 3 - Hard (12 CP: 2+4+6)
 - Animal Handling 2 (3 CP)
 
 **Included Perks:**
 - Mage Gift (20 CP): Can cast spells
-- Extra Mana (10 CP): +10 Mana
 - Familiar (30 CP): Permanent bond with magical creature (up to ~100 CP), mental contact, see through eyes, possess to control, resummon if killed (10 Mana, 1 hour)
 
 **Starting Equipment:**
@@ -415,7 +436,9 @@
 - Binding contracts
 - Familiar (player chooses: imp, pseudodragon, sprite, or custom)
 
-**Notes:** Most summoners invest 30-50 CP in summoning spells. Common spells: Summon Elemental, Summon Beast, Summon Spirit, Planar Binding. Summoned creatures typically last 1 hour and follow commands.
+**Total Cost Breakdown:** 6+12+3 + 50 (perks) = **71 CP**
+
+**Notes:** Most summoners invest 30-50 CP in summoning spells. Common spells: Summon Elemental, Summon Beast, Summon Spirit, Planar Binding. Summoned creatures typically last 1 hour and follow commands. Consider adding Extra Mana perk (10 CP) for additional casting resources.
 
 ---
 
@@ -424,14 +447,14 @@
 Want to make your own? Follow these guidelines:
 
 **For Race Templates:**
-1. Total should be around 50 CP
+1. Total should be around 25-60 CP
 2. Include 2-4 attribute modifiers (balanced positive and negative)
 3. Include 1-3 perks that define the race
 4. Add unique racial traits (no CP cost, flavor abilities)
 5. Define lifespan and size
 
 **For Profession Templates:**
-1. Total should be 30-120 CP
+1. Total should be 30-80 CP
 2. Include 3-6 starting skills
 3. Include 1-4 perks that define the profession
 4. Add 1-3 signature abilities or starting spells/maneuvers

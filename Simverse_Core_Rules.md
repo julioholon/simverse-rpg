@@ -138,25 +138,68 @@ These atributes are used to calculate other derived characteristics (like Speed,
 
 ### Attribute Costs
 
-Attributes cost Character Points (CP) to raise or lower from baseline (10):
+Attributes cost Character Points (CP) to raise or lower from baseline (10). Costs scale exponentially to represent diminishing returns and encourage balanced character builds.
 
 #### Major Attributes (DX, IN, WS, CH)
 These govern most skills and are more expensive:
 
-| Level Range | Cost per Level |
-|-------------|----------------|
-| Any | 10 CP (flat) |
+| Attribute Range | Cost per Increment | Formula | Example |
+|-------------|----------------|---------|---------|
+| 3-9 | -10 CP | -10 × level | 10→3 nets -70 CP |
+| 10-13 | 10 CP | 10 × 2^0 | 10→13 costs 30 CP |
+| 14-16 | 20 CP | 10 × 2^1 | 13→16 costs 60 CP (90 total) |
+| 17-19 | 40 CP | 10 × 2^2 | 16→19 costs 120 CP (210 total) |
+| 20-22 | 80 CP | 10 × 2^3 | 19→22 costs 240 CP (450 total) |
 
-**Example:** Raising DX from 10 to 15 costs: 5x10 = 50 CP
+**Mathematical Formula:** Cost to go from level n-1 to n (for n >=11) => 10 × 2^⌊(n-11)/3⌋ where n is the desired level
+
+**Common Examples:**
+- DX 10→12: 10+10 = **20 CP**
+- DX 10→14: 10+10+10+20 = **50 CP**
+- DX 10→15: 10+10+10+20+20 = **70 CP**
+- DX 10→16: 10+10+10+20+20+20 = **90 CP**
 
 #### Minor Attributes (ST, AW, EN)
-These are generally not used for skill rolls:
+These are generally not used for skill rolls and cost half as much:
 
-| Level Range | Cost per Level |
-|-------------|----------------|
-| Any | 5 CP (flat) |
+| Attribute Range | Cost per Increment | Formula | Example |
+|-------------|----------------|---------|---------|
+| 3-9 | -5 CP | -5 × level | 10→3 nets -35 CP |
+| 10-13 | 5 CP | 5 × 2^0 | 10→13 costs 15 CP |
+| 14-16 | 10 CP | 5 × 2^1 | 13→16 costs 30 CP (45 total) |
+| 17-19 | 20 CP | 5 × 2^2 | 16→19 costs 60 CP (105 total) |
+| 20-22 | 40 CP | 5 × 2^3 | 19→22 costs 120 CP (225 total) |
 
-**Example:** Raising ST from 10 to 15 costs: 5×5 = 25 CP
+**Mathematical Formula:** Cost to go from level n-1 to n = 5 × 2^⌊(n-11)/3⌋ where n is the desired level
+
+**Common Examples:**
+- ST 10→12: 5+5 = **10 CP**
+- ST 10→14: 5+5+5+10 = **25 CP**
+- ST 10→16: 5+5+5+10+10+10 = **45 CP**
+
+**Design Note:** The exponential scaling ensures that skills remain competitive with attributes as characters advance. Raising a major attribute from 16→17 costs 40 CP, making individual skill improvements (which boost only one task) a viable alternative to broad attribute increases (which boost many tasks).
+
+### Attribute Guidelines by Power Level
+
+While there are no hard limits on attributes, the following guidelines help maintain game balance and narrative consistency:
+
+| Power Level | Major Attributes (DX, IN, WS, CH) | Minor Attributes (ST, AW, EN) | Notes |
+|-------------|----------------------------------|-------------------------------|-------|
+| **Weaklings** (50 CP) | Typical max: 11-12 | Typical max: 12-13 | Children, small animals, weak creatures |
+| **Street Level** (75 CP) | Typical max: 12-13 | Typical max: 13-14 | Thugs, militia, typical adult humans |
+| **Starting Adventurer** (100 CP) | Typical max: 13-14 | Typical max: 14-15 | Beginning heroes, competent professionals |
+| **Experienced** (150 CP) | Typical max: 14-15 | Typical max: 15-16 | Veterans, skilled warriors |
+| **Heroic** (200 CP) | Typical max: 15-16 | Typical max: 16-17 | Champions, renowned masters |
+| **Elite** (250 CP) | Typical max: 16-17 | Typical max: 17-18 | Legendary heroes, master wizards |
+| **Superheroic** (400 CP) | Can reach: 18-19 | Can reach: 19-20 | Demigods, supernatural beings |
+| **Cosmic** (500+ CP) | 20+ possible | 20+ possible | Gods, world-shaking entities |
+
+**Important Notes:**
+- These are **guidelines, not hard caps** - players can exceed them if they have the CP
+- Going beyond these ranges should require **narrative justification** (supernatural bloodline, divine blessing, cybernetic enhancement, years of training, etc.)
+- GMs can enforce stricter limits for grounded/realistic campaigns
+- Supernatural templates (vampire, dragon, etc.) may inherently exceed these ranges
+- At 100 CP starting level, most characters will have their primary attribute at 12-14 and skills at 3-5
 
 ---
 
@@ -239,14 +282,20 @@ Several important values are calculated from your attributes:
 
 Characters are built by spending Character Points (CP) based on campaign power level:
 
-| Power Level | CP Budget | Description |
-|-------------|-----------|-------------|
-| Street Level | 200 CP | Normal humans, investigators, criminals |
-| Heroic | 250 CP | Adventurers, soldiers, starting heroes |
-| Superheroic | 400 CP | Legendary warriors, powerful mages |
-| Cosmic | 500+ CP | Demigods, apocalyptic threats |
+| Power Level | Base CP | +Max Flaws | Total | Best Skill Range | Description |
+|-------------|---------|------------|-------|------------------|-------------|
+| **Weaklings** | 50 CP | +25 CP | 75 CP | 13-15 | Children, wild animals, animal familiars |
+| **Street Level** | 75 CP | +35 CP | 110 CP | 14-16 | Thugs, rookies, militia, untrained fighters |
+| **Starting Adventurer** | 100 CP | +50 CP | 150 CP | 15-17 | Beginning heroes, young adventurers, competent professionals |
+| **Experienced** | 150 CP | +50 CP | 200 CP | 18-19 | Veterans, sergeants, skilled warriors, journeyman mages |
+| **Heroic** | 200 CP | +50 CP | 250 CP | 20-21 | Champions, masters, renowned warriors, expert mages |
+| **Elite** | 250 CP | +50 CP | 300 CP | 22-23 | Legendary heroes, elite soldiers, master wizards |
+| **Superheroic** | 400 CP | +50 CP | 450 CP | 25-27 | Demigods, archmages, superhuman warriors |
+| **Cosmic** | 500+ CP | +50 CP | 550+ CP | 30+ | Gods, apocalyptic threats, world-shaking powers |
 
-**Standard starting game: 250 CP**
+**Standard starting game: 100 CP** (up to 150 CP with flaws)
+
+**"Best Skill Range"** indicates the typical highest roll (Attribute + Skill) a specialist character will achieve with their primary skill at this power level.
 
 ### Flaw Limit
 
@@ -279,7 +328,7 @@ Characters are built by spending Character Points (CP) based on campaign power l
    - Gain extra CP to spend
 
 6. **Buy Skills**
-   - Purchase skill levels using Fibonacci costs
+   - Purchase skill levels using sum progression costs
    - Templates may include starting skills
 
 7. **Acquire Powers/Spells/Maneuvers**
@@ -314,26 +363,40 @@ Skills represent trained abilities and specialized knowledge. They are always ro
 - More expensive to learn
 - Examples: Surgery, engineering, lockpicking, occult knowledge
 
-### Skill Costs (Fibonacci Progression)
+### Skill Costs (Sum Progression)
 
-Skills use Fibonacci costs to represent diminishing returns:
+Skills use a sum progression (1+2+3+...+N) to represent diminishing returns while remaining affordable at high levels:
 
-| Skill Level | Regular Skill Cost | Hard Skill Cost | Cumulative (Regular) | Cumulative (Hard) |
-|-------------|-------------------|-----------------|----------------------|-------------------|
-| 1 | 1 CP | 5 CP | 1 CP | 5 CP |
-| 2 | 2 CP | 8 CP | 3 CP | 13 CP |
-| 3 | 3 CP | 13 CP | 6 CP | 26 CP |
-| 4 | 5 CP | 21 CP | 11 CP | 47 CP |
-| 5 | 8 CP | 34 CP | 19 CP | 81 CP |
-| 6 | 13 CP | 55 CP | 32 CP | 136 CP |
-| 7 | 21 CP | 89 CP | 53 CP | 225 CP |
-| 8 | 34 CP | 144 CP | 87 CP | 369 CP |
-| 9 | 55 CP | 233 CP | 142 CP | 602 CP |
-| 10 | 89 CP | 377 CP | 231 CP | 979 CP |
+**Formula:** Total cost to reach level N = N × (N+1) / 2
+**Cost to improve a skill from level N-1 to level N:** N CP
 
-**Hard skills cost structure:** Each level costs (Fibonacci Progression, but starting at 5)
+| Skill Level | Increment | Cumulative (Regular) | Cumulative (Hard) |
+|-------------|-----------|----------------------|-------------------|
+| 1 | +1 CP | 1 CP | 2 CP |
+| 2 | +2 CP | 3 CP | 6 CP |
+| 3 | +3 CP | 6 CP | 12 CP |
+| 4 | +4 CP | 10 CP | 20 CP |
+| 5 | +5 CP | 15 CP | 30 CP |
+| 6 | +6 CP | 21 CP | 42 CP |
+| 7 | +7 CP | 28 CP | 56 CP |
+| 8 | +8 CP | 36 CP | 72 CP |
+| 9 | +9 CP | 45 CP | 90 CP |
+| 10 | +10 CP | 55 CP | 110 CP |
 
-**Note:** Skills can exceed level 10, but costs continue following Fibonacci sequence. Level 10 represents a grandmaster who's trained for a decade.
+**Hard Skills:** Cost ×2 the regular skill cost. Hard skills have no default value and require specialized training.
+
+**Common Examples:**
+- Regular skill to 4: **10 CP**
+- Regular skill to 8: **36 CP**
+- Hard skill to 4: **20 CP**
+- Hard skill to 8: **72 CP**
+
+**Hard Formula:** Total cost to reach level N = N × (N+1)
+**Cost to improve a HARD skill from level N-1 to level N:** 2xN CP
+
+**Design Note:** This progression makes skills competitive with attribute increases. A skill from 6→7 costs 7 CP, while raising a major attribute from 14→15 costs 20 CP. Since attributes boost multiple skills, both remain viable choices at different stages of character development.
+
+**Note:** Skills can exceed level 10, continuing the sum progression. Level 10 represents a grandmaster who's trained for a decade.
 
 ### Skill Specializations
 
@@ -378,7 +441,7 @@ Modifiers:
 - Perception (AW+IN)/2, Tracking (WS/AW), Survival (IN/AW)
 
 #### Magic Skills (varies)
-- Spellcasting (IN), Psionics (WS), Occult Knowledge* (IN)
+- Spellcasting (WS), Psionics (IN), Divine Magic (CH), Ritual Magic (IN), Occult Knowledge* (IN)
 
 \* for HARD skills
 
@@ -399,6 +462,7 @@ Perks represent advantages, talents, and special abilities. Flaws represent disa
 **Weapon Master** (10 CP)
 - Choose one weapon type
 - +2 to attack and parry with that weapon
+- +2 to weapon damage as well
 
 **Martial Arts Training** (20 CP)
 - Unarmed attacks deal +2 damage
@@ -709,12 +773,12 @@ Templates are pre-built packages of attributes, perks, skills, and equipment tha
 
 **Note:** Human is the baseline (0 CP). Other races modify from this baseline.
 
-#### Elf (55 CP)
+#### Elf (50 CP)
 **Attribute Modifiers:**
-- DX +2 (20 CP)
-- AW +1 (5 CP)
-- EN -1 (-5 CP)
-- ST -1 (-5 CP)
+- DX +2 (20 CP): 10→12
+- AW +1 (5 CP): 10→11
+- EN -1 (-5 CP): 10→9
+- ST -1 (-5 CP): 10→9
 
 **Included Perks:**
 - Night Vision (10 CP)
@@ -723,6 +787,8 @@ Templates are pre-built packages of attributes, perks, skills, and equipment tha
 - Graceful (10 CP): +1 to Stealth and Acrobatics skills
 - Extended Lifespan (5 CP): ~300 years
 
+**Total Cost Breakdown:** 20 + 5 - 5 - 5 + 35 (perks) = **50 CP**
+
 ---
 
 #### Dwarf (45 CP)
@@ -730,18 +796,20 @@ Templates are pre-built packages of attributes, perks, skills, and equipment tha
 - **Child/Dwarf Size** (-10 CP): ST -2, DX +2, Vitality ×0.75, Movement ×0.75
 
 **Additional Attribute Modifiers:**
-- ST +1 (15 CP) - Added +3 after size modifier
-- EN +2 (10 CP)
-- DX +0 (-20 CP) - Reduced by -2 after size modifier
-- CH -1 (-10 CP)
+- ST +1 (15 CP): Final ST 11 (base 10 -2 size +3 purchased = 11)
+- EN +2 (10 CP): 10→12
+- DX +0 (-20 CP): Final DX 10 (base 10 +2 size -2 purchased = 10)
+- CH -1 (-10 CP): 10→9
 
 **Included Perks:**
 - Extra Vitality (10 CP)
 - Magic Resistance (15 CP)
 - Night vision (10 CP): See perfectly in darkness up to 30m
-- Strong Willed (5 CP): +2 to resist mental effects
+- Strong Willed (10 CP): +2 to resist mental effects
 - Facilitated Movement (Mountain) (5 CP): No penalty on rocky/underground terrain
 - Extended Lifespan (5 CP): ~200 years
+
+**Total Cost Breakdown:** -10 (size) + 15 + 10 - 20 - 10 + 50 (perks) = **45 CP**
 
 ---
 
@@ -792,11 +860,11 @@ Templates are pre-built packages of attributes, perks, skills, and equipment tha
 
 ---
 
-#### Wizard (65 CP)
+#### Wizard (51 CP)
 
 **Starting Skills:**
 - Spellcasting 3 (6 CP)
-- Occult Knowledge 3 - Hard (26 CP: 5+8+13)
+- Occult Knowledge 3 - Hard (12 CP: 2+4+6)
 - Research 2 (3 CP)
 
 **Included Perks:**
@@ -809,15 +877,17 @@ Templates are pre-built packages of attributes, perks, skills, and equipment tha
 - Spellbook
 - Component pouch
 
-**Note:** Most wizards invest ~45-50 CP in spells (10-15 Minor/Moderate spells)
+**Total Cost Breakdown:** 6 + 12 + 3 + 30 (perks) = **51 CP**
+
+**Note:** Most wizards invest ~30-40 CP in spells (8-12 Minor/Moderate spells)
 
 ---
 
-#### Rogue (48 CP)
+#### Rogue (33 CP)
 
 **Starting Skills:**
-- Stealth 4 (11 CP: 1+2+3+5)
-- Lockpicking 3 - Hard (26 CP: 5+8+13)
+- Stealth 4 (10 CP: 1+2+3+4)
+- Lockpicking 3 - Hard (12 CP: 2+4+6)
 - Sleight of Hand 2 (3 CP)
 - Perception 2 (3 CP)
 
@@ -830,6 +900,8 @@ Templates are pre-built packages of attributes, perks, skills, and equipment tha
 - Thieves' tools
 - Grappling hook and rope
 
+**Total Cost Breakdown:** 10 + 12 + 3 + 3 + 5 (perk) = **33 CP**
+
 **Note:** Most rogues invest 15-25 CP in combat maneuvers (Sneak Attack, Feint, Precision Strike, etc.). See [Simverse_Powers_Library.md](Simverse_Powers_Library.md) for available maneuvers
 
 ---
@@ -838,20 +910,32 @@ Templates are pre-built packages of attributes, perks, skills, and equipment tha
 
 Templates can be combined freely. Simply add their costs together:
 
-**Example: Elf Scout**
-- Elf (55 CP) + Scout (29 CP) = **84 CP total**
-- Remaining budget (250 CP start): **166 CP**
+**Example: Elf Scout (Starting Adventurer, 100 CP)**
+- Elf (50 CP) + Scout (29 CP) = **79 CP total**
+- **Remaining budget (100 CP base): 21 CP**
 - Gets all benefits from both templates
-- Attribute modifiers stack: Base 10 DX → +2 from Elf = 12 DX
+- **Final Stats:** DX 12, AW 11, EN 9, ST 9, others 10
 - Has Night Vision, Acute Hearing, Facilitated Movement (Forest), Graceful, AND Scout skills/equipment
-- Typically invests 20-30 CP in combat maneuvers and attributes
+- **Suggested 21 CP allocation:**
+  - DX 12→13 (10 CP): Boost primary stat for better bow attacks
+  - Aimed Shot maneuver (3 CP): +4 to hit after aiming
+  - Precision Strike maneuver (8 CP): +2d6 damage on precision attacks
+- **Final best bow attack:** DX 13 + Bow 3 = **16** (98% success vs unmodified targets)
 
-**Example: Dwarf Warrior**
+**Example: Dwarf Warrior (Starting Adventurer, 100 CP)**
 - Dwarf (45 CP) + Warrior (33 CP) = **78 CP total**
-- Remaining budget: **172 CP**
-- Extra Vitality, Fast Healer, Magic Resistant, Night vision, Stubborn
-- Typically invests 20-30 CP in combat maneuvers and attributes
-- Natural dungeon delver with combat prowess
+- **Remaining budget (100 CP base): 22 CP**
+- Gets Extra Vitality, Fast Healer, Magic Resistant, Night vision, Strong Willed, AND Warrior training
+- **Final Stats:** ST 11, EN 12, DX 10, CH 9, others 10
+- **Suggested 22 CP allocation:**
+  - ST 11→12 (5 CP): Boost damage
+  - Shield Bash (1 CP): Stun enemies
+  - Power Attack (8 CP): +2d6 damage
+  - Disarm (8 CP): Remove enemy weapon
+- **Final best melee attack:** DX 10 + Weapon 3 = **13** (84% success)
+- Natural dungeon delver with solid combat prowess and great survivability
+
+For more templates and ideas, see [Simverse_Addittional_Templates.md](Simverse_Addittional_Templates.md)
 
 ---
 
@@ -1380,7 +1464,7 @@ No XP tracking - just direct CP awards
 #### Skills
 **Recently Used** (last 3 sessions):
 - No training time required
-- Just spend CP following Fibonacci costs
+- Just spend CP following sum progression costs
 - Represents learning from experience
 
 **Learning New Skills**:
@@ -1446,13 +1530,13 @@ Follow the same CP costs as creation:
 **Defense**: Dodge (DX/2+AD), Parry ((DX+Skill)/2, -4 if acted), Block ((DX+Skill)/2+SD)
 **Damage**: Weapon roll - AR = Vitality loss
 
-### Starting Character (250 CP Budget)
-1. Buy templates: ~50-110 CP
-2. Adjust attributes: ~40-80 CP
-3. Buy perks: ~20-60 CP
-4. Buy skills: ~30-60 CP
-5. Buy powers: ~20-60 CP
-6. Take flaws: Optional, up to -50 CP
+### Starting Character (100 CP Budget)
+1. Buy templates: ~30-80 CP (race + profession)
+2. Adjust attributes: ~10-30 CP (raise 1-2 key attributes)
+3. Buy perks: ~5-15 CP (1-3 perks)
+4. Buy skills: ~10-20 CP (boost template skills or add new ones)
+5. Buy powers/maneuvers: ~10-25 CP (3-8 abilities)
+6. Take flaws: Optional, up to -50 CP (enables 150 CP total)
 
 ---
 
