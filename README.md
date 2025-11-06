@@ -49,7 +49,7 @@ Every decision matters:
 ### 3. **Flexible Customization**
 Build anything from a sword-and-sorcery warrior to a cyberpunk hacker:
 - **Attributes** scale from 5 (severely impaired) to 30+ (godlike)
-- **Skills** use Fibonacci progression for natural diminishing returns
+- **Skills** use Sum progression for diminishing returns
 - **Powers** are constructed from modular enhancements and limitations
 
 ### 4. **Tactical Depth Without Complexity**
