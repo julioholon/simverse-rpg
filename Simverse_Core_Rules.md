@@ -106,7 +106,12 @@ A race to accumulate successes:
 
 ## Attributes
 
-Characters have **7 primary attributes** that define their capabilities:
+Characters have **7 attributes**, divided in two groups, that define their capabilities:
+
+
+### Major Attributes
+
+These are attributes are more general and govern most skill rolls
 
 | Attribute | Abbreviation | Governs |
 |-----------|--------------|---------|
@@ -114,6 +119,13 @@ Characters have **7 primary attributes** that define their capabilities:
 | **Intellect** | IN | Reasoning, memory, learning, technical skills |
 | **Wisdom** | WS | Willpower, mental defense, intuition, sixth sense |
 | **Charisma** | CH | Social influence, leadership, attractiveness |
+
+### Minor attributes
+
+These atributes are used to calculate other derived characteristics (like Speed, Vitality, Stamina, Mana etc.) and usually don't matter for skill rolls
+
+| Attribute | Abbreviation | Governs |
+|-----------|--------------|---------|
 | **Endurance** | EN | Stamina, health, resisting fatigue/poison |
 | **Awareness** | AW | Perception, initiative, luck, magical intuition |
 | **Strength** | ST | Physical power, melee damage bonus, carrying capacity |
@@ -133,17 +145,12 @@ These govern most skills and are more expensive:
 
 | Level Range | Cost per Level |
 |-------------|----------------|
-| 5-10 | 10 CP (going down gives +10 CP) |
-| 10-15 | 10 CP |
-| 15-20 | 20 CP |
-| 20-25 | 40 CP |
-| 25-30 | 80 CP |
-| And so on (doubling) | |
+| Any | 10 CP (flat) |
 
-**Example:** Raising DX from 10 to 15 costs: 10+10+10+20+20 = 70 CP
+**Example:** Raising DX from 10 to 15 costs: 5x10 = 50 CP
 
 #### Minor Attributes (ST, AW, EN)
-These are less central to most builds:
+These are generally not used for skill rolls:
 
 | Level Range | Cost per Level |
 |-------------|----------------|
@@ -723,9 +730,9 @@ Templates are pre-built packages of attributes, perks, skills, and equipment tha
 - **Child/Dwarf Size** (-10 CP): ST -2, DX +2, Vitality ×0.75, Movement ×0.75
 
 **Additional Attribute Modifiers:**
-- ST +3 (15 CP) - Net +1 after size modifier
+- ST +1 (15 CP) - Added +3 after size modifier
 - EN +2 (10 CP)
-- DX -3 (-15 CP) - Net -1 after size modifier
+- DX +0 (-20 CP) - Reduced by -2 after size modifier
 - CH -1 (-10 CP)
 
 **Included Perks:**

@@ -19,15 +19,15 @@
 **After Racial Modifiers:**
 | Attribute | Base | Racial | Additional | Final | CP Cost |
 |-----------|------|--------|------------|-------|---------|
-| **DX** | 10 | -1 | +2 | 11 | 10 CP |
+| **DX** | 10 | +0 | +1 | 11 | 10 CP |
 | **IN** | 10 | +0 | +1 | 11 | 10 CP |
 | **WS** | 10 | +0 | +2 | 12 | 20 CP |
-| **CH** | 10 | -1 | +0 | 9 | +10 CP gained |
+| **CH** | 10 | -1 | +0 | 9 | 0 CP |
 | **ST** | 10 | +1 | +4 | 15 | 20 CP |
 | **AW** | 10 | +0 | +2 | 12 | 10 CP |
 | **EN** | 10 | +2 | +4 | 16 | 20 CP |
 
-**Attribute CP:** Gained 10 CP, spent 90 CP = **Net 80 CP spent**
+**Attribute CP:** **Spent 90 CP**
 
 ---
 
@@ -46,46 +46,21 @@
 
 ---
 
-### RACIAL TRAITS (Dwarf - 45 CP)
-**Size Modifier:**
-- Child/Dwarf Size (-10 CP): ST -2, DX +2, Vitality ×0.75, Movement ×0.75
-
-**Additional Attribute Modifiers:**
-- ST +3 (15 CP) - Net +1 after size modifier
-- EN +2 (10 CP)
-- DX -3 (-15 CP) - Net -1 after size modifier
-- CH -1 (-10 CP)
-
-**Included Perks:**
-- Extra Vitality (10 CP): +10 Vitality
-- Magic Resistance (15 CP): +4 to resist spells
-- Night vision (10 CP): See perfectly in darkness up to 30m
-- Stubborn (5 CP): +2 to resist intimidation/persuasion
-- Facilitated Movement (Mountain) (5 CP): No penalty on rocky/underground terrain
-- Extended Lifespan (5 CP): ~200 years
+### RACIAL TRAITS (Dwarf - 45 CP) - see [Simverse_Core_Rules.md](Simverse_Core_Rules.md)
 
 ---
 
-### PROFESSION TRAITS (Warrior - 33 CP)
-**Perks:**
-- Armor Familiarity (reduce armor penalty by 2) - 5 CP
-- Combat Reflexes (+2 Speed for initiative) - 10 CP
-- Fast Healer (recovers vitality faster) - 10 CP
-
-**Skills from template (13 CP):**
-- Axes 3 (6 CP)
-- Shield 2 (3 CP)
-- Tactics 2 (3 CP)
-- Athletics 1 (1 CP)
+### PROFESSION TRAITS (Warrior - 33 CP) - see [Simverse_Core_Rules.md](Simverse_Core_Rules.md)
 
 ---
 
-### ADDITIONAL SKILLS (48 CP)
+### SKILLS (48 CP)
 | Skill | Attribute | Level | Total | Cost |
 |-------|-----------|-------|-------|------|
-| **Axes** | DX | **5** | 16 (11+5) | +13 CP (total 19 CP) |
-| **Shield** | ST | **4** | 19 (15+4) | +8 CP (total 11 CP) |
-| **Tactics** | IN | **4** | 15 (11+4) | +8 CP (total 11 CP) |
+| **Axes** | DX | **5** | 16 (11+5) | +13 CP |
+| **Shield** | ST | **4** | 19 (15+4) | +8 CP |
+| **Tactics** | IN | **5** | 15 (11+5) | +13 CP |
+| **Athletics** | ST | 1 | 16 (15+1) | 0 CP (template) |
 | **Intimidation** | ST | 3 | 18 (15+3) | 6 CP |
 | **Perception** | AW | 2 | 14 (12+2) | 3 CP |
 | **Leadership** | CH | 2 | 11 (9+2) | 3 CP |
@@ -96,30 +71,35 @@
 | **Climbing** | ST | 2 | 17 (15+2) | 3 CP |
 | **Animal Handling** | AW | 1 | 13 (12+1) | 1 CP |
 
-**Skills Total:** 13 (template) + 48 + 11 (new) = **72 CP**
+**Skills Total:** **60 CP**
 
 ---
 
-### ADDITIONAL PERKS (20 CP)
+### PERKS (20 CP)
+- Extra Vitality (template) + 10 Vitality
+- Magic Resistance (template)
+- Night vision (template): See perfectly in darkness up to 30m
+- Strong Willed (template): +2 to resist mental effects
+- Facilitated Movement (Mountain) (template): No penalty on rocky/underground terrain
+- Extended Lifespan (template): ~200 years
 - **Weapon Master (Axes)** (10 CP): +2 to hit and parry with axes
 - **Hard to Kill** (10 CP): Don't fall unconscious until -1×Vitality (-37 Vitality)
 
 ---
 
-### FLAWS (-10 CP)
-- **Gruff** (-5 CP): -2 to social rolls with non-dwarves initially
-- **Stubborn Pride** (-5 CP): Must roll WS vs 12 to back down from challenges
+### FLAWS (-20 CP)
+- **Overconfident** (-10 CP): Must roll WS to back down from challenges
+- **Social stigma** (-10 CP): -2 reaction with non-dwarves
 
 ---
 
-### COMBAT MANEUVERS (23 CP) - See [Simverse_Powers_Library.md](Simverse_Powers_Library.md)
+### COMBAT MANEUVERS (22 CP) - See [Simverse_Powers_Library.md](Simverse_Powers_Library.md)
 **Shield Bash** (1 CP)
 **Power Attack** (8 CP)
 **Defensive Stance** (5 CP)
 **Knockback Strike** (5 CP)
 **Disarm** (1 CP)
 **Trip Attack** (1 CP)
-**Feint** (1 CP)
 **Riposte** (1 CP)
 
 ---
@@ -181,12 +161,12 @@ Thorin Ironforge is a veteran of the Iron Mountain clan wars, having defended th
 ### CP BREAKDOWN
 - **Race (Dwarf):** 45 CP
 - **Profession (Warrior):** 33 CP
-- **Combat Maneuvers:** 23 CP
-- **Attributes (net):** 80 CP
-- **Additional Skills:** 59 CP
+- **Combat Maneuvers:** 22 CP
+- **Attributes (net):** 90 CP
+- **Skills:** 60 CP
 - **Additional Perks:** 20 CP
-- **Flaws:** -10 CP gained
-- **TOTAL:** 45 + 33 + 23 + 80 + 59 + 20 - 10 = **250 CP**
+- **Flaws:** -20 CP gained
+- **TOTAL:** 45 + 33 + 22 + 80 + 60 + 20 - 20 = **250 CP**
 - **REMAINING:** **0 CP** ✓
 
 ---
@@ -244,7 +224,7 @@ Thorin Ironforge is a veteran of the Iron Mountain clan wars, having defended th
 **Included Perks:**
 - Night Vision (10 CP): No penalties in darkness
 - Acute Senses - Hearing (5 CP): +2 to hearing-based Perception
-- Forest Movement (5 CP): No terrain penalty in woodlands
+- Facilitated Movement (Forest) (5 CP): No terrain penalty in forests
 - Graceful (10 CP): +1 to Stealth and Acrobatics skills
 - Extended Lifespan (5 CP): ~300 years
 
