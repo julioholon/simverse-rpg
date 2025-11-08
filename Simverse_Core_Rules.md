@@ -979,7 +979,7 @@ These modify the cost by a percentage:
 | **Extra Duration** | +10% (2×), +20% (6×), +30% (12×), +40% (72×), +50% (288×), then +10% per doubling | Default 5 min: +10% (10 min), +20% (30 min), +30% (1 hour), +40% (6 hours), +50% (1 day), +60% (2 days), etc. |
 | **Area Effect** | +50% (3m radius), +100% (6m) | Affects multiple targets in area |
 | **Multiple Targets** | +50% (2 targets), +75% (3), +125% (5) | Add specific targets (not area) |
-| **Reduced Resource Cost** | +25% (half cost), +50% (quarter) | Costs less Mana/Stamina to use, if below 1, round to 0 |
+| **Reduced Cost** | +25% (half cost), +50% (quarter) | Costs less Mana/Stamina to use, if below 1, round to 0 |
 | **Weakened Resistance** | +10% per -2 penalty | Target gets -2 to resist (stackable) |
 | **Instant Action** | +25% | Can interrupt or use mid-action |
 | **Persistent** | +20% | Effect continues without concentration |
@@ -1006,7 +1006,7 @@ These reduce the cost by a percentage:
 | **Obvious/Loud** | -10% | Clearly visible flash/sound, alerts everyone nearby, obvious if resisted |
 | **Concentration** | -20% | Can't take other actions while using, broken if interrupted |
 | **Backfire Risk** | -30% | On critical failure, lose resources, suffer effect, or summon attacks you |
-| **Increased Resource Cost** | -25% (double cost), -50% (triple) | Costs more to use, cheaper to buy |
+| **Increased Cost** | -25% (double cost), -50% (triple) | Costs more to use, cheaper to buy |
 | **Fragile** | -25% | Broken by any damage to user, or by specific trigger (attack, strong emotions) |
 | **Situational Trigger** | -20% | Only works after specific event (successful Parry, being attacked, ally knocked out, etc.) |
 | **Gesture Required** | -10% | Need free hand to use (can't use while grappled/bound) |

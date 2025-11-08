@@ -204,10 +204,10 @@
 
 **Template Power - Rage (18 CP):**
 **Type:** Major Physical Power (15 CP base)
-**Resource Cost:** 5 Stamina
+**Resource Cost:** 12 Stamina
 **Enhancements:** Extra Duration +10%, Reliable Activation +100%
-**Limitations:** Strenuous -25%, Cannot Cast -25%, Usage Limit (3/day) -15%, Increased Resource -20%
-**Calculation:** 15 × (1 + 0.10 + 1.00 - 0.25 - 0.25 - 0.15 - 0.20) = 15 × 1.25 = 18.75 → 18 CP
+**Limitations:** Strenuous -25%, Cannot Cast -25%, Usage Limit (3/day) -15%, Increased Cost -25%
+**Calculation:** 15 × (1 + 0.10 + 1.00 - 0.25 - 0.25 - 0.15 - 0.25) = 15 × 1.2 = 18 → 18 CP
 
 **Effect:** Enter rage for 10 minutes. While raging: +4 to ST and EN (provides +2 damage and +8 Vitality), +2 AR, cannot cast spells. After rage ends, -2 to all actions for 10 minutes. Usable 3/day.
 

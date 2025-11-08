@@ -345,7 +345,7 @@
 **Type:** Moderate Spell (5 CP)
 **Mana Cost:** 3
 **Enhancements:** None
-**Limitations:** Increased Resource -20% (3 Mana instead of 2)
+**Limitations:** Increased Cost -25% (4 Mana instead of 2)
 **Calculation:** 5 × (1 + 0 - 0.20) = 5 × 0.80 = 4 CP
 **Final Cost:** 4 CP
 
@@ -506,9 +506,9 @@
 **Type:** Moderate Spell (5 CP)
 **Mana Cost:** 1
 **Enhancements:** Multiple Targets +50% (3 targets), Extra Duration +10% (10 min from 5 min default)
-**Limitations:** Increased Resource -20% (costs 1 Mana instead of 2)
-**Calculation:** 5 × (1 + 0.50 + 0.10 - 0.20) = 5 × 1.40 = 7 CP
-**Final Cost:** 7 CP
+**Limitations:** Increased Cost -25% (costs 4 Mana instead of 2)
+**Calculation:** 5 × (1 + 0.50 + 0.10 - 0.25) = 5 × 1.35 = 6.75, round down to 6 CP
+**Final Cost:** 6 CP
 
 **Effect:** Grant 3 allies +2 to all rolls for 10 minutes. Doesn't stack with other blessing spells.
 
@@ -545,8 +545,8 @@
 **Type:** Moderate Spell (5 CP)
 **Mana Cost:** 3
 **Enhancements:** Extra Duration +30% (1 hour from 5 min default), Area Effect +100% (5m radius)
-**Limitations:** Increased Resource -20% (costs 3 Mana instead of 2), Fragile -25%, Requires [Item] -10% (Holy Ground)
-**Calculation:** 5 × (1 + 0.30 + 1.00 - 0.20 - 0.25 - 0.10) = 5 × 1.75 = 8.75, round down to 8 CP
+**Limitations:** Increased Cost -25% (costs 4 Mana instead of 2), Fragile -25%, Requires [Item] -10% (Holy Ground)
+**Calculation:** 5 × (1 + 0.30 + 1.0 - 0.25 - 0.25 - 0.10) = 5 × 1.7 = 8.5, round down to 8 CP
 **Final Cost:** 8 CP
 
 **Effect:** Create 5m radius protected area. Enemies must roll vs WS to enter or attack those inside. Breaks if anyone inside attacks out. Lasts 1 hour.
@@ -571,9 +571,9 @@
 **Type:** Major Spell (15 CP)
 **Mana Cost:** 8
 **Enhancements:** Extra Duration +20% (30 min from 5 min default)
-**Limitations:** Increased Resource -20% (costs 8 Mana instead of 6), Self Only -25%, Only in [Condition] -20% (animal forms only, rare), Concentration -20%
-**Calculation:** 15 × (1 + 0.20 - 0.20 - 0.25 - 0.20 - 0.20) = 15 × 0.35 = 5.25, round down to 5 CP
-**Final Cost:** 5 CP
+**Limitations:** Increased Cost -25% (costs 12 Mana instead of 6), Self Only -25%, Only in [Condition] -20% (animal forms only, rare), Concentration -20%
+**Calculation:** 15 × (1 + 0.20 - 0.25 - 0.25 - 0.20 - 0.20) = 15 × 0.30 = 4.5, round down to 4 CP
+**Final Cost:** 4 CP
 
 **Effect:** Transform into any animal of similar size (half to double your mass). Gain physical attributes and abilities of animal. Lasts 30 minutes with concentration.
 
@@ -785,10 +785,10 @@
 
 ### SUMMON BEAST
 **Type:** Moderate Spell (5 CP)
-**Mana Cost:** 3
+**Mana Cost:** 4
 **Enhancements:** Extra Duration +30% (1 hour), Reliable Activation +100%
-**Limitations:** Concentration -20%, Preparation Time -20% (10 minutes), Increased Resource Cost -20%
-**Calculation:** 5 × (1 + 0.30 + 1.00 - 0.20 - 0.20 - 0.20) = 5 × 1.50 = 7.5, round down to 7 CP
+**Limitations:** Concentration -20%, Preparation Time -20% (10 minutes), Increased Cost -25%
+**Calculation:** 5 × (1 + 0.30 + 1.00 - 0.20 - 0.20 - 0.25) = 5 × 1.45 = 7.25, round down to 7 CP
 **Final Cost:** 7 CP
 
 **Effect:** After 10 minutes of ritual, summon one beast (wolf, dire wolf, bear, eagle, etc.). Beast has ~50 CP worth of stats. Follows your commands for 1 hour. Requires concentration to maintain control.
@@ -801,10 +801,10 @@
 
 ### SUMMON SPIRIT
 **Type:** Moderate Spell (5 CP)
-**Mana Cost:** 3
+**Mana Cost:** 4
 **Enhancements:** Extra Duration +30% (1 hour), Reliable Activation +100%
-**Limitations:** Concentration -20%, Preparation Time -20% (10 minutes), Increased Resource Cost -20%
-**Calculation:** 5 × (1 + 0.30 + 1.00 - 0.20 - 0.20 - 0.20) = 5 × 1.50 = 7.5, round down to 7 CP
+**Limitations:** Concentration -20%, Preparation Time -20% (10 minutes), Increased Cost -25%
+**Calculation:** 5 × (1 + 0.30 + 1.00 - 0.20 - 0.20 - 0.25) = 5 × 1.45 = 7.25, round down to 7 CP
 **Final Cost:** 7 CP
 
 **Effect:** After 10 minutes of ritual, summon one spirit creature (ghost, shade, wraith). Spirit has ~50 CP worth of stats. Follows your commands for 1 hour. Requires concentration to maintain control.
