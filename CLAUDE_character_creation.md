@@ -71,7 +71,7 @@ Cost **half** of major attributes:
 
 **Formula**: Cost = 5 × 2^⌊(n-11)/3⌋ where n = target level
 
-**Lowering Attributes**: Gain CP by reducing from 10 (same costs but negative)
+**Lowering Attributes**: Gain CP by reducing from 10 (negative FLAT cost, -10 for each level below 10 for major, -5 for each level for minor)
 
 ### 4. CALCULATE DERIVED STATISTICS
 
@@ -119,7 +119,7 @@ Cost **half** of major attributes:
 
 \* = Hard skill
 
-**Specializations**: At skill 5+, spend 2 CP for +2 in specific specialty
+**Specializations**: At skill 5+, pick a specific specialty for +2 on rolls e.g. Swords (Longsword)
 
 ### 6. PURCHASE PERKS & FLAWS
 
@@ -234,7 +234,7 @@ The library contains 100+ ready-to-use powers including:
 | Extra Duration | +10% (2×), +20% (6×), +30% (12×) | Longer lasting |
 | Area Effect | +50% (3m), +100% (6m) | Hit multiple targets in area |
 | Multiple Targets | +50% (2), +75% (3), +125% (5) | Hit specific targets |
-| Reduced Resource | +25% (half), +50% (quarter) | Costs less Stamina/Mana |
+| Reduced Cost | +25% (half), +50% (quarter) | Costs less Stamina/Mana |
 | Reliable Activation | +100% | No skill roll, auto-activates |
 | Armor Piercing | +50% | Ignore 2 AR |
 | Homing | +50% | Auto-hit, no roll needed |
@@ -250,7 +250,7 @@ The library contains 100+ ready-to-use powers including:
 | Preparation Time | -10% (1 min), -20% (10 min), -30% (1 hr) | Must prepare first |
 | Obvious/Loud | -10% | Clearly visible/audible |
 | Concentration | -20% | Can't take other actions |
-| Increased Resource | -25% (double), -50% (triple) | Costs more to use |
+| Increased Cost | -25% (double), -50% (triple) | Costs more to use |
 | Melee Range Only | -15% | Must be adjacent |
 | Self Only | -25% | Cannot target others |
 | Exhausting | -25% | Take 1 Vitality when used |
@@ -374,7 +374,7 @@ Maximum reduction: -75% (can't go below 25% of base)
 **Damage Types**:
 - **Bludgeoning**: Normal AR applies
 - **Cutting**: AR counts as double, but causes bleeding (1 Vitality/turn)
-- **Impaling**: -1 damage per die rolled, but damage through AR is doubled
+- **Impaling**: -1 damage per die rolled (ONLY IF weapon has two damage modes), damage through AR is doubled
 - **Energy**: Normal AR applies, may cause special effects
 
 ---
