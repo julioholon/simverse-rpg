@@ -26,14 +26,13 @@
 
 ---
 
-### Orc (60 CP)
+### Orc (40 CP)
 **Size Modifier:**
 - **Large Size** (10 CP): ST +2, DX -2, Vitality ×1.5, Movement ×1.5
 
 **Additional Attribute Modifiers:**
 - ST +1 (5 CP) - Net +3 after size modifier
 - DX +2 (20 CP) - Net +0 after size modifier
-- EN +2 (10 CP)
 - IN -1 (-10 CP)
 - CH -1 (-10 CP)
 
@@ -41,7 +40,6 @@
 - High Pain Threshold (10 CP): Ignore first -2 from injury penalties
 - Night Vision (10 CP): No penalties in darkness or low light
 - Intimidating (5 CP): +2 to Intimidation
-- Relentless (10 CP): When reduced to 0 Vitality, can take one more action before falling unconscious
 
 **Starting Equipment:** None (from profession)
 
@@ -70,24 +68,30 @@
 
 ---
 
-### Dragonborn (60 CP)
+### Dragonborn (40 CP)
 **Attribute Modifiers:**
-- ST +2 (10 CP)
-- EN +1 (5 CP)
+- ST +1 (5 CP)
 - CH +1 (10 CP)
 
 **Included Perks:**
-- Extra Vitality (10 CP): +10 Vitality
 - Intimidating (5 CP): +2 to Intimidation
 - Natural Armor (10 CP): +2 AR from scales, stacks with worn armor
 
 **Included Powers:**
-- Draconic Breath (10 CP): Once per short rest, exhale destructive energy in 4m cone. Choose damage type at creation (fire, cold, lightning, acid, poison). Targets dodge (DX/2) or take 2d6 damage. Energy Resistance: Take half damage from your chosen breath type.
+- **Draconic Breath (10 CP)**
+  - **Type:** Moderate Effect (5 CP base, 2 Mana base cost)
+  - **Enhancements:** Increased Damage +50% (2d6 total), Cone Shaped +50% (4m cone), Reduced Cost +25% (1 Mana instead of 2)
+  - **Limitations:** Usage Limit -30% (1/day)
+  - **Calculation:** 5 × (1 + 0.50 + 0.50 + 0.25 - 0.30) = 5 × 1.95 = 9.75 → **10 CP**
+  - **Effect:** Exhale destructive energy in a 4m cone. Choose damage type at character creation (fire, cold, lightning, acid, or poison) - this choice is permanent and determines your draconic ancestry. All targets in the cone must dodge (DX/2) or take 2d6 damage of your chosen type. Costs 1 Mana, usable once per day.
+  - **Draconic Resistance:** Gain +2 AR specifically against your chosen damage type (included in the 10 CP cost)
 
 **Notes:**
-- **Draconic Ancestry**: Choose dragon color at creation, determines breath type and appearance
+- **Draconic Ancestry**: Choose dragon color at creation (Red=Fire, White=Cold, Blue=Lightning, Green=Acid, Black=Poison). This determines breath weapon type, resistance, and appearance (scale color, eye color)
 
 **Starting Equipment:** None (from profession)
+
+**Total Cost Breakdown:** 5 + 10 + 5 + 10 + 10 = **40 CP**
 
 ---
 
@@ -115,10 +119,9 @@
 
 ---
 
-### Tiefling (55 CP)
+### Tiefling (45 CP)
 **Attribute Modifiers:**
 - CH +1 (10 CP)
-- IN +1 (10 CP)
 - WS +1 (10 CP)
 
 **Included Perks:**
@@ -130,7 +133,7 @@
 **Flaws:**
 - Hideous Appearance (-10 CP): -2 to reaction rolls with common folk due to demonic features (horns, tail, red skin)
 
-**Total Cost Breakdown:** 10 + 10 + 10 + 35 (perks) - 10 (flaw) = **55 CP**
+**Total Cost Breakdown:** 10 + 10 + 35 (perks) - 10 (flaw) = **45 CP**
 
 **Starting Equipment:** None (from profession)
 
@@ -332,7 +335,7 @@
 
 ---
 
-### Artificer (79 CP)
+### Artificer (64 CP)
 
 **Starting Skills:**
 - Engineering 4 - Hard (20 CP: 2+4+6+8)
@@ -342,7 +345,6 @@
 **Included Perks:**
 - Mage Gift (20 CP): Can cast spells
 - Tinker (15 CP): Create magical gadgets (1 week + materials, can have IN/2 items)
-- Quick Learner (15 CP): Learn all skills 50% faster
 
 **Starting Equipment:**
 - Light armor

@@ -728,6 +728,11 @@ Perks represent advantages, talents, and special abilities. Flaws represent disa
 - -2 to social interactions with certain groups
 - Prejudice, criminal record, or pariah status
 
+**Severe Social Stigma** (-20 CP)
+- -4 to social interactions with certain groups
+- Hunted, death on sight
+
+
 **Enemy** (-5 to -20 CP)
 - Someone actively opposes you
 - Cost varies by enemy's power and determination
@@ -978,6 +983,7 @@ These modify the cost by a percentage:
 | **Expansive Range** | +100% (100× range) | For very long range effects. 10m → 1km (+100%). Each point skill roll succeeds by doubles maximum range. |
 | **Extra Duration** | +10% (2×), +20% (6×), +30% (12×), +40% (72×), +50% (288×), then +10% per doubling | Default 5 min: +10% (10 min), +20% (30 min), +30% (1 hour), +40% (6 hours), +50% (1 day), +60% (2 days), etc. |
 | **Area Effect** | +50% (3m radius), +100% (6m) | Affects multiple targets in area |
+| **Cone Shaped** | +50% (4m cone) | Affects all targets in a 4m cone emanating from the user |
 | **Multiple Targets** | +50% (2 targets), +75% (3), +125% (5) | Add specific targets (not area) |
 | **Reduced Cost** | +25% (half cost), +50% (quarter) | Costs less Mana/Stamina to use, if below 1, round to 0 |
 | **Weakened Resistance** | +10% per -2 penalty | Target gets -2 to resist (stackable) |
