@@ -1243,36 +1243,47 @@ Different damage types interact with armor differently:
 - **Examples:** Longsword (2d6-1 cutting), battleaxe (2d6 cutting)
 
 #### Impaling Damage
-- **Sources:** Spears, arrows, piercing weapons, stabs
-- **Effect:** Subtract 1 damage per die rolled (before AR), but damage that penetrates AR is **doubled**
-- **Examples:** Spear thrust (1d6+1 impaling), arrow (1d6+2 impaling), dagger thrust (1d6-3 impaling)
-- **Calculation:** Roll damage + ST bonus, subtract AR, then double remaining damage
-- **Dual damage type weapons:** Swords and similar weapons that can be used for swinging or thrusting have the default listed damage for swingind, if you use the same weapon for thrusting, you just reduce 1 damage per dice. E
 
-**Example 1 - Arrow (1 die):**
-- Arrow (1d6+2 impaling) + ST 12 (+1): rolls 5 on die
-- 5 + 2 + 1 = 8 damage
-- vs AR 2: 7 - 2 = 5 gets through
-- Impaling doubles: 5 × 2 = **10 Vitality damage**
+Impaling attacks deal devastating damage by penetrating vital areas, but there are two types:
 
-**Example 2 - Heavy Spear (2 dice):**
-- Spear (2d6 impaling) + ST 14 (+2): rolls 9 on dice
-- 9 + 2 = 11 damage
-- vs AR 3: 11 - 3 = 8 gets through
+**1. Dedicated Impaling Weapons** (arrows, spears, pikes, lances):
+- **Effect:** Damage that penetrates AR is **doubled**
+- **Sources:** Arrows, javelins, spears, pikes, lances
+- **Use weapon damage as listed** - no modifications
+- **Examples:** Arrow (1d6+2 impaling), Spear (1d6+1 impaling), Pike (1d6+3 impaling)
+
+**2. Slashing Weapons Used for Thrusting** (swords, daggers, knives):
+- **Effect:** **Subtract 1 per die rolled first**, then damage that penetrates AR is **doubled**
+- **Sources:** Swords, daggers, knives when thrusting instead of slashing
+- **Why the subtraction?** Thrusts with slashing weapons are less effective than proper cuts
+- **Examples:** Longsword thrust (2d6-1 cutting becomes 2d6-3 impaling), Dagger thrust (1d6-3 cutting becomes 1d6-4 impaling)
+
+**Example 1 - Dedicated Impaling (Arrow):**
+- Archer with ST 12 (+1) shoots arrow (1d6+2 impaling) vs target with AR 3
+- Roll: 4 on 1d6+2 = 6 damage + 1 ST = **7 damage total**
+- vs AR 3: 7 - 3 = **4 gets through**
+- Impaling doubles: 4 × 2 = **8 Vitality damage**
+
+**Example 2 - Dedicated Impaling (Heavy Spear):**
+- Warrior with ST 14 (+2) thrusts spear (2d6 impaling) vs target with AR 3
+- Roll: 9 on 2d6 = 9 damage + 2 ST = **11 damage total**
+- vs AR 3: 11 - 3 = **8 gets through**
 - Impaling doubles: 8 × 2 = **16 Vitality damage**
 
-**Example 2 - Longsword thrusting:**
-- Attacker with ST 14 (+2) uses longsword (2d6-1 cutting) thrusting target with AR 4.
-- Roll: 7 on 2d6-1 -2 (-1 per dice) = 4 damage + 2 ST = 6 damage total
-- vs AR 4: 6 - 4 = 2 (x2 because of impaling damage) = 4 damage to Vitality
+**Example 3 - Slashing Weapon Thrust (Longsword):**
+- Warrior with ST 14 (+2) thrusts longsword (2d6-1 cutting) vs target with AR 4
+- Roll: 7 on 2d6-1 = 6 damage
+- **Subtract 1 per die for thrust:** 6 - 2 = 4 damage + 2 ST = **6 damage total**
+- vs AR 4: 6 - 4 = **2 gets through**
+- Impaling doubles: 2 × 2 = **4 Vitality damage**
 
-**Example 3 - Longsword swinging:**
-Attacker with ST 14 (+2) uses longsword (2d6-1 cutting) for swinging against target with AR 4.
-- Roll: 7 on 2d6-1 = 6 damage + 2 ST = 8 damage total
-- AR 4 counts as 8 vs cutting damage
-- 8 damage - 8 AR = 0 damage (armor absorbed it all)
-- If roll had been 10: 9 damage + 2 ST = 11 damage total
-- 11 - 8 AR = 3 damage to Vitality + bleeding starts
+**Example 4 - Same Longsword, Slashing Instead:**
+- Warrior with ST 14 (+2) slashes longsword (2d6-1 cutting) vs target with AR 4
+- Roll: 7 on 2d6-1 = 6 damage + 2 ST = **8 damage total**
+- AR 4 counts as **8 vs cutting** damage
+- 8 damage - 8 AR = **0 damage** (armor absorbed it all)
+- If roll had been 10: 9 damage + 2 ST = 11 total
+- 11 - 8 AR = **3 damage to Vitality + bleeding starts**
 
 #### Energy/Magical Damage
 - **Sources:** Fire, cold, lightning, acid, magical force
