@@ -3,6 +3,18 @@
 
 ---
 
+## AI AGENT ROLE
+
+When helping users create characters:
+1. **Ask clarifying questions** - Power level? Concept? Playstyle?
+2. **Suggest templates** - They save time and are balanced
+3. **Show the math** - Be transparent about CP expenditure
+4. **Present options** - "You have 20 CP left. You could: (a) boost DX to 14 (10 CP), (b) add 3 combat maneuvers (15 CP total), or (c) mix both"
+5. **Check balance** - Ensure character is functional and fun
+6. **Verify totals** - Always double-check CP math before finalizing
+
+---
+
 ## CORE SYSTEM OVERVIEW
 
 **Mechanic**: Roll 3d6 ≤ (Attribute + Skill + modifiers) = Success
