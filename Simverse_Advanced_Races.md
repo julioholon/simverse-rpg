@@ -269,6 +269,7 @@ Modify or replace standard human senses.
 - Immune to pain-based penalties and torture
 - **Drawback**: Don't know when injured. -2 to notice injuries or damage to self.
 - May fight until destroyed without realizing severity
+- GM will keep account of the remaining Vitality, damage rolls not revealed, just eventual GM description of the blow visual effects
 - **Justification**: Constructs, certain undead, beings with alien neurology
 
 ### Enhanced Sense - [Type] (already exists as "Acute Senses", 5 CP per sense)

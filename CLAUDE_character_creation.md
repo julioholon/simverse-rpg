@@ -77,16 +77,25 @@ Cost **half** of major attributes:
 
 | Stat | Formula | Recovery |
 |------|---------|----------|
-| **Vitality** | EN × 2 | AW/2 per long rest (8 hrs) |
+| **Vitality** (living) | EN × 2 | AW/2 per long rest (8 hrs) |
+| **Integrity** (constructs) | EN × 2 | Repair skill (Engineering, 1 hr per EN) |
 | **Stamina** | ST × 2 | ST/2 per short rest (1 hr) |
 | **Mana** | AW × 2 | AW/2 per short rest (1 hr) |
 | **Speed** | (DX + EN) / 4 | Used for initiative & movement |
 | **Perception** | (IN + AW) / 2 | Used for noticing things |
 | **ST Damage Bonus** | (ST - 10) / 2 (round down) | Added to melee/thrown damage |
 
-**Important**:
+**Living Beings use Vitality**:
 - At 0 Vitality: unconscious
 - At -EN Vitality: death (unless Hard to Kill perk)
+- At -2×EN Vitality: body destroyed (beyond normal resurrection)
+
+**Constructs/Robots/Unliving use Integrity**:
+- At 0 Integrity: glitches and malfunctions, random system failures
+- At -EN Integrity: complete shutdown (can be repaired with time)
+- At -2×EN Integrity: completely broken/destroyed (beyond normal repair)
+
+**Other Thresholds**:
 - At 0 Stamina: exhausted (-4 to all physical actions)
 - At 0 Mana: depleted (-4 to all mental actions)
 
@@ -131,7 +140,7 @@ Cost **half** of major attributes:
 - Combat Reflexes (5 CP): +2 Speed for initiative
 - Weapon Master (10 CP): +2 attack/parry/damage with one weapon type
 - Martial Arts Training (20 CP): Unarmed +2 damage, attack as minor action, +2 defense unarmored
-- Ambidextrous (5 CP): No off-hand penalty
+- Ambidextrous (10 CP): No off-hand penalty
 - Hard to Kill (15 CP): Don't fall unconscious until -2×Vitality
 - Armor Familiarity (5 CP): Reduce armor penalties by 2
 
@@ -140,6 +149,7 @@ Cost **half** of major attributes:
 - Night Vision (10 CP): No penalties in darkness
 - Acute Senses (5 CP per sense): +2 Perception with chosen sense
 - High Pain Threshold (10 CP): Ignore first -2 from injuries
+- No Sense of Pain (5 CP): Immune to pain penalties, but -2 to notice injuries (constructs, undead)
 - Natural Armor (10 CP): +2 AR from scales/thick skin
 - Damage Resistance (15 CP per type): Half damage from fire/cold/lightning/acid/poison
 
@@ -169,8 +179,15 @@ Cost **half** of major attributes:
 - Low Stamina (-10 CP): -10 Stamina
 - One Eye (-15 CP): -3 ranged attacks, -2 Perception
 - Chronic Pain (-10 CP): -1 to all physical actions
+- Fragile (-15 CP): Injuries take double time to heal
+
+**Sensory Flaws**:
+- Blind (-20 CP): Cannot see, -6 to attacks, automatically fail vision tasks
+- Deaf (-10 CP): Cannot hear, -4 to Perception, immune to sonic attacks
+- Mute (-5 CP): Cannot speak, can't use verbal spell components
 
 **Mental Flaws**:
+- Animal Intelligence (-20 CP): IN capped at 6, can't learn complex skills
 - Phobia (-5 to -15 CP): Must roll WS vs 12 or freeze/flee
 - Addiction (-10 to -20 CP): Need substance regularly
 - Overconfident (-10 CP): Must roll WS to retreat
@@ -371,10 +388,15 @@ Maximum reduction: -75% (can't go below 25% of base)
 - **Parry**: (DX + Weapon Skill)/2 (-4 if attacked this turn)
 - **Block**: (DX + Shield Skill)/2 + SD (frontal attacks only)
 
+**Two-Weapon Fighting & Off-Hand**:
+- **Off-hand penalty**: -4 to hit with non-dominant hand
+- **Two weapons**: Main hand -2, off-hand -6 (both attack as 1 Major Action)
+- **Ambidextrous (10 CP)**: Removes all off-hand penalties
+
 **Damage Types**:
 - **Bludgeoning**: Normal AR applies
 - **Cutting**: AR counts as double, but causes bleeding (1 Vitality/turn)
-- **Impaling**: -1 damage per die rolled (ONLY IF weapon has two damage modes), damage through AR is doubled
+- **Impaling**: Subtract 1 per die before AR (e.g., 2d6 impaling = roll-2), then damage through AR is doubled
 - **Energy**: Normal AR applies, may cause special effects
 
 ---

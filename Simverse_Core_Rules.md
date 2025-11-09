@@ -207,15 +207,28 @@ While there are no hard limits on attributes, the following guidelines help main
 
 Several important values are calculated from your attributes:
 
-### Vitality (HP)
-**Vitality = EN × 2**
+### Vitality (HP) and Integrity
+
+**Living beings use Vitality = EN × 2**
 
 - Represents physical health and injury tolerance
 - Damage from combat reduces Vitality
 - At 0 Vitality: unconscious
 - At -EN Vitality: death (unless you have Hard to Kill perk)
+- At -2×EN Vitality: body destroyed (beyond normal resurrection)
 - Recovers AW/2 per long rest (8 hours sleep)
 - Can purchase Extra Vitality / Low Vitality to increase/decrease individually
+
+**Constructs/Robots/Unliving beings use Integrity = EN × 2**
+
+- Represents structural integrity and functionality
+- Damage from combat reduces Integrity
+- At 0 Integrity: glitches and malfunctions, random system failures
+- At -EN Integrity: complete shutdown (can be repaired with time)
+- At -2×EN Integrity: completely broken/destroyed (beyond normal repair, needs complete reconstruction)
+- **Note**: Constructs with Integrity cannot be "unconscious" - they either function (with glitches) or shut down completely
+- Physical objects like doors, chests, and walls also have Integrity and may have AR (Armor Rating)
+- Constructs typically require Engineering skill for repair rather than healing magic
 
 ### Stamina
 **Stamina = ST × 2**
@@ -470,7 +483,7 @@ Perks represent advantages, talents, and special abilities. Flaws represent disa
 - +2 to all defense rolls when unarmored
 - Can parry ranged attacks at -4 (requires hand free)
 
-**Ambidextrous** (5 CP)
+**Ambidextrous** (10 CP)
 - No penalty for using off-hand
 - Can wield two weapons effectively
 
@@ -513,6 +526,14 @@ Perks represent advantages, talents, and special abilities. Flaws represent disa
 **High Pain Threshold** (10 CP)
 - Ignore first -2 from injury penalties
 - Can function better when wounded
+
+**No Sense of Pain** (5 CP)
+- Cannot feel pain
+- Immune to pain-based penalties and torture
+- **Drawback**: Don't know when injured. -2 to notice injuries or damage to self.
+- May fight until destroyed without realizing severity
+- GM will keep account of the remaining Vitality, damage rolls not revealed, just eventual GM description of the blow visual effects
+- **Justification**: Constructs, certain undead, beings with alien neurology, nerve damage
 
 **Natural Armor** (10 CP)
 - +2 AR from thick skin, scales, or chitin
@@ -628,6 +649,24 @@ Perks represent advantages, talents, and special abilities. Flaws represent disa
 **Extra Mana** (10 CP / level)
 - +10 to Mana pool
 
+**Undead** (+50 CP)
+- Character is undead (resurrected as zombie, vampire, lich, skeleton, wight, etc.)
+- Count as undead creature for all effects
+- **Use Vitality normally** (not Integrity - undead bodies still have "health")
+- **Immunities:**
+  - Doesn't need food, water, air, or sleep
+  - Immune to poison and disease
+  - Immune to death magic and life drain (already dead)
+  - No bleeding from cutting damage
+  - Immune to effects targeting "living creatures"
+  - Can be healed by negative energy and necromantic magic
+- **Vulnerabilities:**
+  - Can be affected by anti-undead magic (Turn Undead, Destroy Undead, etc.)
+  - Cannot benefit from normal healing magic (Cure Wounds, healing potions, etc.)
+  - Cannot heal naturally during rest - must use necromantic healing
+  - Severe social stigma - hunted, feared, usually killed on sight by most civilizations
+
+
 #### Racial Perks
 
 **Facilitated Movement** (5 CP)
@@ -679,21 +718,42 @@ Perks represent advantages, talents, and special abilities. Flaws represent disa
 - Injuries take double time to heal
 - Slower recovery from wounds
 
-**Undead** (-30 CP)
-- Character is undead (resurrected as zombie, vampire, lich, etc.)
-- **Advantages:**
-  - No need to breathe, sleep, eat, or drink
-  - Immune to poison, disease, and suffocation
-  - Resistant to impaling and cutting damage (takes half damage from these types, as they don't bleed or have vital organs)
-- **Disadvantages:**
-  - Unable to heal naturally (must use magic or necromancy to restore Vitality)
-  - Vulnerable to holy damage (takes double damage from holy/divine sources)
-  - Vulnerable to fire damage (takes double damage from fire)
-  - Social stigma in most civilizations (-4 to social interactions with living)
-  - May be turned or destroyed by clerics/paladins
-  - Cannot benefit from normal healing magic (Cure spells, etc.)
+#### Sensory Flaws
+
+**Blind** (-20 CP)
+- Cannot see
+- Automatically fail any action requiring vision
+- -6 to attacks and most Perception rolls
+- Must rely on other senses (hearing, smell, touch)
+- **Often combined with**: Enhanced other senses like Acute Hearing or exotic senses
+- **Example combination**: Blind (-20 CP) + Acute Hearing (+5 CP) = Net -15 CP
+
+**Deaf** (-10 CP)
+- Cannot hear
+- Automatically fail hearing-based Perception
+- -4 to Perception rolls overall
+- **Immunities**: Sonic attacks, sound-based effects, verbal charms requiring hearing
+- Cannot understand spoken language (must read lips or use sign language)
+- **Benefit**: +4 to resist sonic/thunder damage
+- **Often combined with**: Enhanced vision or other senses
+
+**Mute** (-5 CP)
+- Cannot speak or produce speech sounds
+- Cannot use verbal spell components without alternate method (GM may allow silent casting at increased cost/difficulty)
+- Must communicate via writing, gestures, sign language, or telepathy
+- Can still make involuntary sounds (grunt, scream, gasp) at GM discretion
+- **Note**: Less limiting than it seems - gestures and writing work in most situations
 
 #### Mental Flaws
+
+**Animal Intelligence** (-20 CP)
+- **IN capped at maximum 6**
+- Cannot learn complex skills requiring reasoning (Engineering, Medicine, Tactics, Spellcasting)
+- Cannot read or write (unless trained like a parrot - mimicry without comprehension)
+- Follow simple commands and instincts
+- Rely on training, conditioning, and natural behavior
+- **Benefit**: +2 to Survival, Tracking (natural instincts)
+- **Justification**: Awakened animals, low-intelligence constructs, brain damage, magical regression
 
 **Phobia** (-5 to -15 CP, severity varies)
 - Must roll WS vs 12 when encountering phobia
@@ -1245,6 +1305,37 @@ Characters can fight without weapons:
 
 ---
 
+### Two-Weapon Fighting and Off-Hand Attacks
+
+Characters can attack with two weapons or use their off-hand, but this comes with penalties unless they have the Ambidextrous perk.
+
+**Off-Hand Penalty:**
+- Attacking with your non-dominant hand: **-4 to hit**
+- Applies to any action using the off-hand (attacking, throwing, catching, etc.)
+
+**Two-Weapon Fighting:**
+- Can attack with both weapons in the same turn as a single Major Action
+- **Main hand attack**: -2 to hit
+- **Off-hand attack**: -6 to hit (off-hand penalty already accounted)
+- Both attacks roll separately against the same or different targets
+- Defender gets separate defense rolls against each attack
+
+**Ambidextrous Perk (10 CP):**
+- **Removes all off-hand penalties**
+- Off-hand attacks have no penalty
+- Two-weapon fighting: Both attacks at -2 to hit (no additional off-hand penalty)
+- Can use off-hand for any task without penalty
+
+**Example - Two-Weapon Fighting:**
+- **Without Ambidextrous**: Rogue attacks with two daggers. Main hand at -2 (DX 13 + Skill 4 - 2 = 15), off-hand at -6 (DX 13 + Skill 4 - 6 = 11).
+- **With Ambidextrous**: Same rogue attacks with both daggers at -2 each (both at 15 to hit).
+
+**Example - Off-Hand Use:**
+- **Without Ambidextrous**: Warrior switches sword to off-hand to open door with main hand. When ambushed, attacks with sword in off-hand at -4.
+- **With Ambidextrous**: Warrior can use either hand interchangeably with no penalty.
+
+---
+
 ### Heavy Weapon Requirements
 
 Some weapons require minimum Strength to wield effectively:
@@ -1449,6 +1540,127 @@ Party sees zombie horde for first time. All roll vs WS:
 - **Lyralei** (WS 14, inexperienced -2): Target 12, rolls 18 = failure by 6, panics and flees!
 
 **GM Note:** Use sparingly for dramatic effect. Veteran adventurers shouldn't panic at normal combat.
+
+---
+
+## Environmental Hazards & Survival
+
+Characters must manage basic needs and survive harsh environments.
+
+### Nourishment
+
+**Starvation:**
+Characters need to eat regularly to maintain health and function.
+
+- **Day 1 without food**: No immediate effect
+- **Day 2-3 without food**: -2 to all physical actions, constant hunger
+- **Day 4-7 without food**: -4 to all physical actions, -2 to mental actions, lose 1 Vitality per day
+- **Day 8+ without food**: -6 to all actions, lose 2 Vitality per day, roll vs EN each day or collapse unconscious
+- **After 2 weeks**: Roll vs EN each day or die from starvation
+
+**Dehydration:**
+Water is more critical than food for survival.
+
+- **Day 1 without water**: -1 to all actions, constant thirst
+- **Day 2 without water**: -4 to all physical actions, -2 to mental actions, lose 2 Vitality per day
+- **Day 3 without water**: -6 to all actions, lose 4 Vitality per day, roll vs EN or collapse unconscious
+- **Day 4+**: Roll vs EN each day or die from dehydration
+
+**Hot/Desert environments**: Double the penalties and Vitality loss (need more water)
+
+### Breath-Holding and Suffocation
+
+**Breath-Holding:**
+Characters can hold their breath for a limited time.
+
+- **Normal breath-holding**: EN × 10 seconds (average human with EN 10 = 100 seconds / ~1.5 minutes)
+- **After preparation** (deep breath, calm): EN × 15 seconds
+- **Under stress** (combat, panic): EN × 5 seconds
+
+**After breath-holding limit:**
+- Start losing 2 Vitality per round (6 seconds)
+- Must roll vs EN each round or fall unconscious
+- Unconscious characters drown/suffocate in 1d6 rounds unless rescued
+
+**Suffocation/Drowning:**
+- Being strangled, buried, or in airless environment without preparation = immediate EN × 5 seconds limit
+- Then lose 2 Vitality per round as above
+
+**Vacuum/Space:**
+- Exposure to vacuum causes 1d6 damage per round to exposed areas due to extreme cold
+- Holding breath in vacuum: EN × 3 seconds only (pressure differential)
+- Unconscious in 2-3 rounds, death in 1 minute without rescue
+
+### Sleep Deprivation
+
+Characters need rest to maintain mental and physical performance.
+
+- **1 night without sleep**: -1 to all actions, -2 to Perception
+- **2 nights without sleep**: -2 to all actions, -4 to Perception, roll vs WS or microsleep (freeze for 1 round randomly)
+- **3 nights without sleep**: -4 to all actions, -6 to Perception, roll vs WS each hour or fall asleep uncontrollably for 1d6 hours
+- **4+ nights without sleep**: -6 to all actions, hallucinations, roll vs WS every 30 minutes or collapse unconscious for 8+ hours
+
+**Recovery**: Full 8-hour sleep removes all penalties. Partial sleep (4-6 hours) reduces penalty by half.
+
+### Pain and Injury
+
+Beyond the shock penalties from sudden damage (see [Pain and Shock](#pain-and-shock) in Combat section), ongoing injuries cause persistent effects, post combat:
+
+**Ongoing Pain from Injuries:**
+- **Below 50% Vitality**: -1 to all physical actions from accumulated injuries
+- **Below 25% Vitality**: -2 to all physical actions, obvious limp/impairment
+- **Below 10% Vitality**: -4 to all actions, barely functional, movement at half speed
+
+**No Sense of Pain trait**: Immune to pain penalties, but -2 to notice injuries or damage to self
+
+**High Pain Threshold perk**: Ignore first -2 from injury penalties
+
+**Chronic Pain flaw**: -1 to all physical actions at all times (stacks with injury penalties)
+
+### Disease and Poison
+
+**Poison Types:**
+Poisons cause various effects based on type and potency. See [Simverse_Powers_Library.md](Simverse_Powers_Library.md) for detailed poison effects and creation rules.
+
+**Common Poison Effects:**
+- **Lethal Poison**: Deals damage over time (1d6 per hour/minute/round depending on potency)
+- **Paralyzing Poison**: Causes -4 to all actions, or complete paralysis on failed EN roll
+- **Weakening Poison**: Reduces ST or EN by 1d6 for duration
+- **Sedative**: Causes drowsiness (-4 to mental actions), sleep on failed EN roll
+- **Hallucinogenic**: Causes -6 to Perception, hallucinations, roll vs WS per minute to act normally
+
+**Resisting Poison:**
+- Roll vs EN to resist or reduce poison effect
+- Critical success: Negate completely (success by 10+)
+- Success: Reduce effect by half or negate for weaker poisons
+- Failure: Full poison effect applies, range of failure extends duration
+- Critical failure: Double poison effect or duration
+
+**Treating Poison:**
+- Medicine skill roll can reduce ongoing poison effects
+- Antidote (if available) neutralizes specific poison
+- Healing magic can cure poison instantly
+- Time: Most poisons run their course in hours to days
+
+**Disease:**
+Diseases are similar to poisons but spread over longer periods.
+
+**Common Disease Effects:**
+- **Mild Disease** (common cold, minor infection): -1 to actions, lasts 3-7 days
+- **Moderate Disease** (flu, serious infection): -2 to physical actions, -1 to mental actions, lose 1 Vitality per day, lasts 1-2 weeks
+- **Severe Disease** (plague, magical disease): -4 to all actions, lose 2 Vitality per day, lasts 2-4 weeks, may be contagious
+- **Fatal Disease**: As severe, but also roll vs EN each day or lose 1 EN permanently. Death at EN 0.
+
+**Resisting Disease:**
+- Initial exposure: Roll vs EN to avoid contracting disease
+- During disease: Roll vs EN each day to start recovering (reduce duration)
+- Resilient perk: +2 to resist poison and disease
+
+**Treating Disease:**
+- Medicine skill can improve recovery (reduce penalties or duration)
+- Magical dieseases may require Occult Knowledge instead
+- Magical healing often cures disease instantly
+- Rest and proper care: +2 to resistance rolls
 
 ---
 

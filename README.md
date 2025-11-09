@@ -129,7 +129,8 @@ Characters have 7 attributes starting at 10 (human average):
 
 ### Derived Statistics
 
-- **Vitality** = EN × 2 (health/hit points)
+- **Vitality** = EN × 2 (health/hit points for living beings)
+- **Integrity** = EN × 2 (structural durability for constructs/robots)
 - **Stamina** = ST × 2 (physical energy for maneuvers)
 - **Mana** = AW × 2 (magical/mental energy)
 - **Speed** = (DX + EN) / 4 (initiative and movement)

@@ -368,7 +368,7 @@
 - Disguise 2 (3 CP)
 
 **Included Perks:**
-- Ambidextrous (5 CP): No penalty for using off-hand
+- Ambidextrous (10 CP): No penalty for using off-hand
 
 **Template Power - Assassinate (25 CP):**
 **Type:** Major Physical Maneuver (15 CP base)
