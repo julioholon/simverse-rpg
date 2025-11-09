@@ -20,7 +20,7 @@
 
 
 ### Physical Skills (Regular)
-- **Acrobatics** - Tumbling, flips, aerial maneuvers, breakfalls
+- **Acrobatics** - Tumbling, flips, aerial maneuvers, breakfalls, +2 to dodge when trained
 - **Stealth** - Moving silently, hiding, shadowing targets
 - **Sleight of Hand** - Pickpocketing, palming objects, stage magic
 - **Escape Artist** - Getting out of bonds, slipping restraints
