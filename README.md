@@ -69,19 +69,20 @@ Spells, combat maneuvers, and psychic powers all use the same construction syste
 
 The Simverse RPG system consists of the following documents:
 
-| File | Size | Description |
-|------|------|-------------|
-| **Simverse_Core_Rules.md** | 53 KB | Complete rulebook with character creation, combat, powers, and advancement |
-| **Simverse_Powers_Library.md** | 33 KB | Extensive library of pre-built spells, maneuvers, and powers with full stat blocks |
-| **Simverse_Equipment_List.md** | 17 KB | Comprehensive weapons, armor, and gear with prices and statistics |
-| **Simverse_Skill_List.md** | 7 KB | Complete skill list with descriptions and governing attributes |
-| **Simverse_Additional_Templates.md** | 13 KB | Extended race and profession templates (Monk, Cleric, Paladin, etc.) |
-| **Simverse_Advanced_Combat.md** | 14 KB | Optional advanced rules for mounted combat, mass battles, and siege warfare |
-| **Simverse_Character_Sheet.md** | 13 KB | Printable character sheet template |
-| **Simverse_PreGen_Characters.md** | 19 KB | Ready-to-play pre-generated characters across multiple power levels |
-| **Simverse_Combat_Simulations.md** | 26 KB | Combat encounter examples and simulation results |
+| File | Lines | Description |
+|------|-------|-------------|
+| **Simverse_Core_Rules.md** | ~1,807 | Complete rulebook with character creation, combat, powers, and advancement |
+| **Simverse_Powers_Library.md** | ~870 | Extensive library of pre-built spells, maneuvers, and powers with full stat blocks |
+| **Simverse_Equipment_List.md** | ~408 | Comprehensive weapons, armor, and gear with prices and statistics |
+| **Simverse_Skill_List.md** | ~225 | Complete skill list with descriptions and governing attributes |
+| **Simverse_Additional_Templates.md** | ~466 | Extended race and profession templates (Monk, Cleric, Paladin, etc.) |
+| **Simverse_Advanced_Races.md** | ~926 | Advanced race templates with unique abilities and characteristics |
+| **Simverse_Advanced_Combat.md** | ~433 | Optional advanced rules for mounted combat, mass battles, and siege warfare |
+| **Simverse_Character_Sheet.md** | ~341 | Printable character sheet template |
+| **Simverse_PreGen_Characters.md** | ~589 | Ready-to-play pre-generated characters across multiple power levels |
+| **Simverse_Combat_Simulations.md** | ~750 | Combat encounter examples and simulation results |
 
-**Total:** ~195 KB of content
+**Total:** ~6,815 lines of content
 
 ---
 
