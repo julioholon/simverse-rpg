@@ -287,6 +287,39 @@ Several important values are calculated from your attributes:
 - Base: 2d6-1
 - With ST bonus: 2d6-1+4 = 2d6+3 damage
 
+### Carrying Capacity
+
+**Maximum Lift** = ST × 5 kg (one-time lift)
+**Carry Capacity** = ST × 2 kg (sustained carrying)
+
+| ST | Max Lift | Carry Capacity |
+|----|----------|----------------|
+| 8  | 40 kg    | 16 kg          |
+| 10 | 50 kg    | 20 kg          |
+| 12 | 60 kg    | 24 kg          |
+| 14 | 70 kg    | 28 kg          |
+| 16 | 80 kg    | 32 kg          |
+| 18 | 90 kg    | 36 kg          |
+| 20 | 100 kg   | 40 kg          |
+
+### Encumbrance Levels
+
+Based on percentage of Carry Capacity:
+
+| Level | Load | Effects |
+|-------|------|---------|
+| **Normal** | 0-100% | No penalties |
+| **Overburdened** | 101-150% | -2 Speed, -2 to physical skills, -1 to defenses, 1 Stamina/10 min |
+| **Maximum** | 151-200% | Speed halved, -4 to physical skills, -2 to defenses, cannot sprint |
+
+**Beyond 200%:** Cannot move without dropping weight.
+
+**Combat Effects:**
+- Encumbrance penalties stack with armor penalties
+- Overburdened characters cannot use Sprint movement
+
+**Example:** Character with ST 12 (24 kg capacity) carrying 30 kg (125%) is Overburdened: -2 Speed, -2 to Athletics/Stealth/etc., -1 to Dodge/Parry/Block.
+
 ---
 
 ## Character Creation
@@ -710,6 +743,14 @@ Perks represent advantages, talents, and special abilities. Flaws represent disa
 - Movement speed reduced by 1, dodge not affected
 - Permanent injury or condition
 
+**Paraplegic** (-30 CP)
+- Cannot walk or use legs
+- Requires wheelchair, mount, or assistance to move
+- Movement speed is 0 without aid (wheelchair provides Speed 2)
+- Cannot dodge, can only parry or block
+- -4 to most physical skills involving lower body
+- May still fight effectively from mounted position or stationary
+
 **Chronic Pain** (-10 CP)
 - -1 to all physical actions
 - Constant discomfort
@@ -1014,11 +1055,11 @@ All abilities start with a base effect tier that determines CP cost and resource
 
 | Tier | Min Skill Level | CP Base | Resource Cost (Stamina/Mana) | Examples |
 |------|-----------------|---------|------------------------------|----------|
-| **Minor** | 2 | 1 CP | 1 | Shield Bash, Trip, Disarm, Quick Draw, Feint |
-| **Moderate** | 3 | 5 CP | 2 Mana | 1d6 damage bolt, minor healing, charm person, detect magic |
-| **Major** | 5 | 15 CP | 6 Mana | 3d6 damage, serious healing, flight, invisibility, lightning bolt |
-| **Epic** | 8 | 30 CP | 12 Mana | 6d6+ damage, teleportation, open portal, time stop, raise dead |
-| **Legendary** | 13 | 50 CP | Varies | World-altering effects, deity-level powers |
+| **Minor** | 2 | 1 CP | 1 | 1 damage, move objecs, cantrips, most easy combat maneuvers |
+| **Moderate** | 3 | 5 CP | 2 Mana | harder combat maneuvers, 1d6 damage bolt, 1d6 healing bolt, easy less impactful roleplay spells like charm and detect magic |
+| **Major** | 5 | 15 CP | 6 Mana | 3d6 damage, serious healing, stronger more impactful spells like invisibility, flight |
+| **Epic** | 8 | 30 CP | 12 Mana | 6d6+ damage, game changing spells like teleportation, open portal, time stop, raise dead |
+| **Legendary** | 13 | 50 CP | Varies | world-altering effects, deity-level powers |
 
 **Skill Level Requirement**: To purchase a power of a given tier, you must have the minimum skill level in the relevant skill (Spellcasting for spells, weapon skill for combat maneuvers, etc.). This represents the mastery needed to learn and perform that tier of ability.
 
@@ -1029,7 +1070,7 @@ All abilities start with a base effect tier that determines CP cost and resource
 - **Spells/Powers**: Usually cost Mana
 - **Extreme Effects**: Some may cost Vitality (blood magic, self-sacrifice)
 
-**Alternative Energy Sources**: Wizards can use power stones, ritual circles, ley lines, or blood sacrifice to provide Mana for spells beyond their personal pool.
+**Alternative Energy Sources**: Wizards can use mana stones, ritual circles, ley lines, or blood sacrifice to provide Mana for spells beyond their personal pool.
 
 ### Enhancements (Percentage-Based)
 
@@ -1110,10 +1151,10 @@ These reduce the cost by a percentage:
 #### Fire Bolt (Moderate Spell)
 - **Base**: Moderate Effect (5 CP, 2 Mana)
 - **Effect**: 1d6 fire damage, ranged attack
-- **Enhancement**: Extra Range +20%, Increased Damage +100% (2d6 total)
-- **Limitation**: Verbal Component -10%
-- **Calculation**: 5 × (1 + 0.20 + 1.00 - 0.10) = 5 × 2.10 = 10.5, round down to 10 CP
-- **Final Cost**: 10 CP
+- **Enhancement**: Extra Range +20%, Increased Damage +50% (2d6 total)
+- **Limitation**: Verbal Component -10%, Obvious/Loud -10%
+- **Calculation**: 5 × (1 + 0.20 + 0.50 - 0.10 - 0.10) = 5 × 1.50 = 7.5, round down to 7 CP
+- **Final Cost**: 7 CP
 - **Usage**: Costs 2 Mana, roll Spellcasting vs target's Dodge
 
 #### Power Attack (Combat Maneuver)
@@ -1673,6 +1714,88 @@ Diseases are similar to poisons but spread over longer periods.
 - Magical healing often cures disease instantly
 - Rest and proper care: +2 to resistance rolls
 
+### Travel & Exploration
+
+#### Travel Pace
+
+Characters can travel at different paces affecting distance and fatigue:
+
+| Pace | Distance/Day | Effects |
+|------|--------------|---------|
+| **Cautious** | Speed × 3 km | +2 to Perception, can use Stealth, no fatigue |
+| **Normal** | Speed × 5 km | Standard travel, 1 Stamina per 4 hours |
+| **Forced March** | Speed × 7 km | -2 to Perception, 2 Stamina per 4 hours, roll vs EN each 4 hours or gain 1 level Fatigue |
+
+**Standard Day**: 8 hours of travel with breaks. Characters can push to 12 hours at Forced March pace (roll vs EN or -2 to all actions next day).
+
+#### Terrain Modifiers
+
+| Terrain | Distance Modifier | Notes |
+|---------|-------------------|-------|
+| Road/Trail | ×1 | Standard |
+| Open Plains | ×0.9 | Slightly slower |
+| Light Forest | ×0.75 | Some obstacles |
+| Dense Forest/Jungle | ×0.5 | Navigation check or get lost |
+| Hills | ×0.6 | Stamina cost +50% |
+| Mountains | ×0.4 | Climbing required, double Stamina |
+| Swamp | ×0.3 | Triple Stamina, disease risk |
+| Desert | ×0.5 | Double water requirement |
+
+#### Encumbrance During Travel
+
+Add one level of effective encumbrance for travel fatigue calculations:
+- Medium encumbrance travels as if Heavy
+- Overburdened characters cannot maintain Forced March pace
+- Heavy+ encumbrance doubles Stamina costs for travel
+
+#### Fatigue System
+
+Extended exertion causes cumulative fatigue:
+
+| Fatigue Level | Effects |
+|---------------|---------|
+| **1 - Tired** | -1 to all actions |
+| **2 - Weary** | -2 to all actions, half movement |
+| **3 - Exhausted** | -4 to all actions, cannot sprint, -2 to defenses |
+| **4 - Collapse** | Fall unconscious, must rest 8 hours |
+
+**Gaining Fatigue:**
+- Failed EN roll during Forced March
+- 8+ hours of travel without rest
+- Heavy exertion while Overburdened
+- Fighting while already Weary or worse
+
+**Recovering Fatigue:**
+- Short rest (1 hour): Reduce 1 fatigue level, recover Stamina = ST/2
+- Long rest (8 hours): Remove all fatigue, full Stamina/Vitality recovery (see Recovery in Downtime Activities)
+
+#### Navigation
+
+**Getting Lost:**
+When traveling without clear path, roll Survival or Navigation:
+- **Success**: Travel correct direction, full distance
+- **Failure by 1-4**: Drift off course, lose 25% distance
+- **Failure by 5-9**: Wrong direction for half day, lose 50% distance
+- **Failure by 10+**: Completely lost, no progress, may enter dangerous area
+
+**Modifiers:**
+- Map/directions: +2 to +4
+- Guide who knows area: +4
+- Poor weather: -2 to -4
+- Night travel: -4
+
+#### Mounts and Vehicles
+
+| Mount/Vehicle | Speed Multiplier | Carry Capacity | Notes |
+|---------------|------------------|----------------|-------|
+| Riding Horse | ×2 | 80 kg rider + 40 kg gear | Can't maintain sprint long |
+| War Horse | ×1.8 | 100 kg rider + 60 kg gear | Combat trained |
+| Draft Horse | ×1.2 | Pulls 500 kg | Slow but strong |
+| Wagon | ×1 | 1000+ kg | Requires roads, draft animal |
+| Camel | ×1.5 | 150 kg total | Desert specialist, less water |
+
+Mounted characters use mount's Speed for travel but rider's skills for navigation.
+
 ---
 
 ## Character Advancement
@@ -1732,6 +1855,391 @@ Follow the same CP costs as creation:
 - Skills capped only by time and dedication (no hard maximum)
 - Attributes normally capped at 18 (supernatural templates may exceed)
 - Some Perks have prerequisites (level requirements, other Perks, etc.)
+
+### Downtime Activities
+
+During periods between adventures, characters can engage in productive activities. Each activity has a time requirement and potential outcomes.
+
+#### Time Allocation
+
+A character can engage in **one primary activity per day** (4-8 hours) plus **one secondary activity** (1-2 hours). Some activities can be combined.
+
+#### Recovery
+
+**Short Rest (1 hour):**
+- Recover Stamina = ST/2
+- Recover Mana = AW/2
+- Reduce 1 Fatigue level
+
+**Long Rest (8 hours sleep):**
+- Recover all Stamina and Mana
+- Recover Vitality = EN/2 (natural healing)
+- Remove all Fatigue
+- **With medical care**: Recover Vitality = EN (double healing)
+- **With magical healing environment**: As medical care plus cure one disease/poison
+
+**Meditation (1 hour):**
+- Roll Meditation skill
+- Success: Recover additional Mana = margin of success
+- Can be done multiple times per day, but each subsequent attempt is at -2
+- Requires quiet, undisturbed environment
+
+**Bed Rest (full day):**
+- Recover Vitality = EN (even without medical care)
+- **With medical care**: Recover Vitality = EN × 1.5
+- Required for serious injuries (broken bones, organ damage)
+
+#### Serious Injuries as Temporary Flaws
+
+Major injuries impose **temporary flaws** on the character until healed. These use existing flaw mechanics but are gained through injury rather than character creation:
+
+| Injury | Temporary Flaw | CP Value | Natural Healing Time |
+|--------|----------------|----------|----------------------|
+| Broken arm | One Arm (-20) | 20 | 6-8 weeks |
+| Broken leg | Lame (-15) | 15 | 6-8 weeks |
+| Severe burns | Chronic Pain (-10) | 10 | 2-4 weeks |
+| Concussion | Slow (-10) | 10 | 1-2 weeks |
+| Damaged eye | One Eye (-10) | 10 | Permanent without magic |
+| Paralysis (partial) | Lame (-15) or Paraplegic (-30) | 15-30 | Permanent without magic |
+| Internal injury | Fragile (-15) | 15 | 3-4 weeks |
+
+**Removing Injury Flaws:**
+- **Medical Treatment**: Proper care (Surgery + ongoing Medicine rolls) allows natural healing over time
+- **Magical Healing**: Appropriate healing magic removes injury instantly
+- **Spending CP**: Character can spend CP equal to the flaw value to "miraculously" heal faster (represents body's extraordinary recovery, divine intervention, or narrative convenience)
+
+**Example:** A character breaks their leg, gaining the Lame (-15) temporary flaw. They can:
+- Wait 6-8 weeks with proper medical care
+- Receive healing magic to remove it instantly
+- Spend 15 CP to heal dramatically faster (perhaps over a few days)
+
+#### Medical Treatment
+
+**First Aid** (immediate, 1-10 minutes):
+- Roll Medicine skill vs wound severity
+- Success: Stop bleeding, prevent infection, stabilize patient
+- Each 5 margin: +1 Vitality recovered immediately (max EN/2)
+- Requires: Basic medical supplies
+
+**Surgery** (1-4 hours):
+- Required for: embedded objects, internal injuries, setting broken bones
+- Roll Surgery skill (Hard) at appropriate difficulty
+- Success: Begin proper healing, injury flaw can start recovering
+- Failure: Patient loses 1d6 Vitality, complications (may worsen flaw)
+- Requires: Surgery tools, clean environment, assistant helpful (+2)
+
+**Ongoing Care** (daily attention):
+- Roll Medicine once per day
+- Success: Patient gets +2 to recovery rolls, halves healing time for injury flaws
+- Can treat up to IN/2 patients simultaneously
+
+#### Crafting and Recipes
+
+All crafting follows a unified recipe system. Whether forging weapons, brewing potions, or creating magical items, the process uses the same structure.
+
+**Recipe Components:**
+Every recipe specifies:
+- **Required Skill** (Blacksmithing, Alchemy, Leatherworking, etc.)
+- **Difficulty Modifier** (penalty to the skill roll)
+- **Time Required** (hours, days, or weeks)
+- **Materials/Ingredients** (specific items needed)
+- **Tools Required** (workshop, alchemist's kit, forge, etc.)
+
+**Crafting Procedure:**
+1. **Verify Requirements**: Must know the recipe, have tools and materials
+2. **Spend Time**: Complete the required crafting time
+3. **Roll Skill**: Roll relevant craft skill with difficulty modifier
+4. **Determine Outcome**: Based on success/failure margin
+
+**Crafting Results:**
+| Roll Result | Outcome |
+|-------------|---------|
+| **Critical Success** | Exceptional quality (+1 tier), extra doses/effects, or half materials used |
+| **Success by 5+** | Superior result, possible bonus effect or durability |
+| **Success** | Item created as specified |
+| **Failure by 1-4** | Flawed item (reduced quality) OR +50% time needed to fix |
+| **Failure by 5+** | Materials ruined, must start over |
+| **Critical Failure** | Materials ruined, possible damage to tools or crafter (explosion, injury, etc.) |
+
+**Quality/Tool/Material Modifiers:**
+| Condition | Modifier |
+|-----------|----------|
+| Excellent tools | +2 |
+| Standard tools | +0 |
+| Poor/improvised tools | -2 to -4 |
+| Missing essential tool | Cannot attempt or -6 |
+| Premium materials | +2 |
+| Standard materials | +0 |
+| Substandard materials | -2 |
+| Substituted ingredients | -2 to -4 |
+
+#### Alchemy (Hard Skill)
+
+Alchemy covers potion brewing, poison creation, and alchemical compounds. It follows the standard recipe system with additional rules for experimentation.
+
+**Potion Brewing:**
+- Must know the recipe (learned from teacher, book, or experimentation)
+- Requires alchemist's tools (retorts, burners, vials, etc.)
+- Requires specific ingredients (herbs, reagents, monster parts, etc.)
+
+**Example Potion Recipes:**
+
+| Potion | Difficulty | Time | Ingredients | Effect |
+|--------|------------|------|-------------|--------|
+| Healing Potion (Minor) | -2 | 2 hours | Healroot, purified water | Restore 1d6+2 Vitality |
+| Healing Potion (Major) | -4 | 4 hours | Healroot ×2, moonpetal, silver dust | Restore 2d6+4 Vitality |
+| Antidote | -3 | 2 hours | Neutralizing moss, charcoal, clean water | Cure poison (EN roll +4) |
+| Stamina Tonic | -2 | 1 hour | Ginseng root, honey, stimulant herbs | Restore 2d6 Stamina |
+| Mana Elixir | -4 | 3 hours | Arcane crystal dust, moonwater, lotus | Restore 2d6 Mana |
+| Fire Resistance | -5 | 4 hours | Salamander scale, frost lily, mineral oil | Resist fire (AR +4 vs fire) for 1 hour |
+| Invisibility | -8 | 8 hours | Chameleon skin, ghost orchid, quicksilver | Invisibility for 10 minutes |
+| Poison (Lethal) | -4 | 2 hours | Deathcap, viper venom, black lotus | 2d6 damage per hour for 4 hours |
+
+**Alchemy Roll Modifiers:**
+- Complete laboratory: +2
+- Field kit only: -2
+- Fresh ingredients: +1
+- Aged/degraded ingredients: -1 to -3
+- Rare/exotic ingredients: Usually required for powerful effects
+
+**Experimentation:**
+Alchemists can attempt to create new recipes or modify existing ones:
+
+1. **Describe Desired Effect**: Tell GM what you want to achieve
+2. **GM Sets Difficulty**: Based on similar recipes or effect power (-4 to -10 typical)
+3. **Gather Materials**: May need to seek specific rare ingredients
+4. **Attempt Roll**: Roll Alchemy vs difficulty
+5. **Interpret Results**:
+   - **Success**: Discover working recipe, can reproduce it
+   - **Failure by 1-4**: Partial success—learn what's missing (specific ingredient or tool needed)
+   - **Failure by 5+**: Complete failure, materials wasted, no useful information
+   - **Critical Failure**: Dangerous reaction—explosion (2d6 damage in 2m radius), toxic fumes (poison check), or tool destruction
+
+**Experimentation Example:**
+An alchemist wants to create a potion granting water breathing. The GM decides this is similar to other transformation potions (difficulty -6). The alchemist rolls Alchemy-6. On failure by 3, the GM tells them the formula needs "essence of a water-breathing creature"—they must obtain fish gills, nixie tears, or similar. On success, they've created the recipe and can brew it again at -6 difficulty.
+
+#### Enchanting (Hard Skill)
+
+Enchanting allows spellcasters to imbue permanent magical effects into items. Any spell the enchanter knows can be placed into a suitable item vessel, though maneuvers cannot be enchanted.
+
+**Requirements:**
+- Know the spell to be enchanted (or have access to it via scroll/teacher)
+- Suitable prepared item vessel (weapon, ring, amulet, etc.)
+- Reagents as specified by GM based on the effect
+- Initial roll: Enchanting skill (or Occult Knowledge, or Theology for divine powers)
+
+**Difficulty Modifier:**
+- -1 per tier of the spell being enchanted
+- -1 per tier of spells already on the item (enchanting additional effects is harder)
+
+**Enchanted Item Activation:**
+- Enchanted items always consume the **user's Mana** when activated
+- Items have no inherent charges
+- To allow alternative power source, a **Mana Stone** must be incorporated into the item
+- User can then choose to draw from their own Mana or the item's Mana Stone
+
+**Two Methods of Enchanting:**
+
+##### Regular Enchanting (Time-Intensive)
+
+For each CP of the spell's cost:
+- **10 days of work** (2 hours per day)
+- Must remain stationary (cannot be traveling)
+- Well-equipped laboratory or sacred place: Reduce time by up to 50% (GM discretion)
+
+**Assistants:** Each assistant who also knows the spell reduces time by 5%, up to -50% maximum. This does not stack with lab bonus—maximum time reduction is 50% total.
+
+**At the end of the enchanting period**, roll Enchanting with the difficulty modifier.
+
+| Result | Outcome |
+|--------|---------|
+| **Critical Success** | Enchantment complete with bonus effect (extra charges, enhanced power, etc.) |
+| **Success** | Enchantment complete as intended |
+| **Failure** | Must start the process over (time wasted, materials intact) |
+| **Critical Failure** | Item destroyed |
+
+After enchanting one spell, you may proceed to enchant another on the same item, but each additional enchantment increases difficulty.
+
+##### Immediate Enchanting (Energy-Intensive)
+
+For each CP of the spell's cost:
+- **20 Mana** provided by the enchanter, mana stones, or other sources
+- Mana is consumed instantly upon attempt
+- **Warning**: If all your Mana is consumed directly, you may faint or worse
+
+Roll Enchanting with the difficulty modifier immediately.
+
+| Result | Outcome |
+|--------|---------|
+| **Critical Success** | Enchantment complete with bonus effect |
+| **Success** | Enchantment complete as intended |
+| **Failure** | Item destroyed, Mana lost |
+| **Critical Failure** | Item destroyed, enchanter takes damage, may gain temporary injury flaw |
+
+**Assistants with Immediate Enchanting:**
+- Assistants need not know the spell, only have Mage Gift and be willing
+- Each assistant may contribute up to their full Mana
+- For every 2 Mana drained from assistants, only 1 is useful to the enchanter
+- Each assistant adds -1 to the Enchanting roll difficulty
+- **If the enchantment fails or critically fails, all assistants suffer the bad outcomes too!**
+
+**Example:** Enchanting a 10 CP spell immediately requires 200 Mana. With two assistants contributing 40 Mana each (yielding 20 + 20 = 40 useful Mana), the enchanter needs to provide 160 Mana themselves, and the roll is at -2 additional penalty from the assistants.
+
+#### Mana Stones
+
+Mana Stones are enchanted items that store magical energy for later use. They are created using the standard enchanting rules.
+
+**Creating Mana Stones:**
+- Each 1 point of Mana storage capacity is enchanted as a 1 CP **Tier 1 (Minor) spell**
+- Must use Regular or Immediate enchanting methods
+- Multiple points of storage must be enchanted separately (e.g., a 5 Mana stone requires 5 separate Tier 1 enchantments)
+
+**Mana Stone Recovery:**
+- Recover **1 Mana per day** under normal conditions
+- **Sacred or deeply magical places**: Faster recovery (GM discretion, typically 2-5 per day)
+- **No-mana zones**: No recovery at all
+
+**Availability and Rarity:**
+
+| Capacity | Rarity | Availability | Approximate Cost |
+|----------|--------|--------------|------------------|
+| 1-5 Mana | Common | Easily purchased in magic shops | Affordable |
+| 6-10 Mana | Rare | Expensive, limited availability | Costly |
+| 11-20 Mana | Very Rare | Very hard to craft or find | Very expensive |
+| 21-50 Mana | Legendary | Almost impossible to purchase | Extremely expensive |
+
+**Natural Mana Stones:**
+In deeply magical places—ancient groves, ley line nexuses, sites of great magical events—Mana Stones occasionally form naturally. These are ultra-rare and highly sought after, often the subject of quests or the treasures of powerful creatures.
+
+#### Other Crafting Skills
+
+**Blacksmithing** (weapons, armor, metal tools):
+- Requires forge, anvil, hammer, tongs
+- Base time: 1 day per 10 gold value
+- Quality affects damage/protection and durability
+
+**Leatherworking** (leather armor, bags, straps):
+- Requires cutting tools, needles, tanning supplies
+- Base time: 4 hours per 5 gold value
+- Can incorporate special hides for bonuses
+
+**Woodworking** (bows, shafts, shields, furniture):
+- Requires carving tools, lathe (for fine work)
+- Base time: 4 hours per 5 gold value
+- Wood type affects final properties
+
+**Engineering** (mechanisms, siege equipment, complex devices):
+- Hard skill, requires drafting tools and workshop
+- Base time: 1 week+ for complex devices
+- Often requires multiple rolls for subsystems
+
+#### Repair and Maintenance
+
+**Equipment Repair:**
+- Time: 10% of original crafting time per point of damage/degradation
+- Skill: Same as crafting the item
+- Materials: 10% of item cost per point repaired
+
+**Weapon/Armor Maintenance** (1 hour):
+- Prevents degradation from regular use
+- Required weekly for metal items, daily in wet/harsh conditions
+- No roll needed, just time and basic supplies
+- Neglected equipment: -1 to function per week of neglect
+
+#### Research and Study
+
+**Learning New Knowledge:**
+- Time: As skill training (1 CP/week base, modified by resources/teacher)
+- Activities: Reading, experimenting, practice
+- Can combine with other light duties
+
+**Research Specific Information:**
+- Time: Varies by obscurity (hours to weeks)
+- Roll: Research or appropriate Knowledge skill
+- **Success**: Find accurate information
+- **Failure**: Find incomplete info or take additional time
+- **Critical failure**: Find misleading information
+
+| Information Type | Base Time | Difficulty |
+|------------------|-----------|------------|
+| Common knowledge | 1 hour | +2 |
+| Specialized | 4 hours | 0 |
+| Obscure | 1-3 days | -2 |
+| Rare/Secret | 1 week+ | -4 to -6 |
+
+**Library/Resource Quality:**
+- Poor: +50% time, -2 to rolls
+- Average: Normal
+- Good: -25% time, +2 to rolls
+- Excellent: Half time, +4 to rolls
+
+#### Practice and Training
+
+**Skill Practice** (follows existing training rules):
+- 1 CP worth of progress per week (base)
+- Requires 4+ hours daily practice
+- Can combine with light duties
+
+**Physical Training:**
+- Maintain fitness: 1 hour/day
+- Improve attributes: 4+ hours/day, 10× CP cost in weeks
+- Athletics, combat drills, strength training
+
+**Sparring/Combat Practice:**
+- Gain familiarity with specific opponents (+1 vs that fighting style)
+- Develop new techniques (work toward maneuver CP cost)
+- Requires partner of similar or greater skill
+
+#### Social Activities
+
+**Gather Information** (2-4 hours):
+- Roll Streetwise, Persuasion, or Etiquette
+- Learn rumors, locate people/places, gauge local mood
+- Better results in appropriate venues (taverns, markets, guilds)
+
+**Build Contacts** (days to weeks):
+- Repeated positive social interactions
+- Eventually gain Contacts advantage (see Perks)
+- Requires investment of time and often money
+
+**Work for Income:**
+| Work Type | Daily Income | Skill Required |
+|-----------|--------------|----------------|
+| Unskilled labor | 1-2 silver | None |
+| Skilled labor | 5-10 silver | Relevant craft 2+ |
+| Professional | 1-5 gold | Relevant skill 4+ |
+| Expert | 5-20 gold | Relevant skill 6+, reputation |
+
+#### Writing and Documentation
+
+**Transcription:**
+- Copy existing text: 10 pages per day
+- Requires: Writing materials, original text
+
+**Composition:**
+- Letters, reports: 1-2 hours
+- Technical documents: 4-8 hours
+- Books/manuals: Weeks to months
+
+**Creating Spell Scrolls/Formulae:**
+- Time: Power CP cost in hours (minimum 4 hours)
+- Skill: Appropriate magic skill
+- Materials: Special inks, paper (10 x power CP cost in silver coins)
+- Creates one-use magical item or permanent reference
+
+#### Combined Activities
+
+Some activities can be done together:
+- **Travel + Gather Information**: At each stop
+- **Recovery + Light Study**: Reading while resting
+- **Crafting + Training**: Learn while doing (if master craftsman teaches)
+- **Guard Duty + Practice**: Drill and watch (reduced efficiency for both)
+
+Activities that **cannot** be combined:
+- Surgery + anything else
+- Forced march + anything productive
+- Complex crafting + other focused work
+- Enchanting (requires full concentration)
 
 ---
 

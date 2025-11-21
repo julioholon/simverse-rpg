@@ -711,19 +711,22 @@ SOLUTIONS:
 
 ### Movement Rates
 
-**On Foot (per day, 8 hours travel):**
-- Road: 30 km
-- Grassland/plains: 25 km
-- Forest/hills: 20 km
-- Mountains/swamp: 15 km
-- Difficult terrain: 10 km
+**Travel Pace (per day, based on Speed):**
+- **Cautious**: Speed × 3 km/day (stealth possible, +2 to spot hazards)
+- **Normal**: Speed × 5 km/day (standard travel)
+- **Forced March**: Speed × 7 km/day (costs 2 Stamina/day, -2 to actions)
 
-**Forced March:** +50% distance, lose 2 Stamina/day, -2 to actions
+**Terrain Modifiers:**
+- Road/Trail: ×1.5 distance
+- Forest/Hills: ×0.75 distance
+- Mountains/Swamp: ×0.5 distance
+- Difficult terrain: ×0.25 distance
 
-**Mounts (horse):**
-- Road: 50 km/day
-- Grassland: 40 km/day
-- Rough terrain: 25 km/day
+**Example:** Speed 5 character on Normal pace = 25 km/day on roads (5 × 5 × 1.5 = 37.5, or base 25 on open terrain)
+
+**Mounts:** Use mount's Speed value instead of character's
+
+*See Core Rules "Travel & Exploration" section for detailed fatigue, navigation, and camping rules*
 
 ### Navigation
 **Getting Lost:**
@@ -756,6 +759,36 @@ SOLUTIONS:
 - Open terrain: 100-200m (both sides see each other)
 - Forest/hills: 30-50m (Perception to spot first)
 - Dungeon: 10-20m (Stealth vs Perception)
+
+---
+
+## DOWNTIME ACTIVITIES
+
+When players have time between adventures, they can pursue various activities:
+
+### Quick Reference
+
+| Activity | Time | Skill | Notes |
+|----------|------|-------|-------|
+| **Training** | 1 week per CP | Various | Learn new skills/abilities |
+| **Crafting** | Varies by item | Appropriate craft | See recipe system |
+| **Alchemy** | 1 day per potion | Alchemy (Hard) | Requires ingredients |
+| **Enchanting** | 10 days per spell CP | Enchanting (Hard) | Or 20 Mana for immediate |
+| **Research** | 1 day per topic | Research/Occult | Find information |
+| **Healing** | 1 day per 5 Vitality | Medicine | Treat injuries |
+| **Work** | 1 day | Profession | Earn 1-5 sp/day |
+
+### Crafting & Enchanting
+
+**Crafting:** Roll craft skill vs recipe difficulty. Quality tools (+1 to +2), quality materials (+1), assistants (+1 per helper with skill 3+).
+
+**Alchemy:** Hard skill, requires recipe + ingredients + tools. Experimentation possible to discover new recipes.
+
+**Enchanting:** Two methods:
+- **Regular:** 10 days per spell CP, roll at end
+- **Immediate:** 20 Mana per spell CP, instant but riskier
+
+*See Core Rules "Downtime Activities" section for complete crafting, alchemy, and enchanting rules*
 
 ---
 

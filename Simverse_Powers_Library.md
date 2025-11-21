@@ -197,13 +197,97 @@
 
 ## Arcane Spells
 
+### FROST TOUCH
+**Type:** Minor Spell (1 CP)
+**Mana Cost:** 0
+**Enhancements:** Increased Damage +50% (+1d6)
+**Limitations:** Melee Range Only -15%, Obvious/Loud -10%
+**Calculation:** 1 × (1 + 0.50 - 0.15 - 0.10) = 1 × 1.25 = 1.25, round down to 1 CP
+**Final Cost:** 1 CP
+
+**Effect:** Touch a creature to deliver 1d6 cold damage. Your hand frosts over with icy energy. Automatically hits if you successfully touch target (make Brawling roll if target resists). Can also chill drinks or freeze small amounts of water.
+
+---
+
+### FLAME DART
+**Type:** Minor Spell (1 CP)
+**Mana Cost:** 0
+**Enhancements:** Increased Damage +50% (+1d6)
+**Limitations:** Obvious/Loud -10%, Verbal Component -10%
+**Calculation:** 1 × (1 + 0.50 - 0.10 - 0.10) = 1 × 1.30 = 1.3, round down to 1 CP
+**Final Cost:** 1 CP
+
+**Effect:** Hurl a small dart of fire at target within 10m. Roll Spellcasting to hit. Deals 1d6 fire damage. May ignite highly flammable objects (oil, loose paper, dry tinder).
+
+---
+
+### KINDLE FLAME
+**Type:** Minor Spell (1 CP)
+**Mana Cost:** 0
+**Enhancements:** Reliable Activation +100%
+**Limitations:** Only in [Condition] -20% (non-living flammable objects only), Requires [Item] -10% (target must be flammable), Preparation Time -10% (takes 1 full action)
+**Calculation:** 1 × (1 + 1.00 - 0.20 - 0.10 - 0.10) = 1 × 1.60 = 1.6, round down to 1 CP
+**Final Cost:** 1 CP
+
+**Effect:** Touch or target a flammable object within 3m to ignite it. Lights torches, campfires, oil, rope, paper, dry wood, etc. Won't work on living creatures or worn/carried items unless dropped. Takes 1 full action to cast.
+
+---
+
+### PHANTOM ECHO
+**Type:** Minor Spell (1 CP)
+**Mana Cost:** 0
+**Enhancements:** Extra Duration +30% (1 hour)
+**Limitations:** Concentration -20%, Only in [Condition] -20% (stationary illusion no larger than 1m cube, only one sense at a time)
+**Calculation:** 1 × (1 + 0.30 - 0.20 - 0.20) = 1 × 0.90 = 0.9, round down minimum 1 CP
+**Final Cost:** 1 CP
+
+**Effect:** Create a simple visual or auditory illusion within 10m that lasts 1 hour. Can be a sound (whisper, footstep, music) or an image (object, simple pattern, fake writing). The illusion is stationary and no larger than 1m cube. Anyone touching it realizes it's not real. Requires concentration.
+
+---
+
+### SPECTRAL GRASP
+**Type:** Minor Spell (1 CP)
+**Mana Cost:** 0
+**Enhancements:** Extra Duration +30% (1 hour)
+**Limitations:** Concentration -20%, Only in [Condition] -20% (objects up to 5kg only)
+**Calculation:** 1 × (1 + 0.30 - 0.20 - 0.20) = 1 × 0.90 = 0.9, round down minimum 1 CP
+**Final Cost:** 1 CP
+
+**Effect:** Create a spectral floating hand within 10m that can manipulate objects weighing up to 5kg. Move at Speed 2. Can open doors, pull levers, pick up items, pour liquids, etc. Cannot attack or activate magical items. Lasts 1 hour with concentration.
+
+---
+
+### ARCANE WHISPER
+**Type:** Minor Spell (1 CP)
+**Mana Cost:** 0
+**Enhancements:** Extra Range +40% (100m), Reliable Activation +100%
+**Limitations:** Requires [Item] -10% (must see or know target's location), Only in [Condition] -20% (one-way whisper only)
+**Calculation:** 1 × (1 + 0.40 + 1.00 - 0.10 - 0.20) = 1 × 2.10 = 2.1, round down to 2 CP
+**Final Cost:** 2 CP
+
+**Effect:** Point your finger at a creature within 100m and whisper a message up to 25 words. Only the target hears it as if you whispered in their ear. You must see the target or know their exact location. Target cannot respond unless they also cast this spell back.
+
+---
+
+### MENDING TOUCH
+**Type:** Minor Spell (1 CP)
+**Mana Cost:** 0
+**Enhancements:** Reliable Activation +100%
+**Limitations:** Only in [Condition] -30% (small non-magical objects only, minor damage), Preparation Time -10% (1 minute), Requires [Item] -10% (must touch broken object)
+**Calculation:** 1 × (1 + 1.00 - 0.30 - 0.10 - 0.10) = 1 × 1.50 = 1.5, round down to 1 CP
+**Final Cost:** 1 CP
+
+**Effect:** Repair one small non-magical object (rope, clothing, simple tool, ceramic cup, etc.) with minor damage. Fixes tears, cracks, or breaks in objects no larger than 30cm. Cannot repair complex mechanisms, magical items, or completely destroyed objects. Takes 1 minute of concentration.
+
+---
+
 ### FIRE BOLT
 **Type:** Moderate Spell (5 CP)
 **Mana Cost:** 2
-**Enhancements:** Extra Damage +100% (increases from 1d6 to 2d6), Extra Range +20% (20m from 10m default)
+**Enhancements:** Increased Damage +50% (increases from 1d6 to 2d6), Extra Range +20% (20m from 10m default)
 **Limitations:** Obvious/Loud -10%, Verbal Component -10%
-**Calculation:** 5 × (1 + 1.00 + 0.20 - 0.10 - 0.10) = 5 × 2.00 = 10 CP
-**Final Cost:** 10 CP
+**Calculation:** 5 × (1 + 0.50 + 0.20 - 0.10 - 0.10) = 5 × 1.50 = 7.5, round down to 7 CP
+**Final Cost:** 7 CP
 
 **Effect:** Hurl a bolt of fire at target within 20m. Roll Spellcasting to hit. Deals 2d6 fire damage. May ignite flammable objects.
 

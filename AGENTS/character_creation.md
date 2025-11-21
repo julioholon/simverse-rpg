@@ -12,6 +12,7 @@ When helping users create characters:
 4. **Present options** - "You have 20 CP left. You could: (a) boost DX to 14 (10 CP), (b) add 3 combat maneuvers (15 CP total), or (c) mix both"
 5. **Check balance** - Ensure character is functional and fun
 6. **Verify totals** - Always double-check CP math before finalizing
+7. **Remaining zero** - Always make sure all CP is spent, never save for later
 
 ---
 
@@ -96,6 +97,7 @@ Cost **half** of major attributes:
 | **Speed** | (DX + EN) / 4 | Used for initiative & movement |
 | **Perception** | (IN + AW) / 2 | Used for noticing things |
 | **ST Damage Bonus** | (ST - 10) / 2 (round down) | Added to melee/thrown damage |
+| **Carry Capacity** | ST × 2 kg | Max sustained load without penalties |
 
 **Living Beings use Vitality**:
 - At 0 Vitality: unconscious
@@ -313,21 +315,26 @@ Maximum reduction: -75% (can't go below 25% of base)
 - Craftsman: 250 sp
 - Wealthy Perk (5 CP): 500 sp
 
-**Common Equipment** (See Simverse_Equipment_List.md for full list):
+**Common Equipment** (See Simverse_Equipment_List.md for full list with weights):
 
 **Weapons**:
-- Dagger: 1d6-3, 5 sp
-- Shortsword: 1d6-1, 20 sp
-- Longsword: 2d6-1, 50 sp (cutting or impaling thrust)
-- Greatsword: 3d6, 100 sp
-- Spear: 1d6+1, 10 sp (impaling)
-- Shortbow: 1d6+1, 30 sp (50m range)
-- Longbow: 2d6, 60 sp (100m range)
+- Dagger: 1d6-3, 5 sp, 0.3 kg
+- Shortsword: 1d6-1, 20 sp, 1 kg
+- Longsword: 2d6-1, 50 sp, 1.5 kg (cutting or impaling thrust)
+- Greatsword: 3d6, 100 sp, 3 kg
+- Spear: 1d6+1, 10 sp, 1.5 kg (impaling)
+- Shortbow: 1d6+1, 30 sp, 1 kg (50m range)
+- Longbow: 2d6, 60 sp, 1.5 kg (100m range)
 
 **Armor** (penalties: Light 0, Medium -2, Heavy -4):
-- Leather: AR 2, 25 sp (Light)
-- Chain Shirt: AR 4, AD 1, 80 sp (Medium, -2 penalty)
-- Plate Mail: AR 6, AD 2, 400 sp (Heavy, -4 penalty)
+- Leather Cuirass: AR 2, 25 sp, 4 kg (Light)
+- Chain Shirt: AR 4, AD 1, 80 sp, 10 kg (Medium, -2 penalty)
+- Full Plate Cuirass: AR 10, AD 2, 1500 sp, 15 kg (Heavy, -4 penalty)
+
+**Encumbrance** (see Core Rules for details):
+- 0-100% Carry Capacity: No penalties
+- 101-150%: Overburdened (-2 Speed, -2 physical, -1 defenses)
+- 151-200%: Maximum (half speed, -4 physical, -2 defenses)
 
 **Shields**:
 - Small Shield: SD 1, 10 sp

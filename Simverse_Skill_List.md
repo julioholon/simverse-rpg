@@ -110,6 +110,7 @@
 ### Knowledge Skills (Hard)
 - **Occult Knowledge** - Magical theory, supernatural lore, forbidden knowledge
 - **Theology** - Deep religious knowledge, divine mysteries
+- **Enchanting** - Imbuing permanent magical effects into items, creating mana stones
 
 ---
 
