@@ -90,8 +90,8 @@
 - **Appraisal** - Determining value and authenticity of items
 
 ### Magic Skills (varies)
-- **Psionics** - Mental powers, telepathy, telekinesis
-- **Ritual Magic** - Extended magical ceremonies
+- **Psionics** (Regular) - Mental powers, telepathy, telekinesis
+- **Ritual Magic** (Hard) - Extended magical ceremonies
 
 ---
 
@@ -104,7 +104,7 @@
 - **Animal Handling** - Training, calming, commanding animals
 - **Insight** - Reading body language, detecting lies, understanding motives
 
-### Magic Skills (varies)
+### Magic Skills (Regular)
 - **Spellcasting** - Casting and controlling arcane magic
 
 ### Knowledge Skills (Hard)
@@ -127,7 +127,7 @@
 - **Streetwise** - Navigating criminal underworld, finding black markets
 - **Animal Training** - Teaching tricks, commands to animals
 
-### Magic Skills (varies)
+### Magic Skills (Regular)
 - **Divine Magic** - Channeling power from deities
 
 ### Special Skills

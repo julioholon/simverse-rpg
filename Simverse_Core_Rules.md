@@ -915,7 +915,7 @@ Templates are pre-built packages of attributes, perks, skills, and equipment tha
 - Facilitated Movement (Mountain) (5 CP): No penalty on rocky/underground terrain
 - Extended Lifespan (5 CP): ~200 years
 
-**Total Cost Breakdown:** -10 (size) + 15 + 10 - 20 - 10 + 50 (perks) = **45 CP**
+**Total Cost Breakdown:** -10 (size) + 15 + 10 - 20 - 10 + 55 (perks) = **40 CP**
 
 ---
 

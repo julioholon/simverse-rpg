@@ -145,8 +145,8 @@
 
 **Starting Skills:**
 - Divine Magic 3 (6 CP)
-- Religion 3 - Hard (12 CP: 2+4+6)
-- Medicine 2 (3 CP)
+- Religion 3 (6 CP)
+- Medicine 2 - Hard (6 CP)
 - Persuasion 2 (3 CP)
 
 **Included Perks:**
@@ -161,7 +161,7 @@
 - Healer's kit
 - Holy texts
 
-**Total Cost Breakdown:** 6 + 12 + 3 + 3 + 30 (perks) = **54 CP**
+**Total Cost Breakdown:** 6 + 6 + 6 + 3 + 30 (perks) = **51 CP**
 
 **Notes:** Most clerics invest 25-35 CP in healing and divine spells. Common spells: Healing Touch, Bless, Turn Undead, Divine Protection. Characters can add Extra Mana perk (10 CP) if desired.
 
