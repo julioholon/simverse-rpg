@@ -1506,15 +1506,15 @@ Shields add SD to Block defense rolls only
 - **Range** (bows/guns): Penalties at long range per weapon
 
 **Ranged Combat Modifiers:**
-- **Range Penalty:** -1 to hit per 5 meters beyond half of maximum range
+- **Range Penalty:** -1 to hit per log2(distance) rounded up. Example: for 10m, log2(10) = 3.3219, rounded up = 4, so -4 penalty
 - **Range Damage Penalty:** after weapon max range, the damage is halved
 - **Aiming Bonus:** Spend Major Action aiming, next shot gets +3 to hit (lost if you move or are hit)
 - **Point-Blank Range:** Shooting within 2 meters with ranged weapon = -2 to hit (weapon too long/awkward at close range)
 
 **Example Range Penalties:**
-- Shortbow (max 50m, penalties start after 25m): Shooting at 30m = -1, at 40m = -3, at 50m = -5, at 55m -6 and deal half damage
-- Longbow (max 100m, optimal 50m): Shooting at 60m = -2, at 80m = -6, at 105m = -11 and deal half damage onwards
-- Crossbow (max 80m, optimal 40m): Shooting at 60m = -4, at 85m -9 and deal half damage onwards
+- Shortbow (max 50m): Shooting at 10m = -4 (log2(10)=3.32→4), at 30m = -5 (log2(30)=4.91→5), at 50m = -6 (log2(50)=5.64→6), at 55m = -6 (log2(55)=5.78→6) and deal half damage
+- Longbow (max 100m): Shooting at 20m = -5 (log2(20)=4.32→5), at 60m = -6 (log2(60)=5.91→6), at 100m = -7 (log2(100)=6.64→7), at 105m = -7 (log2(105)=6.71→7) and deal half damage onwards
+- Crossbow (max 80m): Shooting at 15m = -4 (log2(15)=3.91→4), at 60m = -6 (log2(60)=5.91→6), at 80m = -7 (log2(80)=6.32→7), at 85m = -7 (log2(85)=6.41→7) and deal half damage onwards
 
 **Example Aiming:**
 - Round 1: Use Major Action to aim at target

@@ -421,18 +421,20 @@ Shields add to Block defense only (not Dodge or Parry):
 ### Ranged Combat Modifiers
 
 **Range Penalties:**
-- **-1 to hit per 5m beyond half maximum range**
+- **-1 to hit per log2(distance) rounded up.** Example: for 10m, log2(10) = 3.3219, rounded up = 4, so -4 penalty
 - **Half damage beyond maximum range**
 
 **Examples:**
-- Shortbow (max 50m): Penalties after 25m
-  - At 30m: -1 to hit
-  - At 50m: -5 to hit
-  - At 55m: -6 to hit + half damage
-- Longbow (max 100m): Penalties after 50m
-  - At 60m: -2 to hit
-  - At 100m: -10 to hit
-  - At 110m: -12 to hit + half damage
+- Shortbow (max 50m):
+  - At 10m: -4 to hit (log2(10)=3.32→4)
+  - At 30m: -5 to hit (log2(30)=4.91→5)
+  - At 50m: -6 to hit (log2(50)=5.64→6)
+  - At 55m: -6 to hit (log2(55)=5.78→6) + half damage
+- Longbow (max 100m):
+  - At 20m: -5 to hit (log2(20)=4.32→5)
+  - At 60m: -6 to hit (log2(60)=5.91→6)
+  - At 100m: -7 to hit (log2(100)=6.64→7)
+  - At 110m: -7 to hit (log2(110)=6.78→7) + half damage
 
 **Aiming Bonus:**
 - Spend Major Action to aim
