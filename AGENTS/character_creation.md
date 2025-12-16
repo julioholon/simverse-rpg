@@ -333,8 +333,8 @@ Maximum reduction: -75% (can't go below 25% of base)
 
 **Encumbrance** (see Core Rules for details):
 - 0-100% Carry Capacity: No penalties
-- 101-150%: Overburdened (-2 Speed, -2 physical, -1 defenses)
-- 151-200%: Maximum (half speed, -4 physical, -2 defenses)
+- 101-150%: Heavy (-2 Speed, -2 physical, -1 defenses)
+- 151-200%: Overburdened (half speed, -4 physical, -2 defenses)
 
 **Shields**:
 - Small Shield: SD 1, 10 sp

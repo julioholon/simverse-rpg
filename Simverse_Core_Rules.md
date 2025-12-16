@@ -309,8 +309,8 @@ Based on percentage of Carry Capacity:
 | Level | Load | Effects |
 |-------|------|---------|
 | **Normal** | 0-100% | No penalties |
-| **Overburdened** | 101-150% | -2 Speed, -2 to physical skills, -1 to defenses, 1 Stamina/10 min |
-| **Maximum** | 151-200% | Speed halved, -4 to physical skills, -2 to defenses, cannot sprint |
+| **Heavy** | 101-150% | -2 Speed, -2 to physical skills, -1 to defenses, 1 Stamina/10 min |
+| **Overburdened** | 151-200% | Speed halved, -4 to physical skills, -2 to defenses, cannot sprint |
 
 **Beyond 200%:** Cannot move without dropping weight.
 
@@ -318,7 +318,7 @@ Based on percentage of Carry Capacity:
 - Encumbrance penalties stack with armor penalties
 - Overburdened characters cannot use Sprint movement
 
-**Example:** Character with ST 12 (24 kg capacity) carrying 30 kg (125%) is Overburdened: -2 Speed, -2 to Athletics/Stealth/etc., -1 to Dodge/Parry/Block.
+**Example:** Character with ST 12 (24 kg capacity) carrying 30 kg (125%) is Heavy load: -2 Speed, -2 to Athletics/Stealth/etc., -1 to Dodge/Parry/Block.
 
 ---
 
