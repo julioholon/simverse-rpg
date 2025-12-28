@@ -283,7 +283,7 @@ Minimum Damage = 1 (if AR = 0)
 - Longsword (2d6-1) + ST 16 (+3) = rolls 8
 - 8 - 1 + 3 = 10 total damage
 - vs AR 3: AR counts as 6 for cutting
-- 10 - 6 = **4 Vitality damage + bleeding (-1 Vitality/turn)**
+- 10 - 6 = **4 Vitality damage + bleeding_count increases by 1**
 
 **Example 3 - Dedicated Impaling (Arrow):**
 - Arrow (1d6+2) + ST 12 (+1) = rolls 4
@@ -513,7 +513,7 @@ Targeting specific body parts for extra effect:
 
 | Condition | Effects | Duration | Treatment |
 |-----------|---------|----------|-----------|
-| **Bleeding** | -1 Vitality/turn | Until bandaged | First Aid (Minor Action) |
+| **Bleeding** | -bleeding_count Vitality/turn | Until bandaged or EN roll succeeds | First Aid (Minor Action, stops all) or EN roll each turn (reduces by 1) |
 | **Stunned** | -4 to all actions, lose Reaction | 1 round | Wait it out |
 | **Prone** | -4 to attacks, +4 to be hit (melee), -4 to be hit (ranged) | Until stand | Half move to stand up |
 | **Disarmed** | No weapon | Until retrieved | Minor Action (3m away) |
@@ -526,13 +526,17 @@ Targeting specific body parts for extra effect:
 ### Bleeding Management
 **Critical for cutting weapons!**
 
-1. **Inflicted:** When cutting damage penetrates armor
-2. **Effect:** -1 Vitality per turn (ongoing)
-3. **Treatment:** First Aid roll as Minor Action
+1. **Inflicted:** Each time cutting damage penetrates armor, bleeding_count increases by 1
+2. **Effect:** -bleeding_count Vitality per turn (multiple wounds stack!)
+3. **Natural Recovery:** Each turn, automatic roll vs EN with penalty -2 × bleeding_count
+   - Success: Reduce bleeding_count by 1
+   - Failure: Bleeding continues
+   - When bleeding_count reaches 0: Bleeding stops completely
+4. **Treatment:** First Aid roll as Minor Action (faster than natural recovery)
    - Roll vs (IN + Medicine/First Aid) or default (IN-2)
-   - Success: Bleeding stops
-   - Failure: Continues for 1d6 more turns, can retry
-4. **Multiple Wounds:** Track separately (can bleed from 3 cuts = -3/turn)
+   - Success: Stop ALL bleeding immediately (bleeding_count = 0)
+   - Failure: Continues, can retry
+5. **Multiple Wounds:** Bleeding count stacks (3 cutting hits = bleeding_count 3 = -3 Vitality/turn + EN roll at -6)
 
 ---
 
@@ -758,7 +762,7 @@ Characters roll vs **WS** when facing:
    - Critical failure: Describe embarrassing fumble
 
 3. **Track Status Effects:**
-   - Bleeding: Remind players each turn
+   - Bleeding: Remind players each turn (-bleeding_count damage, then EN roll to reduce)
    - Prone: Apply modifiers correctly
    - Stunned: Don't forget they lose reactions
    - Pain penalties: Track who took damage outside combat
@@ -881,7 +885,7 @@ Characters roll vs **WS** when facing:
 ### ALWAYS DO:
 1. ✅ Calculate margin and apply penalty to defender
 2. ✅ Apply damage type effects correctly (cutting AR × 2, impaling penetration × 2)
-3. ✅ Track bleeding and ongoing effects
+3. ✅ Track bleeding_count and ongoing effects (each cutting hit adds 1, EN rolls reduce by 1)
 4. ✅ Apply pain penalties for damage taken outside active combat
 5. ✅ Use tactical terrain and enemy intelligence
 6. ✅ Describe combat cinematically

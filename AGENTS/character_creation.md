@@ -414,7 +414,7 @@ Maximum reduction: -75% (can't go below 25% of base)
 
 **Damage Types**:
 - **Bludgeoning**: Normal AR applies
-- **Cutting**: AR counts as double, but causes bleeding (1 Vitality/turn)
+- **Cutting**: AR counts as double, but each penetrating hit adds 1 to bleeding_count (lose bleeding_count Vitality/turn, EN roll to reduce)
 - **Impaling** (two types):
   - **Dedicated impaling weapons** (arrows, spears, pikes): Damage through AR is doubled
   - **Slashing weapons thrust** (swords, daggers): Subtract 1 per die first, then damage through AR is doubled

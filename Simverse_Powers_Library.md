@@ -349,7 +349,7 @@
 **Calculation:** 15 × (1 + 1.50 - 0.10 - 0.10 - 0.15) = 15 × 2.15 = 32.25, round down to 32 CP
 **Final Cost:** 32 CP
 
-**Effect:** Touch target to restore 4d6 Vitality. Can cure minor diseases and stop bleeding. Requires 1 minute of prayer/chanting.
+**Effect:** Touch target to restore 4d6 Vitality. Can cure minor diseases and stop all bleeding (set bleeding_count to 0). Requires 1 minute of prayer/chanting.
 
 ---
 

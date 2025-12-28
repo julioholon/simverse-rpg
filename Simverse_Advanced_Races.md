@@ -131,6 +131,8 @@ These traits modify how you take damage and recover.
 
 ### No Bleeding (+10 CP)
 - Immune to bleeding effects from cutting damage
+- Cutting weapons never increase your bleeding_count
+- Note: Most constructs, undead, and elementals have this trait
 - Cutting damage still applies normally (including double AR) but doesn't cause ongoing 1 Vitality/turn loss
 - Don't leave blood trails, can't be tracked by blood
 - **Justification**: Mechanical body, undead (no blood), elemental nature (made of stone/water/energy), sealed biology

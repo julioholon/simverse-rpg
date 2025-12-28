@@ -690,7 +690,7 @@ Perks represent advantages, talents, and special abilities. Flaws represent disa
   - Doesn't need food, water, air, or sleep
   - Immune to poison and disease
   - Immune to death magic and life drain (already dead)
-  - No bleeding from cutting damage
+  - No bleeding from cutting damage (immune to bleeding effects)
   - Immune to effects targeting "living creatures"
   - Can be healed by negative energy and necromantic magic
 - **Vulnerabilities:**
@@ -1280,7 +1280,11 @@ Different damage types interact with armor differently:
 #### Cutting Damage
 - **Sources:** Swords, axes, slashing weapons
 - **Effect:** AR applies **double** (AR 4 counts as 8 vs cutting), but damage that gets through causes **bleeding**
-- **Bleeding:** Victim loses 1 Vitality per turn until treated (First Aid roll as Minor Action)
+- **Bleeding:** Each cutting wound that penetrates armor adds 1 to bleeding count. Each turn:
+  - Lose bleeding_count Vitality
+  - Roll vs EN with penalty -2 × bleeding_count to naturally heal one wound (reduce bleeding_count by 1)
+  - When bleeding_count reaches 0, bleeding stops completely
+- **Treatment:** First Aid roll as Major Action stops all bleeding immediately (wraping some bandage or available piece of cloth around the wound to compress it)
 - **Examples:** Longsword (2d6-1 cutting), battleaxe (2d6 cutting)
 
 #### Impaling Damage
@@ -1495,6 +1499,11 @@ Shields add SD to Block defense rolls only
 - Masterwork or oversized weapons may have higher threshold (15+ damage)
 - Broken weapons are useless until repaired
 
+#### Bleeding to death
+- When Vitality reaches 0, roll versus EN every turn (6 seconds), modified by how much negative vitality the character has
+- Failing this roll sets the character unsconscious, and start bleeding by -1 vitality to death (if not bleeding already)
+- Upon reaching -1 x Vitality the character is dead (bleeding stops)
+
 ### Combat Modifiers
 
 **Situational:**
@@ -1544,7 +1553,7 @@ Arrow (1d6+2 impaling) hits head (-6 to hit) against AR 2:
 
 **Grappled**: Can't move, both grappler and target at -4 to all actions except grapple-related
 
-**Bleeding**: Lose 1 Vitality per round until bandaged (First Aid roll, Minor Action)
+**Bleeding**: Lose bleeding_count Vitality per round. Each round, roll vs EN (penalty -2 × bleeding_count) to reduce bleeding by 1. First Aid (Major Action) stops all bleeding
 
 **Dazed**: -2 to all actions, lose Minor Action, lasts 1 round
 
@@ -1915,9 +1924,9 @@ Major injuries impose **temporary flaws** on the character until healed. These u
 
 #### Medical Treatment
 
-**First Aid** (immediate, 1-10 minutes):
-- Roll Medicine skill vs wound severity
-- Success: Stop bleeding, prevent infection, stabilize patient
+**First Aid** (immediate, 1-10 minutes, Major action in combat):
+- Roll Medicine/First Aid skill vs wound severity
+- Success: Stop all bleeding (set bleeding_count to 0), prevent infection, stabilize patient
 - Each 5 margin: +1 Vitality recovered immediately (max EN/2)
 - Requires: Basic medical supplies
 

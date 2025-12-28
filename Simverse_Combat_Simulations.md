@@ -285,8 +285,8 @@
   - Rolls 2d6 = 8, so 8-1+4 = 11 base damage + rolls 2d6 = 7 for Power Attack
   - Total: 18 damage cutting
   - vs AR 2 (counts as 4 vs cutting): 18-4 = **14 Vitality damage!**
-  - **BLEEDING starts:** -1 Vitality per turn
-  - **Kael: 10/24 Vitality** (badly wounded!)
+  - **BLEEDING starts:** bleeding_count increases to 1 (will lose 1 Vitality/turn, EN roll to recover)
+  - **Kael: 10/24 Vitality, bleeding_count: 1** (badly wounded!)
 - **Pain Check:** 14 damage in one turn, not in "active combat" at start... wait, they are in active combat
   - No pain penalty (combat adrenaline active)
 
@@ -309,14 +309,17 @@
 **Round 2 Summary:**
 - Aldric's Power Attack nearly split Kael in two!
 - Kael's Precision Strike headshot finally penetrated (only damage so far!)
-- Kael is bleeding (-1/turn) and at 10/24 Vitality - desperate situation
+- Kael is bleeding (bleeding_count: 1, -1 Vitality/turn, EN roll at -2 to reduce) and at 10/24 Vitality - desperate situation
 - One more solid hit from Aldric could end this
 
 ---
 
 ### ROUND 3
 
-**Bleeding:** Kael loses 1 Vitality from bleeding (9/24)
+**Bleeding Phase:** 
+- Kael loses 1 Vitality from bleeding (bleeding_count: 1) → 9/24 Vitality
+- EN roll to stop bleeding: Roll vs EN 12 with -2 penalty (bleeding_count × 2) = target 10
+- Rolls 3d6 = 13 → **FAILS!** Bleeding continues
 
 **Ser Aldric's Turn:**
 - **Action:** Press advantage, regular attack
@@ -345,13 +348,16 @@
 **Round 3 Summary:**
 - Kael's visor thrust deflected - armor holds again!
 - Aldric still at 31/35 Vitality (only took 4 damage total from Round 2 headshot)
-- Kael bleeding continues: 9/24 Vitality - getting desperate!
+- Kael bleeding continues (failed EN roll): 9/24 Vitality, bleeding_count: 1 - getting desperate!
 
 ---
 
 ### ROUND 4
 
-**Bleeding:** Kael loses 1 Vitality (8/24) - getting critical!
+**Bleeding Phase:**
+- Kael loses 1 Vitality from bleeding (bleeding_count: 1) → 8/24 Vitality
+- EN roll: vs EN 12 with -2 penalty = target 10
+- Rolls 3d6 = 11 → **FAILS again!** Bleeding continues
 
 **Ser Aldric's Turn:**
 - **Action:** Finish this! Regular attack
@@ -362,8 +368,8 @@
 - **Damage:** Longsword 2d6-1 cutting + ST +4
   - Rolls 2d6 = 9, so 9-1+4 = 12 damage
   - vs AR 4 (2×2 for cutting): 12-4 = **8 Vitality damage!**
-  - **More bleeding!** (already bleeding, no stack)
-  - **Kael: 0/24 Vitality - DOWN!**
+  - **Another bleeding wound!** bleeding_count increases from 1 to 2 (will lose 2/turn now, EN roll at -4)
+  - **Kael: 0/24 Vitality, bleeding_count: 2 - DOWN!**
 - **Dying:** Kael collapses, bleeding out
 
 **Combat Ends:**
@@ -377,7 +383,8 @@
 - Light impaling weapons (rapier 1d6) are nearly useless against heavy armor without special maneuvers
 - Kael's only successful damage: 4 Vitality from Precision Strike (ignoring 2 AR) + headshot multiplier
 - Power Attack maneuver turned the tide with massive 14 damage cutting attack
-- Bleeding damage (3 Vitality over 3 rounds) contributed significantly to Kael's defeat
+- Bleeding damage (2 Vitality over 2 rounds from bleeding_count: 1, failed EN rolls both times) contributed significantly to Kael's defeat
+- Second cutting wound increased bleeding_count to 2 before Kael fell
 - **Key lesson:** Weapon and armor selection matters MORE than skill at high levels
 
 ---
@@ -483,8 +490,8 @@
 - **Damage:** Battleaxe 2d6 cutting + ST +4
   - Rolls 2d6 = 8, so 8+4 = 12 damage
   - vs AR 10 (5×2 for cutting): 12-10 = 2 gets through
-  - **Bleeding starts on Grigor**
-  - **Grigor: 24/26 Vitality**
+  - **Bleeding starts on Grigor:** bleeding_count increases to 1
+  - **Grigor: 24/26 Vitality, bleeding_count: 1**
 - Thorin bellows: "FOR THE MOUNTAIN!"
 
 ---
@@ -548,7 +555,7 @@
 - **Elena rolls:** 3d6 = 11 - **FAILS! Hit from the side**
 - **Damage:** Hand axe 1d6 cutting + ST +1
   - Rolls 1d6 = 4, so 4+1 = 5 damage
-  - vs AR 6 (3×2 for cutting): 5-6 = 0 **Armor absorbed**
+  - vs AR 6 (3×2 for cutting): 5-6 = 0 **Armor absorbed** (no bleeding since no damage penetrated)
   - **Elena: 24/24 Vitality**
 
 ---
@@ -581,7 +588,10 @@
 
 ### ROUND 2
 
-**Bleeding:** Grigor loses 1 Vitality (23/26)
+**Bleeding Phase:** 
+- Grigor loses 1 Vitality from bleeding (bleeding_count: 1) → 23/26 Vitality
+- EN roll: vs EN 11 with -2 penalty = target 9
+- Rolls 3d6 = 12 → **FAILS!** Bleeding continues
 
 **THORIN's Turn (+2 from Bless):**
 - **Action:** Power Attack on Grigor (costs 2 Stamina, 34/36)
@@ -592,8 +602,8 @@
 - **Damage:** Battleaxe 2d6+4+2d6 (Power Attack) cutting
   - Rolls 2d6 = 7, +4 ST = 11, +2d6 = 8, total 19 damage
   - vs AR 10 (5×2 cutting): 19-10 = 9 gets through
-  - **Already bleeding, no new bleed**
-  - **Grigor: 14/26 Vitality** (badly wounded!)
+  - **Another bleeding wound!** bleeding_count increases from 1 to 2 (will lose 2/turn, EN roll at -4)
+  - **Grigor: 14/26 Vitality, bleeding_count: 2** (badly wounded!)
 
 ---
 
@@ -679,8 +689,11 @@
 
 ### ROUND 3 - MOPPING UP
 
-**Bleeding & Fire:**
-- Grigor: -1 Vitality (bleeding), -1d6 = 4 Vitality (fire) = **6/26 Vitality!**
+**Bleeding & Fire Phase:**
+- Grigor loses 2 Vitality from bleeding (bleeding_count: 2) → 12/26 Vitality
+- EN roll: vs EN 11 with -4 penalty (2 × bleeding_count) = target 7
+- Rolls 3d6 = 14 → **FAILS!** Bleeding continues at full strength
+- Fire damage: rolls 1d6 = 4 Vitality → **8/26 Vitality!**
 
 **THORIN's Turn (+2):**
 - **Action:** Finish Grigor
@@ -691,8 +704,9 @@
 - **Damage:** Battleaxe 2d6+4 cutting
   - Rolls 2d6 = 10, so 10+4 = 14 damage
   - vs AR 10 (5×2): 14-10 = 4 gets through
-  - **Grigor: 2/26 Vitality** (barely alive!)
-- **Morale Check for Grigor:** At 2 Vitality, on fire, bleeding
+  - **Another bleeding wound!** bleeding_count increases from 2 to 3
+  - **Grigor: 4/26 Vitality, bleeding_count: 3** (barely alive!)
+- **Morale Check for Grigor:** At 4 Vitality, on fire, bleeding heavily (bleeding_count: 3)
   - Automatically surrenders: "I yield! I yield!"
 
 **MARCUS & ELENA:**
@@ -705,8 +719,8 @@
   - Elena: 23/24 (minor cut)
   - Lyralei: 17/18 (arrow wound, mostly healed)
 - **Bandits Defeated:**
-  - Vark: Fled into forest (10/18 Vitality)
-  - Grigor: Surrendered (2/26 Vitality, bleeding, on fire)
+  - Vark: Fled into forest (2/18 Vitality)
+  - Grigor: Surrendered (4/26 Vitality, bleeding_count: 3, on fire)
   - Krug & Brog: Surrendered (12/20 and 20/20)
 
 **Combat Analysis:**
@@ -735,7 +749,8 @@
 - Precision Strike maneuver was essential - only way to damage heavily armored opponent
 - Single powerful hits (Power Attack 14 damage) more decisive than many weak hits (0 damage)
 - Maneuvers (Power Attack, Precision Strike) are fight-winners
-- Bleeding damage adds up quickly (3 Vitality over 3 rounds)
+- **New bleeding system is more realistic:** Multiple cutting wounds stack (bleeding_count increases), making each wound more dangerous. EN rolls to recover get harder with more wounds (-2 × bleeding_count penalty)
+- Bleeding damage adds up: Kael took 2 Vitality over 2 rounds (bleeding_count: 1, failed both EN rolls)
 - **New impaling rules make armor MORE effective** - minimum damage applies before AR, then AR can reduce to 0
 
 ### Group Combat
@@ -745,6 +760,7 @@
 - Surprise rounds are devastating
 - Coordinated tactics beat individual heroics
 - Support characters (healers, buffers) enable victory
+- **Multiple cutting wounds stack dangerously:** Grigor accumulated bleeding_count: 3 from three separate cutting hits, making recovery very difficult (EN roll at -6)
 
 ---
 

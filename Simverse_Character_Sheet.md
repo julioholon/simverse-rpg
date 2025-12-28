@@ -278,7 +278,7 @@ ________________________________________________
 - ☐ Prone (-4 attacks, +4 to be hit melee, -4 to be hit ranged)
 - ☐ Disarmed (weapon 3m away)
 - ☐ Grappled (can't move, -4 actions)
-- ☐ Bleeding (lose 1 Vitality/round until bandaged)
+- ☐ Bleeding (count: ___, lose that many Vitality/round, EN roll each round to reduce by 1)
 - ☐ Dazed (-2 all actions, no minor action, 1 round)
 - ☐ Exhausted (0 Stamina: -4 physical actions)
 - ☐ Depleted (0 Mana: -4 mental actions)

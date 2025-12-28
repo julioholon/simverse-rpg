@@ -54,7 +54,7 @@ Four main damage types affect armor and cause different effects:
 | Type | AR Effect | Special |
 |------|-----------|---------|
 | **Bludgeoning** | Normal | Standard damage |
-| **Cutting** | Double AR | Causes bleeding |
+| **Cutting** | Double AR | Each penetrating hit adds 1 to bleeding_count |
 | **Impaling** | Normal | Damage through armor doubled |
 | **Energy** | Normal | Additional effects |
 
@@ -84,15 +84,19 @@ Four main damage types affect armor and cause different effects:
 
 **Mechanics:**
 1. **AR counts double** for cutting damage
-2. Damage that penetrates causes **bleeding**
-3. **Bleeding:** -1 Vitality per turn until treated (First Aid as Minor Action)
+2. Each time damage penetrates, **bleeding_count increases by 1**
+3. **Bleeding Mechanics:**
+   - Each turn: Lose bleeding_count Vitality
+   - Each turn: Roll vs EN (penalty -2 × bleeding_count) to reduce bleeding_count by 1
+   - When bleeding_count reaches 0: Bleeding stops
+   - Treatment: First Aid as Major Action stops all bleeding immediately (bleeding_count = 0)
 
 **Example:**
 - Longsword (2d6-1 cutting) + ST 16 (+3) = rolls 8
 - 8 - 1 + 3 = 10 damage total
 - vs AR 3: AR counts as 6 vs cutting
 - 10 - 6 = 4 damage to Vitality
-- **Victim bleeds: -1 Vitality/turn until bandaged**
+- **Victim's bleeding_count increases by 1 (will lose 1 Vitality/turn, EN roll each turn to recover)**
 
 **Tactical Note:** Cutting weapons are excellent vs unarmored or lightly armored foes, but struggle against heavy armor.
 
@@ -374,7 +378,7 @@ Targeting specific body parts for extra effect:
    - Stacks with impaling for × 4 total
 5. Final damage to Vitality
 6. Apply special effects:
-   - Cutting: Bleeding (-1 Vitality/turn)
+   - Cutting: Bleeding (adds 1 to bleeding_count, -bleeding_count Vitality/turn)
    - Energy: Type-specific effects
 7. Check pain penalty (if not in active combat):
    - Every 5 damage = -1 next turn
@@ -416,7 +420,7 @@ Targeting specific body parts for extra effect:
 
 ### Damage Type Summary
 - **Bludgeoning:** Normal AR, no special
-- **Cutting:** AR × 2, causes bleeding
+- **Cutting:** AR × 2, each penetrating hit adds 1 to bleeding_count
 - **Impaling:** Penetrating damage × 2
 - **Energy:** Normal AR, special effects
 
