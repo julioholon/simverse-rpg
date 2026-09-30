@@ -3,14 +3,19 @@
 
 ---
 
+> **Canonical source of truth.** This document (`Simverse_Skill_List.md`) is the authoritative registry of every Simverse skill — its name, governing attribute, category, and difficulty (Regular/Hard). The runtime data library (`skills_library.json`) is a machine mirror and must conform to this list: every `skills_library[].name` must have a matching entry here, with the same governing attribute and difficulty. Derived statistics — Vitality, Integrity, Stamina, Mana, Speed, and Perception — are **not** skills and must never appear as purchasable skill entries or in `starting_skills`. Other documents (e.g. the "Common Skills" section of `Simverse_Core_Rules.md`) are abbreviated summaries, not registries, and are not authoritative for the skill set.
+
 ## DEXTERITY (DX) Skills
 
 ### Combat Skills (Regular)
 - **Swords** - All bladed weapons: longswords, shortswords, rapiers, katanas
 - **Axes** - Battle axes, hand axes, throwing axes
-- **Spears** - Spears, javelins, lances, polearms
+- **Maces** - Maces, clubs, morningstars, hammers, mauls
+- **Spears** - Spears, javelins, lances
+- **Daggers** - Small concealable blades, knives; cutting or impaling (thrust -1 dmg/die)
 - **Bows** - Shortbow, longbow, recurve bow
 - **Crossbows** - Light and heavy crossbows, repeating crossbows
+- **Slings** - Slings, sling bullets, stones
 - **Throwing** - Throwing knives, shuriken, grenades
 - **Brawling** - Unarmed combat, punching, kicking, grappling
 - **Whips** - Whips, chains, flails
@@ -74,6 +79,7 @@
 - **Surgery** - Complex medical procedures, operations
 - **Engineering** - Mechanical design, construction, repair
 - **Alchemy** - Potion-making, chemical compounds
+- **Poisons** - Identifying, crafting, applying, and resisting poisons
 - **Cryptography** - Codes, ciphers, encryption
 - **Forgery** - Creating fake documents, signatures, art
 - **Computer Science** - Programming, hacking, networks (setting dependent)
@@ -119,6 +125,7 @@
 ### Social Skills (Regular)
 - **Persuasion** - Convincing, negotiating, selling ideas
 - **Deception** - Lying, bluffing, creating false impressions
+- **Disguise** - Creating and maintaining false identities, costumes, mimicry
 - **Leadership** - Inspiring allies, commanding troops, rallying morale
 - **Performance** - Acting, singing, public speaking, entertaining
 - **Diplomacy** - Mediating disputes, formal negotiations

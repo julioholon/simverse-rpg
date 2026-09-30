@@ -484,7 +484,7 @@ Modifiers:
 - Engineering*, Medicine*, Surgery*, Alchemy*, Lockpicking* (IN/DX)
 
 #### Perception Skills (Regular)
-- Perception (AW+IN)/2, Tracking (WS/AW), Survival (IN/AW)
+- Spotting (AW/IN), Tracking (WS/AW), Survival (IN/AW)
 
 #### Magic Skills (varies)
 - Spellcasting (WS), Psionics (IN), Divine Magic (CH), Ritual Magic (IN), Occult Knowledge* (IN)
@@ -944,14 +944,13 @@ Templates are pre-built packages of attributes, perks, skills, and equipment tha
 
 ---
 
-#### Scout/Ranger (29 CP)
+#### Scout/Ranger (26 CP)
 
 **Starting Skills:**
 - Bow 3 (6 CP)
 - Stealth 3 (6 CP)
 - Tracking 3 (6 CP)
 - Survival 2 (3 CP)
-- Perception 2 (3 CP)
 
 **Included Perks:**
 - Acute Senses - choose one (5 CP)
@@ -989,13 +988,12 @@ Templates are pre-built packages of attributes, perks, skills, and equipment tha
 
 ---
 
-#### Rogue (33 CP)
+#### Rogue (30 CP)
 
 **Starting Skills:**
 - Stealth 4 (10 CP: 1+2+3+4)
 - Lockpicking 3 - Hard (12 CP: 2+4+6)
 - Sleight of Hand 2 (3 CP)
-- Perception 2 (3 CP)
 
 **Included Perks:**
 - Ambidextrous (5 CP)
@@ -1006,7 +1004,7 @@ Templates are pre-built packages of attributes, perks, skills, and equipment tha
 - Thieves' tools
 - Grappling hook and rope
 
-**Total Cost Breakdown:** 10 + 12 + 3 + 3 + 5 (perk) = **33 CP**
+**Total Cost Breakdown:** 10 + 12 + 3 + 5 (perk) = **30 CP**
 
 **Note:** Most rogues invest 15-25 CP in combat maneuvers (Sneak Attack, Feint, Precision Strike, etc.). See [Simverse_Powers_Library.md](Simverse_Powers_Library.md) for available maneuvers
 

@@ -289,14 +289,7 @@
 - Mage Gift (20 CP): Can cast spells
 - Charismatic Leader (10 CP): Allies within 10m get +1 to morale rolls
 
-**Template Power - Inspiring Performance (11 CP):**
-**Type:** Moderate Social Power (5 CP base)
-**Resource Cost:** 2 Mana
-**Enhancements:** Multiple Targets +125% (5+ allies), Extra Duration +20% (30 min)
-**Limitations:** Requires [Item] -10% (instrument), Obvious/Loud -10%
-**Calculation:** 5 × (1 + 1.25 + 0.20 - 0.10 - 0.10) = 5 × 2.25 = 11.25 → 11 CP
-
-**Effect:** As Major Action, perform and roll Performance. All allies within 10m gain temporary bonus = your margin/5 to their next roll. Lasts 30 minutes.
+**Template Power - Inspiring Performance (11 CP):** +2 to Performance skill rolls for 30 minutes (self-buff, 2 Mana). See [Simverse_Powers_Library.md](Simverse_Powers_Library.md).
 
 **Starting Equipment:**
 - Light armor (studded leather)
@@ -364,7 +357,7 @@
 **Starting Skills:**
 - Stealth 4 (10 CP: 1+2+3+4)
 - Daggers 3 (6 CP)
-- Poison Knowledge 3 - Hard (12 CP: 2+4+6)
+- Poisons 3 - Hard (12 CP: 2+4+6)
 - Disguise 2 (3 CP)
 
 **Included Perks:**

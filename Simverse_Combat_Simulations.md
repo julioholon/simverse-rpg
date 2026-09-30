@@ -28,7 +28,7 @@
 - DX 12, ST 11 (+0 damage), EN 11, AW 9
 - Vitality: 22, Stamina: 22
 - Speed: 5.75
-- Skills: Club 2 (DX 12 + 2 = 14), Brawling 2 (DX 12 + 2 = 14)
+- Skills: Maces 2 (DX 12 + 2 = 14), Brawling 2 (DX 12 + 2 = 14)
 - Equipment: Club (1d6-2 bludgeoning), no armor
 - Defense: Dodge 6 (DX 12/2), Parry 7 ((12+2)/2)
 
@@ -44,7 +44,7 @@
 
 **Marcus's Turn:**
 - **Action:** Attack Gareth with club
-- **Roll:** 3d6 = 9 vs target 14 (DX 12 + Club 2)
+- **Roll:** 3d6 = 9 vs target 14 (DX 12 + Maces 2)
 - **Success!** Margin: 14 - 9 = 5
 - **Gareth's Defense:** Dodge, needs 5 or less (base 5, no modifier from Marcus's margin yet since margin ÷ 5 = 1)
   - Actually, margin 5 = -1 to Gareth's defense, so Gareth needs 4 or less
@@ -411,7 +411,7 @@
 
 **ELENA LIGHTBRINGER** (Human Cleric)
 - Speed: 5.5, Vitality: 24/24, Mana: 28/28
-- Attack: Mace 14, Defense: Dodge 6, Block 10
+- Attack: Maces 14, Defense: Dodge 6, Block 10
 - Equipment: Mace (2d6 bludgeoning + ST+1), Medium Armor (AR 3), Shield
 - Spells: Healing Touch, Bless
 

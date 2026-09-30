@@ -149,13 +149,13 @@ Let's create **Lyra, an Elven Scout** using the standard starting budget (100 CP
 - DX +2, AW +1, EN -1, ST -1
 - Night Vision, Acute Senses (Hearing), Facilitated Movement (Forest), Graceful, Extended Lifespan
 
-**Scout Template** (29 CP):
-- Bow 3, Stealth 3, Tracking 3, Survival 2, Perception 2
+**Scout Template** (26 CP):
+- Bow 3, Stealth 3, Tracking 3, Survival 2
 - Acute Senses (choose one - we'll pick Sight)
 - Light armor, bow, hunting knife, camping gear
 
-**Total Spent:** 79 CP
-**Remaining:** 51 CP
+**Total Spent:** 76 CP
+**Remaining:** 54 CP
 
 ### Step 2: Set Attributes
 
@@ -170,7 +170,7 @@ Starting from baseline 10, applying racial modifiers:
 - **AW:** 10 + 1 (racial) + 1 (5 CP) = **12**
 
 **Spent:** 15 CP
-**Remaining:** 36 CP
+**Remaining:** 39 CP
 
 ### Step 3: Calculate Derived Stats
 
@@ -187,7 +187,7 @@ Starting from baseline 10, applying racial modifiers:
 - **Quick Learner** (15 CP) - Learn skills 50% faster
 
 **Spent:** 15 CP
-**Remaining:** 21 CP
+**Remaining:** 24 CP
 
 ### Step 5: Improve Skills
 
@@ -196,7 +196,7 @@ Boosting key skills (from template base):
 - **Stealth:** 3 → 4 (+4 CP using sum formula: 10 total)
 
 **Spent:** 8 CP
-**Remaining:** 13 CP
+**Remaining:** 16 CP
 
 ### Step 6: Combat Maneuvers
 
@@ -205,7 +205,7 @@ Boosting key skills (from template base):
 - **Quick Draw** (1 CP) - Draw weapon as free action
 
 **Spent:** 12 CP
-**Remaining:** 1 CP
+**Remaining:** 4 CP
 
 ### Step 7: Take Flaws
 
@@ -219,7 +219,7 @@ To reach our 130 CP budget, we took flaws worth -30 CP:
 **Attributes:** DX 13, IN 10, WS 10, CH 10, ST 9, EN 9, AW 12
 **Derived:** Vitality 18, Stamina 18, Mana 24, Speed 5.5, Perception 11
 **Combat:** Bow +17 to hit (DX 13 + Bow 4), deals 2d6-1 damage (2d6 base +0 ST -1)
-**Skills:** Bow 4, Stealth 4, Tracking 3, Survival 2, Perception 2
+**Skills:** Bow 4, Stealth 4, Tracking 3, Survival 2
 **Perks:** Night Vision, Acute Senses (Hearing & Sight), Forest Movement, Graceful, Quick Learner
 **Maneuvers:** Aimed Shot, Precision Strike, Quick Draw
 **Flaws:** Curious, Code of Honor, Overconfident
