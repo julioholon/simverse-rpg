@@ -930,21 +930,6 @@
 
 ---
 
-## Social Powers
-
-### INSPIRING PERFORMANCE
-**Type:** Moderate Social Power (5 CP base)
-**Mana Cost:** 2
-**Enhancements:** Multiple Targets +125% (5+ allies), Extra Duration +20% (30 min)
-**Limitations:** Requires [Item] -10% (instrument), Obvious/Loud -10%
-**Calculation:** 5 × (1 + 1.25 + 0.20 - 0.10 - 0.10) = 5 × 2.25 = 11.25, round down to 11 CP
-**Final Cost:** 11 CP
-
-**Effect:** As a Major Action, perform and roll Performance. All allies within 10m gain a temporary
-bonus equal to your margin of success / 5 on their next roll. Lasts 30 minutes.
-
----
-
 ## Building Your Own
 
 Remember the construction system:
