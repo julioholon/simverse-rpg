@@ -408,7 +408,7 @@ SOLUTIONS:
 
 ### Combat Skills (DX-based)
 *Delegate detailed combat to combat.md agent*
-- **Swords, Axes, Spears, etc.:** Attack rolls
+- **Swords, Axes, Polearms, etc.:** Attack rolls
 - **Bows, Crossbows, Throwing:** Ranged attacks
 - **Brawling:** Unarmed attacks, grappling
 - **Shield:** Block defense rolls

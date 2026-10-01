@@ -289,7 +289,7 @@
 - Mage Gift (20 CP): Can cast spells
 - Charismatic Leader (10 CP): Allies within 10m get +1 to morale rolls
 
-**Template Power - Inspiring Performance (11 CP):** +2 to Performance skill rolls for 30 minutes (self-buff, 2 Mana). See [Simverse_Powers_Library.md](Simverse_Powers_Library.md).
+**Template Feature - Inspiring Performance:** +2 to Performance skill rolls. Intrinsic to the Bard and priced into the template (11 CP of the 63) — it is not a purchasable power and is deliberately absent from [Simverse_Powers_Library.md](Simverse_Powers_Library.md).
 
 **Starting Equipment:**
 - Light armor (studded leather)

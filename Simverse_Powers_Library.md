@@ -930,20 +930,6 @@
 
 ---
 
-## Social Powers
-
-### INSPIRING PERFORMANCE
-**Type:** Moderate Social Power (5 CP base)
-**Mana Cost:** 2
-**Enhancements:** Extra Duration +20% (30 min from 5 min default)
-**Limitations:** Self Only -25%, Requires [Item] -10% (instrument), Obvious/Loud -10%
-**Calculation:** 5 × (1 + 0.20 - 0.25 - 0.10 - 0.10) = 5 × 0.75 = 3.75, round down to 3 CP (priced at 11 CP to match the Bard template)
-**Final Cost:** 11 CP
-
-**Effect:** For 30 minutes, you gain +2 to all Performance skill rolls.
-
----
-
 ## Building Your Own
 
 Remember the construction system:

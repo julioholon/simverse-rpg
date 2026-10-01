@@ -469,7 +469,7 @@ Modifiers:
 ### Common Skills
 
 #### Combat Skills (DX-based)
-- Swords, Axes, Spears, Bows, Crossbows, Throwing, Brawling, Shield
+- Swords, Axes, Polearms, Bows, Crossbows, Throwing, Brawling, Shield
 
 #### Physical Skills (DX-based)
 - Athletics (DX), Running (DX/EN), Climbing (DX/ST), Swimming (DX/EN), Stealth (DX), Acrobatics* (DX)

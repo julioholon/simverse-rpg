@@ -11,7 +11,7 @@
 - **Swords** - All bladed weapons: longswords, shortswords, rapiers, katanas
 - **Axes** - Battle axes, hand axes, throwing axes
 - **Maces** - Maces, clubs, morningstars, hammers, mauls
-- **Spears** - Spears, javelins, lances
+- **Polearms** - Long-shaft weapons: spears, halberds, pikes, poleaxes, quarterstaves (a wizard's staff is used as a polearm as well as a spellcasting focus)
 - **Daggers** - Small concealable blades, knives; cutting or impaling (thrust -1 dmg/die)
 - **Bows** - Shortbow, longbow, recurve bow
 - **Crossbows** - Light and heavy crossbows, repeating crossbows
