@@ -132,7 +132,7 @@ Cost **half** of major attributes:
 | 8 | +8 CP | 36 CP | +16 CP | 72 CP |
 
 **Skill Types by Attribute**:
-- **DX**: Swords, Axes, Spears, Bows, Crossbows, Throwing, Brawling, Shield, Stealth, Acrobatics, Sleight of Hand
+- **DX**: Swords, Axes, Polearms, Bows, Crossbows, Throwing, Brawling, Shield, Stealth, Acrobatics, Sleight of Hand
 - **IN**: History, Nature, Religion, Engineering*, Medicine*, Alchemy*, Research, Investigation
 - **WS**: Spellcasting, Willpower, Meditation, Intuition, Animal Handling, Occult Knowledge*
 - **CH**: Persuasion, Deception, Leadership, Performance, Divine Magic, Intimidation
@@ -369,9 +369,9 @@ Maximum reduction: -75% (can't go below 25% of base)
 **Simple Guard (75 CP Street Level)**:
 - Human baseline (0 CP)
 - ST 11 (5 CP), EN 11 (5 CP), DX 11 (10 CP)
-- Spears 3 (6 CP), Athletics 2 (3 CP), Perception 2 (3 CP)
+- Polearms 3 (6 CP), Athletics 2 (3 CP)
 - Equipment: Spear (1d6+1), leather armor (AR 2), small shield (SD 1)
-- Total: 32 CP spent, 43 CP left for Guard template skills/equipment
+- Total: 29 CP spent, 46 CP left for Guard template skills/equipment
 
 **Skilled Wizard (150 CP Experienced)**:
 - Elf (50 CP) + Wizard (51 CP) = 101 CP
@@ -444,7 +444,7 @@ Maximum reduction: -75% (can't go below 25% of base)
 **Skills** (from Scout template):
 - Bow 4 (6 CP + 4 CP upgrade = 10 total)
 - Stealth 4 (6 CP + 4 CP upgrade = 10 total)
-- Tracking 3, Survival 2, Perception 2
+- Tracking 3, Survival 2
 
 **Perks** (from templates):
 - Night Vision, Acute Senses (Hearing & Sight)
@@ -462,8 +462,8 @@ Maximum reduction: -75% (can't go below 25% of base)
 - Dodge: DX 13/2 = 6.5 → 6
 - Vitality: 18 HP
 
-**Total CP**: 50 (Elf) + 29 (Scout) + 10 (DX) + 5 (AW) + 4 (Bow upgrade) + 4 (Stealth upgrade) + 3 (Aimed Shot) + 1 (Quick Draw) = **106 CP**
-*Note: Exceeded by 6 CP - could reduce by taking -6 CP flaws or adjusting skills*
+**Total CP**: 50 (Elf) + 26 (Scout) + 10 (DX) + 5 (AW) + 4 (Bow upgrade) + 4 (Stealth upgrade) + 3 (Aimed Shot) + 1 (Quick Draw) = **103 CP**
+*Note: Exceeded by 3 CP - could reduce by taking -3 CP flaws or adjusting skills*
 
 ---
 

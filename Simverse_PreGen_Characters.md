@@ -10,7 +10,7 @@
 
 ### CHARACTER INFORMATION
 **Race:** Dwarf (45 CP)
-**Profession:** Warrior (33 CP)
+**Profession:** Warrior (30 CP)
 **Power Level:** Starting Adventurer (100 CP + 30 CP from flaws = 130 CP)
 **Concept:** Frontline tank with axe mastery
 
@@ -59,14 +59,13 @@ See [Simverse_Core_Rules.md](Simverse_Core_Rules.md#dwarf-45-cp)
 
 ---
 
-### PROFESSION TRAITS (Warrior - 33 CP)
+### PROFESSION TRAITS (Warrior - 30 CP)
 
 **Skills:**
 - Axes 3 (6 CP)
 - Shield 3 (6 CP)
 - Athletics 1 (1 CP)
 - Intimidation 3 (6 CP)
-- Perception 2 (3 CP)
 - Tactics 1 (1 CP)
 
 **Perks:**
@@ -112,7 +111,6 @@ See [Simverse_Core_Rules.md](Simverse_Core_Rules.md#dwarf-45-cp)
 | **Shield** | ST | 4 | 17 (13+4) |
 | **Athletics** | ST | 1 | 14 (13+1) |
 | **Intimidation** | CH | 3 | 12 (9+3) |
-| **Perception** | AW | 2 | 12 (10+2) |
 | **Tactics** | IN | 2 | 12 (10+2) |
 
 ---
@@ -171,13 +169,13 @@ Thorin Ironforge comes from the Iron Mountain clan, where honor and battle prowe
 
 ### CP BREAKDOWN
 - **Race (Dwarf):** 45 CP
-- **Profession (Warrior):** 33 CP
+- **Profession (Warrior):** 30 CP
 - **Additional Attributes:** 40 CP (DX +2 (20), ST +2 (10), EN +2 (10))
 - **Additional Skills:** 15 CP
 - **Additional Perks:** 10 CP (Weapon Master)
 - **Combat Maneuvers:** 17 CP
 - **Flaws:** -30 CP
-- **TOTAL:** 45 + 33 + 40 + 15 + 10 + 17 - 30 = **130 CP** ✓
+- **TOTAL:** 45 + 30 + 40 + 15 + 10 + 17 - 30 = **127 CP** (3 CP unspent)
 
 ---
 ---
@@ -356,7 +354,7 @@ Lyra Moonwhisper is a young elf wizard (75 years old - quite young for elves) fr
 
 ### CHARACTER INFORMATION
 **Race:** Human (0 CP)
-**Profession:** Rogue (33 CP)
+**Profession:** Rogue (30 CP)
 **Power Level:** Starting Adventurer (100 CP + 30 CP from flaws = 130 CP)
 **Concept:** Skilled infiltrator and striker
 
@@ -399,13 +397,12 @@ None - baseline race
 
 ---
 
-### PROFESSION TRAITS (Rogue - 33 CP)
+### PROFESSION TRAITS (Rogue - 30 CP)
 
 **Skills:**
 - Stealth 4 (10 CP: 1+2+3+4)
 - Lockpicking 3 - Hard (12 CP: 2+4+6)
 - Sleight of Hand 2 (3 CP)
-- Perception 2 (3 CP)
 
 **Perks:**
 - Ambidextrous (5 CP): No off-hand penalty
@@ -434,8 +431,8 @@ None - baseline race
 
 Let me recalculate budget:
 - Total: 100 + 30 (flaws) = 130 CP
-- Human 0 + Rogue 33 + Attributes 75 + Skills 15 + Perks 5 = 128 CP
-- Remaining: 2 CP for maneuvers
+- Human 0 + Rogue 30 + Attributes 75 + Skills 15 + Perks 5 = 125 CP
+- Remaining: 5 CP for maneuvers
 
 That's way too little! Let me adjust:
 
@@ -445,8 +442,8 @@ Reduce Attributes:
 - Final DX 13
 
 Now:
-- Spent: 0 + 33 + 55 + 15 + 5 = 108 CP
-- Remaining: 22 CP for maneuvers
+- Spent: 0 + 30 + 55 + 15 + 5 = 105 CP
+- Remaining: 25 CP for maneuvers
 
 **Revised Attributes (55 CP):**
 - DX +3 (30 CP), final DX 13
@@ -485,7 +482,6 @@ Now:
 | **Acrobatics** | DX | 3 | 16 (13+3) | Mobility |
 | **Sleight of Hand** | DX | 2 | 15 (13+2) | Pickpocket |
 | **Deception** | CH | 2 | 14 (12+2) | Social |
-| **Perception** | AW | 2 | 13 (11+2) | +2 from Acute Senses = 15 |
 
 ---
 
@@ -552,13 +548,13 @@ Raven Quickfingers grew up in the city slums, mastering the arts of stealth, loc
 
 ### CP BREAKDOWN
 - **Race (Human):** 0 CP
-- **Profession (Rogue):** 33 CP
+- **Profession (Rogue):** 30 CP
 - **Attributes:** 55 CP (DX +3, CH +2, AW +1)
 - **Additional Skills:** 15 CP
 - **Additional Perks:** 5 CP (Acute Senses)
 - **Combat Maneuvers:** 22 CP
 - **Flaws:** -30 CP
-- **TOTAL:** 0 + 33 + 55 + 15 + 5 + 22 - 30 = **100 CP** ✓
+- **TOTAL:** 0 + 30 + 55 + 15 + 5 + 22 - 30 = **97 CP** (3 CP unspent)
 
 ---
 ---

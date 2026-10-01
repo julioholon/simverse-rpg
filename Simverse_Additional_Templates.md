@@ -364,7 +364,7 @@
 **Starting Skills:**
 - Stealth 4 (10 CP: 1+2+3+4)
 - Daggers 3 (6 CP)
-- Poison Knowledge 3 - Hard (12 CP: 2+4+6)
+- Poisons 3 - Hard (12 CP: 2+4+6)
 - Disguise 2 (3 CP)
 
 **Included Perks:**

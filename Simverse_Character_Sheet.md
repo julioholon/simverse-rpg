@@ -35,7 +35,7 @@
 | **Stamina** | ST × 2 | _______ / | _______ |
 | **Mana** | AW × 2 | _______ / | _______ |
 | **Speed** | (DX + EN) / 4 | _______ | - |
-| **Perception** | Choose IN or AW | _______ | - |
+| **Perception** | (IN + AW) / 2 | _______ | - |
 
 **Recovery Rates:**
 - Vitality: AW/2 per long rest (8 hours) = _____ per rest
